@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow public read access to niches and published blog posts
+    match /niches/{document=**} {
+      allow read: if true;
+    }
+    
+    match /blog_posts/{document=**} {
+      // Allow public read for published posts
+      // Note: for simpler development, we allow all reads here, 
+      // but in production you'd want to restrict writes.
+      allow read: if true;
+    }
+    
+    match /{document=**} {
+      allow read, write: if false; // Default deny for everything else
+    }
+  }
+}
