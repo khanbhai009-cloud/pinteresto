@@ -144,7 +144,11 @@ export default function Home() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 content-start max-w-6xl mx-auto">
           {loading ? (
              Array(8).fill(0).map((_, i) => (
-                <div key={i} className="bg-[var(--color-cream)] w-full h-24 rounded-xl animate-pulse"></div>
+                <div key={i} className="flex flex-col gap-3">
+                  <div className="bg-[var(--color-cream)] w-full aspect-[3/4] md:aspect-[4/5] rounded-2xl animate-pulse"></div>
+                  <div className="bg-[var(--color-cream)] w-3/4 h-5 rounded animate-pulse"></div>
+                  <div className="bg-[var(--color-cream)] w-1/2 h-4 rounded animate-pulse"></div>
+                </div>
              ))
           ) : (
             latestPins.map((pin) => (
