@@ -16,6 +16,9 @@
 }
 
 @layer base {
+  html, body {
+    overflow-x: hidden;
+  }
   body {
     background-color: var(--color-warm-white);
     color: var(--color-mocha);

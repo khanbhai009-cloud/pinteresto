@@ -42,10 +42,10 @@ export default function CollectionPage() {
         <div className="w-10 h-px bg-[var(--color-sand)] mx-auto opacity-80"></div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-16 max-w-7xl mx-auto px-6 md:px-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-16 max-w-7xl mx-auto px-6 md:px-12">
         {loading ? (
            Array(8).fill(0).map((_, i) => (
-              <div key={i} className="bg-[var(--color-blush)] w-full aspect-[3/4] animate-pulse"></div>
+              <div key={i} className="bg-[var(--color-cream)] w-full h-24 rounded-xl animate-pulse"></div>
            ))
         ) : (
           pins.map((pin) => (

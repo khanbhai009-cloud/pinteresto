@@ -11,13 +11,13 @@ export function Footer() {
           <p className="text-[0.72rem] leading-[1.9] text-[var(--color-muted)] mb-6 max-w-sm">
             AI-curated aesthetic home decor blogs with real affiliate picks. From Pinterest pin to purchase — beautifully.
           </p>
-          <div className="flex mt-5 max-w-xs">
+          <div className="flex mt-5 max-w-xs w-full">
             <input 
               type="email" 
               placeholder="Email Address" 
-              className="flex-1 bg-transparent border border-[var(--color-sand)] border-r-0 rounded-l-full px-5 py-2.5 text-[0.72rem] text-[var(--color-mocha)] font-sans outline-none placeholder:text-[var(--color-muted)] focus:border-[var(--color-mocha)] transition-colors"
+              className="flex-1 bg-transparent border border-[var(--color-sand)] border-r-0 rounded-l-full px-4 md:px-5 py-2.5 text-[0.72rem] text-[var(--color-mocha)] font-sans outline-none placeholder:text-[var(--color-muted)] focus:border-[var(--color-mocha)] transition-colors min-w-0"
             />
-            <button className="bg-[var(--color-mocha)] border border-[var(--color-mocha)] rounded-r-full px-5 py-2.5 text-[0.6rem] tracking-[0.15em] uppercase text-[var(--color-warm-white)] cursor-pointer font-sans transition-colors hover:brightness-110">
+            <button className="bg-[var(--color-mocha)] border border-[var(--color-mocha)] rounded-r-full px-4 md:px-5 py-2.5 text-[0.6rem] tracking-[0.15em] uppercase text-[var(--color-warm-white)] cursor-pointer font-sans transition-colors hover:brightness-110 shrink-0">
               Subscribe
             </button>
           </div>

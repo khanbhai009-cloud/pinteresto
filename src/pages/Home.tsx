@@ -124,7 +124,7 @@ export default function Home() {
         </div>
         <div className="bg-[var(--color-blush)] relative overflow-hidden flex items-center justify-center min-h-[300px] md:min-h-full">
           <div className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-multiply" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1000)' }}></div>
-          <div className="w-[300px] h-[400px] arch bg-[var(--color-cream)] flex items-center justify-center relative pin-shadow">
+          <div className="w-[260px] sm:w-[300px] h-[340px] sm:h-[400px] arch bg-[var(--color-cream)] flex items-center justify-center relative pin-shadow">
             <div className="absolute inset-4 arch border border-[var(--color-mocha)] opacity-10"></div>
             <span className="text-[4rem] saturate-50 opacity-80">🌾</span>
           </div>

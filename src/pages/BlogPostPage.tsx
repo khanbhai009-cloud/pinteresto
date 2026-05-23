@@ -74,7 +74,7 @@ export default function BlogPostPage() {
       {related.length > 0 && (
         <div className="mt-32 max-w-5xl mx-auto px-6">
           <h3 className="font-serif text-2xl text-[var(--color-mocha)] text-center mb-10">More Like This</h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {related.map(rel => (
               <PinCard key={rel.slug} post={rel} />
             ))}
