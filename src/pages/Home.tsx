@@ -175,7 +175,7 @@ export default function Home() {
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-brown)] font-light mb-10">
             Looking for a specific aesthetic or need help finding the perfect decor style for your space? Our AI-powered curation team is here to guide you — every step of the way.
           </p>
-          <a href="mailto:hello@pinteresto.com" className="inline-flex items-center gap-4 bg-transparent border border-[var(--color-mocha)] text-[var(--color-mocha)] px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-colors hover:bg-[var(--color-mocha)] hover:text-white no-underline">
+          <a href="mailto: finishertechai@gmail.com" className="inline-flex items-center gap-4 bg-transparent border border-[var(--color-mocha)] text-[var(--color-mocha)] px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-colors hover:bg-[var(--color-mocha)] hover:text-white no-underline">
             Get in touch
           </a>
         </motion.div>
