@@ -12,14 +12,16 @@ import type { BlogPost, Niche, Collection } from './types';
 
 export async function getLatestPosts(limitCount = 20): Promise<BlogPost[]> {
   try {
+    // Avoid composite index by ordering by date first, then filtering status client-side
     const q = query(
       collection(db, 'blog_posts'),
-      where('status', '==', 'published'),
       orderBy('created_at', 'desc'),
-      limit(limitCount)
+      limit(limitCount * 3) // fetch extra to account for any unpublished posts
     );
     const snapshot = await getDocs(q);
-    return snapshot.docs.map(doc => doc.data() as BlogPost);
+    const allPosts = snapshot.docs.map(doc => doc.data() as BlogPost);
+    const published = allPosts.filter(p => p.status === 'published');
+    return published.slice(0, limitCount);
   } catch (error) {
     console.error("Error in getLatestPosts", error);
     return [];
@@ -51,16 +53,20 @@ export async function getSubNiches(nicheSlug: string): Promise<Niche | null> {
 
 export async function getCollectionPins(niche: string, sub_niche: string, limitCount = 10): Promise<BlogPost[]> {
   try {
+    // Multiple equality constraints do not require a composite index.
+    // We sort locally to avoid needing one for the orderBy.
     const q = query(
       collection(db, 'blog_posts'),
       where('niche', '==', niche),
       where('sub_niche', '==', sub_niche),
       where('status', '==', 'published'),
-      orderBy('created_at', 'desc'),
-      limit(limitCount)
+      limit(100)
     );
     const snapshot = await getDocs(q);
-    return snapshot.docs.map(doc => doc.data() as BlogPost);
+    const posts = snapshot.docs.map(doc => doc.data() as BlogPost);
+    // Sort descending by created_at
+    posts.sort((a, b) => (b.created_at || 0) - (a.created_at || 0));
+    return posts.slice(0, limitCount);
   } catch (error) {
     console.error("Error in getCollectionPins", error);
     return [];

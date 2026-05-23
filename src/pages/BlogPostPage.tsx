@@ -60,10 +60,27 @@ export default function BlogPostPage() {
         <p className="text-[0.9rem] leading-relaxed text-[var(--color-muted)]">{post.excerpt}</p>
       </div>
 
-      <div className="w-full aspect-[16/9] md:aspect-[21/9] max-w-5xl mx-auto bg-gradient-to-br from-[var(--color-blush)] to-[var(--color-sand)] flex items-center justify-center relative overflow-hidden mb-16"
-           style={{ backgroundImage: post.image_url ? `url(${post.image_url})` : undefined, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        {!post.image_url && <span className="text-6xl text-white/50">🌺</span>}
-        <div className="absolute inset-0 bg-black/5"></div>
+      <div className="w-full relative flex items-center justify-center mb-16 overflow-hidden py-12 md:py-20 rounded-3xl max-w-6xl mx-auto">
+        {/* Blurred Background Layer for 16:9 effect using the 9:16 image */}
+        {post.image_url ? (
+          <div 
+            className="absolute inset-0 bg-cover bg-center blur-2xl opacity-40 scale-110 saturate-150"
+            style={{ backgroundImage: `url(${post.image_url})` }}
+          ></div>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-blush)] to-[var(--color-sand)] opacity-40"></div>
+        )}
+        
+        {/* True 9:16 Pinterest Frame */}
+        <div className="relative z-10 w-[75%] max-w-[300px] md:max-w-[420px] aspect-[9/16] rounded-3xl overflow-hidden pin-shadow bg-[var(--color-cream)] border-[6px] md:border-[10px] border-white/60">
+           {post.image_url ? (
+             <img src={post.image_url} alt={post.title} className="w-full h-full object-cover" />
+           ) : (
+             <div className="w-full h-full flex items-center justify-center">
+               <span className="text-6xl opacity-50">🌺</span>
+             </div>
+           )}
+        </div>
       </div>
 
       <div className="max-w-2xl mx-auto px-6">
