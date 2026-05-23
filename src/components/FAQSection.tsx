@@ -25,7 +25,7 @@ function FAQItem({ faq }: { faq: FAQ; key?: string | number }) {
   return (
     <div className="border-b border-[rgba(196,149,106,0.25)] py-5">
       <div 
-        className="text-[0.82rem] font-medium text-[var(--color-mocha)] mb-2.5 tracking-wide cursor-pointer flex justify-between items-center"
+        className="text-[0.95rem] md:text-[1.05rem] font-medium text-[var(--color-mocha)] mb-2.5 tracking-wide cursor-pointer flex justify-between items-center"
         onClick={() => setIsOpen(!isOpen)}
       >
         {faq.question}
@@ -41,7 +41,7 @@ function FAQItem({ faq }: { faq: FAQ; key?: string | number }) {
             exit={{ height: 0, opacity: 0 }}
             className="overflow-hidden"
           >
-            <p className="text-[0.78rem] leading-[1.85] text-[var(--color-muted)] pt-2 pb-2">
+            <p className="text-[0.9rem] md:text-[1rem] leading-[1.75] text-[#4a3728] pt-2 pb-2">
               {faq.answer}
             </p>
           </motion.div>

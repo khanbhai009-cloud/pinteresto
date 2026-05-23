@@ -26,7 +26,7 @@ export function Footer() {
         <div>
           <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">Contact Us</h4>
           <div className="space-y-3">
-            <a href="mailto:hello@pinteresto.com" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">hello@pinteresto.com</a>
+            <a href="mailto:finishertechai@gmail.com" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">finishertechai@gmail.com</a>
             <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Find a Niche</Link>
             <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">FAQ</Link>
             <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Care Guide</Link>
@@ -59,7 +59,7 @@ export function Footer() {
         <div className="flex space-x-6 mt-4 md:mt-0">
           <Link to="/affiliate-disclosure" className="hover:text-[var(--color-accent)] transition-colors">Affiliate Disclosure</Link>
           <Link to="/privacy-policy" className="hover:text-[var(--color-accent)] transition-colors">Privacy Policy</Link>
-          <a href="mailto:hello@pinteresto.com" className="hover:text-[var(--color-accent)] transition-colors">Contact</a>
+          <a href="mailto:finishertechai@gmail.com" className="hover:text-[var(--color-accent)] transition-colors">Contact</a>
         </div>
       </div>
     </footer>

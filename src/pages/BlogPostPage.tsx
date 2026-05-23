@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { getPostBySlug, getRelatedPosts } from '../lib/posts';
@@ -10,6 +10,7 @@ import { PinCard } from '../components/PinCard';
 
 export default function BlogPostPage() {
   const { niche, sub_niche, slug } = useParams<{ niche: string; sub_niche: string; slug: string }>();
+  const navigate = useNavigate();
   const [post, setPost] = useState<BlogPost | null>(null);
   const [related, setRelated] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
@@ -47,17 +48,29 @@ export default function BlogPostPage() {
         {post.image_url && <meta property="og:image" content={post.image_url} />}
       </Helmet>
 
-      <div className="pt-20 px-6 md:px-12 text-center max-w-3xl mx-auto mb-12">
-        <div className="text-[0.6rem] tracking-[0.25em] uppercase text-[var(--color-muted)] mb-5">
-          <Link to="/" className="text-[var(--color-muted)] hover:text-[var(--color-mocha)]">Home</Link> &gt;{' '}
-          <Link to={`/${niche}`} className="text-[var(--color-muted)] hover:text-[var(--color-mocha)] capitalize">{niche?.replace(/-/g, ' ')}</Link> &gt;{' '}
-          <Link to={`/${niche}/${sub_niche}`} className="text-[var(--color-muted)] hover:text-[var(--color-mocha)] capitalize">{sub_niche?.replace(/-/g, ' ')}</Link> &gt;{' '}
-          Post
+      <div className="pt-24 md:pt-32 px-6 md:px-12 text-center max-w-3xl mx-auto mb-12 relative">
+        <div className="absolute left-6 md:left-12 top-6 md:top-24 hidden lg:block">
+           <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-xs tracking-widest uppercase text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors border border-[var(--color-sand)] rounded-full px-4 py-2 hover:bg-[var(--color-cream)]">
+             <span className="text-lg opacity-70">&larr;</span> Back
+           </button>
         </div>
-        <h1 className="font-serif text-[clamp(2.2rem,4.5vw,3.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">
+        <div className="flex flex-col items-center gap-4 text-[0.6rem] tracking-[0.25em] uppercase text-[var(--color-muted)] mb-6">
+          <div className="lg:hidden">
+             <button onClick={() => navigate(-1)} className="flex items-center gap-2 text-xs tracking-widest uppercase text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors border border-[var(--color-sand)] rounded-full px-4 py-2 hover:bg-[var(--color-cream)]">
+               <span className="text-lg opacity-70">&larr;</span> Back
+             </button>
+          </div>
+          <div>
+            <Link to="/" className="text-[var(--color-muted)] hover:text-[var(--color-mocha)]">Home</Link> &gt;{' '}
+            <Link to={`/${niche}`} className="text-[var(--color-muted)] hover:text-[var(--color-mocha)] capitalize">{niche?.replace(/-/g, ' ')}</Link> &gt;{' '}
+            <Link to={`/${niche}/${sub_niche}`} className="text-[var(--color-muted)] hover:text-[var(--color-mocha)] capitalize">{sub_niche?.replace(/-/g, ' ')}</Link> &gt;{' '}
+            Post
+          </div>
+        </div>
+        <h1 className="font-serif text-[clamp(2.5rem,5vw,4rem)] text-[var(--color-mocha)] mb-6 leading-[1.1] font-normal">
           {post.title}
         </h1>
-        <p className="text-[0.9rem] leading-relaxed text-[var(--color-muted)]">{post.excerpt}</p>
+        <p className="text-base md:text-lg leading-[1.8] text-[var(--color-mocha)] opacity-90 max-w-2xl mx-auto font-light">{post.excerpt}</p>
       </div>
 
       <div className="w-full relative flex items-center justify-center mb-16 overflow-hidden py-12 md:py-20 rounded-3xl max-w-6xl mx-auto">
