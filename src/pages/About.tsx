@@ -62,7 +62,7 @@ export default function About() {
         <p className="text-[0.85rem] leading-[1.9] text-[var(--color-muted)] mb-10">
           Our mission is simple: to provide beautiful content and honest recommendations. We want to remove the friction between seeing a beautifully designed space and actually creating it in your own home. Every idea is thoughtfully crafted to inspire.
         </p>
-        <p className="text-[0.85rem] text-[var(--color-mocha)] select-all">hello@pinteresto.com</p>
+        <p className="text-[0.85rem] text-[var(--color-mocha)] select-all">finishertechai@gmail.com</p>
       </section>
     </div>
   );
