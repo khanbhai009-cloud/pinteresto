@@ -38,9 +38,6 @@ export function Footer() {
             <Link to="/about" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Our Story</Link>
             <Link to="/affiliate-disclosure" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Affiliate Disclosure</Link>
             <Link to="/privacy-policy" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Privacy Policy</Link>
-            <a href="https://console.firebase.google.com/project/earn-d6f28/firestore" target="_blank" rel="noopener noreferrer" className="block text-[0.72rem] text-[var(--color-muted)] hover:text-[var(--color-mocha)] transition-colors flex items-center gap-1 mt-4">
-              <span>&#9881;</span> Backend Admin
-            </a>
           </div>
         </div>
       </div>

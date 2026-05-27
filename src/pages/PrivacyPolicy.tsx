@@ -22,11 +22,11 @@ export default function PrivacyPolicy() {
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">1. Data We Collect</h3>
           <p>
             We collect minimal data to operate the site effectively:
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Email Addresses:</strong> Collected only if you voluntarily sign up for our newsletter.</li>
-              <li><strong>Usage Data:</strong> Basic analytics related to how you interact with our website.</li>
-            </ul>
           </p>
+          <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
+            <li><strong>Email Addresses:</strong> Collected only if you voluntarily sign up for our newsletter.</li>
+            <li><strong>Usage Data:</strong> Basic analytics related to how you interact with our website.</li>
+          </ul>
 
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">2. How We Use Your Data</h3>
           <p>
@@ -43,12 +43,12 @@ export default function PrivacyPolicy() {
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">4. Third Parties</h3>
           <p>
             This website relies on the following third-party services:
-            <ul className="list-disc pl-6 mt-2 space-y-1">
-              <li><strong>Firebase:</strong> Used for database and hosting infrastructure.</li>
-              <li><strong>Vercel / Cloud Run:</strong> Used for application hosting.</li>
-              <li><strong>Amazon Associates:</strong> Used for processing affiliate link clicks.</li>
-            </ul>
           </p>
+          <ul className="list-disc pl-6 mt-2 space-y-1 mb-4">
+            <li><strong>Firebase:</strong> Used for database and hosting infrastructure.</li>
+            <li><strong>Vercel / Cloud Run:</strong> Used for application hosting.</li>
+            <li><strong>Amazon Associates:</strong> Used for processing affiliate link clicks.</li>
+          </ul>
 
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">5. Your Rights</h3>
           <p>
