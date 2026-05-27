@@ -16,6 +16,8 @@ import NichePage from './pages/NichePage';
 import CollectionPage from './pages/CollectionPage';
 import BlogPostPage from './pages/BlogPostPage';
 
+import LatestPage from './pages/LatestPage';
+
 export default function App() {
   return (
     <HelmetProvider>
@@ -25,6 +27,7 @@ export default function App() {
           <main className="flex-1 mt-[76px]">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/latest" element={<LatestPage />} />
               <Route path="/about" element={<About />} />
               <Route path="/affiliate-disclosure" element={<AffiliateDisclosure />} />
               <Route path="/privacy-policy" element={<PrivacyPolicy />} />

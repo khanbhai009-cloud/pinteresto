@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export function Footer() {
   return (
     <footer id="footer" className="bg-[var(--color-warm-white)] text-[var(--color-mocha)] px-6 md:px-12 py-12 md:py-16 border-t border-[var(--color-sand)] flex flex-col gap-12">
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1fr] gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10">
         <div>
           <div className="font-serif text-[1.4rem] font-semibold tracking-tight uppercase mb-4">
             Pinteresto
@@ -24,33 +24,23 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">Contact Us</h4>
+          <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">Explore</h4>
           <div className="space-y-3">
-            <a href="mailto:finishertechai@gmail.com" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">finishertechai@gmail.com</a>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Find a Niche</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">FAQ</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Care Guide</Link>
+            <a href="/#collections" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Our Collections</a>
+            <Link to="/latest" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Latest Gallery</Link>
+            <a href="mailto:finishertechai@gmail.com" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Contact Us</a>
           </div>
         </div>
 
         <div>
-          <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">Shop</h4>
+          <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">About & Legal</h4>
           <div className="space-y-3">
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Ordering & Payment</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Shipping</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Returns</Link>
-            <Link to="/affiliate-disclosure" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Affiliate Disclaimer</Link>
-          </div>
-        </div>
-
-        <div>
-          <h4 className="text-[10px] tracking-widest uppercase text-[var(--color-muted)] mb-4 font-medium">About</h4>
-          <div className="space-y-3">
-            <Link to="/about" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">About Us</Link>
-            <Link to="/about" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">How It Works</Link>
+            <Link to="/about" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Our Story</Link>
+            <Link to="/affiliate-disclosure" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Affiliate Disclosure</Link>
             <Link to="/privacy-policy" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Privacy Policy</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Terms & Conditions</Link>
-            <Link to="/" className="block text-[0.72rem] text-[var(--color-mocha)] hover:text-[var(--color-accent)] transition-colors">Press</Link>
+            <a href="https://console.firebase.google.com/project/earn-d6f28/firestore" target="_blank" rel="noopener noreferrer" className="block text-[0.72rem] text-[var(--color-muted)] hover:text-[var(--color-mocha)] transition-colors flex items-center gap-1 mt-4">
+              <span>&#9881;</span> Backend Admin
+            </a>
           </div>
         </div>
       </div>

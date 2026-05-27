@@ -82,7 +82,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-mocha)]">Our Collections</h2>
             <p className="text-xs text-[var(--color-muted)] font-light mt-2 uppercase tracking-widest">Browse by aesthetic</p>
           </div>
-          <Link to="/" className="text-[10px] uppercase tracking-widest text-[var(--color-mocha)] border-b border-[var(--color-mocha)] pb-0.5 mt-4 md:mt-0 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">View All Gallery</Link>
+          <Link to="/latest" className="text-[10px] uppercase tracking-widest text-[var(--color-mocha)] border-b border-[var(--color-mocha)] pb-0.5 mt-4 md:mt-0 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">View All Gallery</Link>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-6xl mx-auto">
@@ -117,9 +117,9 @@ export default function Home() {
             <p className="text-[0.9rem] leading-[1.9] text-[var(--color-brown)] font-light mb-10">
               Every blog post comes with hand-picked affiliate products placed naturally in the content. Minimal clutter. High-quality curation. Just beautiful pieces with real purchase links — right where you need them.
             </p>
-            <a href="#blog" className="inline-flex items-center gap-4 bg-[var(--color-mocha)] text-[var(--color-warm-white)] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide transition-colors hover:brightness-125 no-underline">
-              Read Our Stories
-            </a>
+            <Link to="/about" className="inline-flex items-center justify-center gap-4 bg-[var(--color-mocha)] text-[var(--color-warm-white)] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide transition-transform hover:-translate-y-0.5 hover:shadow-lg no-underline active:scale-95">
+              Read Our Story
+            </Link>
           </motion.div>
         </div>
         <div className="bg-[var(--color-blush)] relative overflow-hidden flex items-center justify-center min-h-[300px] md:min-h-full">
@@ -138,7 +138,7 @@ export default function Home() {
             <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-mocha)]">Popular Pins</h2>
             <p className="text-xs text-[var(--color-muted)] font-light mt-2">Trending this week from our collections</p>
           </div>
-          <Link to="/" className="text-[10px] uppercase tracking-widest text-[var(--color-mocha)] border-b border-[var(--color-mocha)] pb-0.5 mt-4 md:mt-0 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">View All Gallery</Link>
+          <Link to="/latest" className="text-[10px] uppercase tracking-widest text-[var(--color-mocha)] border-b border-[var(--color-mocha)] pb-0.5 mt-4 md:mt-0 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">View All Gallery</Link>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 content-start max-w-6xl mx-auto">
@@ -175,7 +175,7 @@ export default function Home() {
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-brown)] font-light mb-10">
             Looking for a specific aesthetic or need help finding the perfect decor style for your space? Our AI-powered curation team is here to guide you — every step of the way.
           </p>
-          <a href="mailto: finishertechai@gmail.com" className="inline-flex items-center gap-4 bg-transparent border border-[var(--color-mocha)] text-[var(--color-mocha)] px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-colors hover:bg-[var(--color-mocha)] hover:text-white no-underline">
+          <a href="mailto:finishertechai@gmail.com" className="inline-flex items-center gap-4 bg-transparent border border-[var(--color-mocha)] text-[var(--color-mocha)] px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-colors hover:bg-[var(--color-mocha)] hover:text-white no-underline">
             Get in touch
           </a>
         </motion.div>

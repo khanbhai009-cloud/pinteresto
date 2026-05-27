@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
 
           <div className="mt-12 pt-6 border-t border-[rgba(196,149,106,0.3)] text-[0.75rem]">
             <p><strong>Last Updated:</strong> May 2026</p>
-            <p className="mt-2">For any data requests or privacy questions, please contact us at: <a href="mailto:hello@pinteresto.com" className="text-[var(--color-mocha)] underline decoration-[rgba(92,61,46,0.3)] underline-offset-4">hello@pinteresto.com</a>.</p>
+            <p className="mt-2">For any data requests or privacy questions, please contact us at: <a href="mailto:finishertechai@gmail.com" className="text-[var(--color-mocha)] underline decoration-[rgba(92,61,46,0.3)] underline-offset-4">finishertechai@gmail.com</a>.</p>
           </div>
         </div>
       </div>
