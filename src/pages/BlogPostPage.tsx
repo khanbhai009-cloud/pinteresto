@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
+import { useQuery } from '@tanstack/react-query';
 import { getPostBySlug, getRelatedPosts } from '../lib/posts';
-import type { BlogPost } from '../lib/types';
 import { BlogContent } from '../components/BlogContent';
 import { FAQSection } from '../components/FAQSection';
 import { PinCard } from '../components/PinCard';
@@ -11,26 +10,20 @@ import { PinCard } from '../components/PinCard';
 export default function BlogPostPage() {
   const { niche, sub_niche, slug } = useParams<{ niche: string; sub_niche: string; slug: string }>();
   const navigate = useNavigate();
-  const [post, setPost] = useState<BlogPost | null>(null);
-  const [related, setRelated] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function load() {
-      if (slug && niche && sub_niche) {
-        setLoading(true);
-        window.scrollTo({ top: 0, behavior: 'instant' });
-        const postData = await getPostBySlug(slug);
-        setPost(postData);
-        if (postData) {
-          const relatedData = await getRelatedPosts(niche, sub_niche, slug, 4);
-          setRelated(relatedData);
-        }
-        setLoading(false);
-      }
-    }
-    load();
-  }, [slug, niche, sub_niche]);
+  const { data: post, isLoading: loadingPost } = useQuery({
+    queryKey: ['post', slug],
+    queryFn: () => getPostBySlug(slug!),
+    enabled: !!slug,
+  });
+
+  const { data: related = [], isLoading: loadingRelated } = useQuery({
+    queryKey: ['relatedPosts', niche, sub_niche, slug, 4],
+    queryFn: () => getRelatedPosts(niche!, sub_niche!, slug!, 4),
+    enabled: !!post && !!niche && !!sub_niche && !!slug,
+  });
+
+  const loading = loadingPost;
 
   if (loading) {
     return <div className="min-h-screen py-32 px-6 flex justify-center"><div className="w-10 h-10 border-4 border-[var(--color-mocha)] border-t-transparent rounded-full animate-spin"></div></div>;

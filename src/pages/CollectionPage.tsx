@@ -1,26 +1,17 @@
-import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useQuery } from '@tanstack/react-query';
 import { getCollectionPins } from '../lib/posts';
-import type { BlogPost } from '../lib/types';
 import { PinCard } from '../components/PinCard';
 
 export default function CollectionPage() {
   const { niche, sub_niche } = useParams<{ niche: string; sub_niche: string }>();
-  const [pins, setPins] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function load() {
-      if (niche && sub_niche) {
-        setLoading(true);
-        const data = await getCollectionPins(niche, sub_niche, 20);
-        setPins(data);
-        setLoading(false);
-      }
-    }
-    load();
-  }, [niche, sub_niche]);
+  const { data: pins = [], isLoading: loading } = useQuery({
+    queryKey: ['collectionPins', niche, sub_niche, 20],
+    queryFn: () => getCollectionPins(niche!, sub_niche!, 20),
+    enabled: !!niche && !!sub_niche,
+  });
 
   const formattedSubNiche = sub_niche ? sub_niche.replace(/-/g, ' ') : '';
   const titleText = pins.length >= 10 ? `Top 10 ${formattedSubNiche} Ideas` : `Top ${formattedSubNiche} Ideas`;

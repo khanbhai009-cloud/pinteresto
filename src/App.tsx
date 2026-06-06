@@ -39,22 +39,37 @@ function AnimatedRoutes() {
   );
 }
 
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: 1000 * 60 * 5,     // 5 min fresh
+      gcTime: 1000 * 60 * 10,       // 10 min in memory (was cacheTime in v4, gcTime in v5)
+      refetchOnWindowFocus: false,
+      refetchOnMount: false,
+    }
+  }
+});
+
 export default function App() {
   return (
-    <HelmetProvider>
-      <MotionConfig reducedMotion="user">
-        <Router>
-          <ScrollToTop />
-          <div className="min-h-screen flex flex-col bg-[var(--color-warm-white)]">
-            <Navbar />
-            <main className="flex-1">
-              <AnimatedRoutes />
-            </main>
-            <Footer />
-          </div>
-        </Router>
-      </MotionConfig>
-    </HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <HelmetProvider>
+        <MotionConfig reducedMotion="user">
+          <Router>
+            <ScrollToTop />
+            <div className="min-h-screen flex flex-col bg-[var(--color-warm-white)]">
+              <Navbar />
+              <main className="flex-1">
+                <AnimatedRoutes />
+              </main>
+              <Footer />
+            </div>
+          </Router>
+        </MotionConfig>
+      </HelmetProvider>
+    </QueryClientProvider>
   );
 }
 

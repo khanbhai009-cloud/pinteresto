@@ -1,25 +1,16 @@
-import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useQuery } from '@tanstack/react-query';
 import { getSubNiches } from '../lib/posts';
-import type { Niche } from '../lib/types';
 
 export default function NichePage() {
   const { niche: nicheSlug } = useParams<{ niche: string }>();
-  const [nicheData, setNicheData] = useState<Niche | null>(null);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function load() {
-      if (nicheSlug) {
-        setLoading(true);
-        const data = await getSubNiches(nicheSlug);
-        setNicheData(data);
-        setLoading(false);
-      }
-    }
-    load();
-  }, [nicheSlug]);
+  const { data: nicheData, isLoading: loading } = useQuery({
+    queryKey: ['subNiche', nicheSlug],
+    queryFn: () => getSubNiches(nicheSlug!),
+    enabled: !!nicheSlug,
+  });
 
   if (loading) {
     return <div className="min-h-screen py-32 px-6 flex justify-center"><div className="w-10 h-10 border-4 border-[var(--color-mocha)] border-t-transparent rounded-full animate-spin"></div></div>;

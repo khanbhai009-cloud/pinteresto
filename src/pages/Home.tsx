@@ -1,34 +1,23 @@
-import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
+import { useQuery } from '@tanstack/react-query';
 import { getLatestPosts, getNiches } from '../lib/posts';
-import type { BlogPost, Niche } from '../lib/types';
 import { NicheCard } from '../components/NicheCard';
 import { PinCard } from '../components/PinCard';
 
 export default function Home() {
-  const [niches, setNiches] = useState<Niche[]>([]);
-  const [latestPins, setLatestPins] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { data: niches = [], isLoading: loadingNiches } = useQuery({
+    queryKey: ['niches'],
+    queryFn: () => getNiches(),
+  });
 
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const [fetchedNiches, fetchedPins] = await Promise.all([
-          getNiches(),
-          getLatestPosts(8)
-        ]);
-        setNiches(fetchedNiches);
-        setLatestPins(fetchedPins);
-      } catch (e) {
-        console.error(e);
-      } finally {
-        setLoading(false);
-      }
-    }
-    loadData();
-  }, []);
+  const { data: latestPins = [], isLoading: loadingPins } = useQuery({
+    queryKey: ['latestPosts', 8],
+    queryFn: () => getLatestPosts(8),
+  });
+
+  const loading = loadingNiches || loadingPins;
 
   return (
     <>

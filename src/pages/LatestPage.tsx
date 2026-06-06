@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion, AnimatePresence } from 'motion/react';
+import { useQuery } from '@tanstack/react-query';
 import { getLatestPosts } from '../lib/posts';
 import type { BlogPost } from '../lib/types';
 import { PinCard } from '../components/PinCard';
@@ -8,18 +9,12 @@ import { PinCard } from '../components/PinCard';
 const FILTERS = ['All', 'Bedroom', 'Living Room', 'Gaming', 'Aesthetic'];
 
 export default function LatestPage() {
-  const [pins, setPins] = useState<BlogPost[]>([]);
-  const [loading, setLoading] = useState(true);
   const [activeFilter, setActiveFilter] = useState('All');
 
-  useEffect(() => {
-    async function load() {
-      const data = await getLatestPosts(50);
-      setPins(data);
-      setLoading(false);
-    }
-    load();
-  }, []);
+  const { data: pins = [], isLoading: loading } = useQuery({
+    queryKey: ['latestPosts', 50],
+    queryFn: () => getLatestPosts(50),
+  });
 
   const filteredPins = pins.filter(pin => {
     if (activeFilter === 'All') return true;
