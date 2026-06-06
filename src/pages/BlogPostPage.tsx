@@ -73,26 +73,34 @@ export default function BlogPostPage() {
         <p className="text-base md:text-lg leading-[1.8] text-[var(--color-mocha)] opacity-90 max-w-2xl mx-auto font-light">{post.excerpt}</p>
       </div>
 
-      <div className="w-full relative flex items-center justify-center mb-16 overflow-hidden py-12 md:py-20 rounded-3xl max-w-6xl mx-auto">
-        {/* Blurred Background Layer for 16:9 effect using the 9:16 image */}
+      <div className="w-full relative flex items-center justify-center mb-16 overflow-hidden py-12 md:py-24">
+        {/* Blurred Background Layer for cinematic effect */}
         {post.image_url ? (
           <div 
-            className="absolute inset-0 bg-cover bg-center blur-2xl opacity-40 scale-110 saturate-150"
+            className="absolute inset-0 bg-cover bg-center blur-3xl opacity-50 scale-110 saturate-150"
             style={{ backgroundImage: `url(${post.image_url})` }}
           ></div>
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-blush)] to-[var(--color-sand)] opacity-40"></div>
         )}
         
-        {/* True 9:16 Pinterest Frame */}
-        <div className="relative z-10 w-[75%] max-w-[300px] md:max-w-[420px] aspect-[9/16] rounded-3xl overflow-hidden pin-shadow bg-[var(--color-cream)] border-[6px] md:border-[10px] border-white/60">
-           {post.image_url ? (
-             <img src={post.image_url} alt={post.title} className="w-full h-full object-cover" />
-           ) : (
-             <div className="w-full h-full flex items-center justify-center">
-               <span className="text-6xl opacity-50">🌺</span>
-             </div>
-           )}
+        {/* Editorial Cinematic Image */}
+        <div className="relative z-10 w-full max-w-5xl px-6">
+           <motion.div 
+             initial={{ opacity: 0, y: 30 }}
+             animate={{ opacity: 1, y: 0 }}
+             transition={{ duration: 1, delay: 0.2 }}
+             className="w-full aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden pin-shadow bg-[var(--color-cream)] relative group"
+           >
+             {post.image_url ? (
+               <img src={post.image_url} alt={post.title} className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
+             ) : (
+               <div className="w-full h-full flex items-center justify-center">
+                 <span className="text-6xl opacity-50">🌺</span>
+               </div>
+             )}
+             <div className="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.2)] rounded-2xl pointer-events-none"></div>
+           </motion.div>
         </div>
       </div>
 

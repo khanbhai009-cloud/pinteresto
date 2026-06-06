@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { HelmetProvider } from 'react-helmet-async';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import { AnimatePresence } from 'motion/react';
+import { AnimatePresence, MotionConfig } from 'motion/react';
 import { PageTransition } from './components/PageTransition';
 
 // Pages
@@ -40,15 +40,17 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <HelmetProvider>
-      <Router>
-        <div className="min-h-screen flex flex-col bg-[var(--color-warm-white)]">
-          <Navbar />
-          <main className="flex-1">
-            <AnimatedRoutes />
-          </main>
-          <Footer />
-        </div>
-      </Router>
+      <MotionConfig reducedMotion="user">
+        <Router>
+          <div className="min-h-screen flex flex-col bg-[var(--color-warm-white)]">
+            <Navbar />
+            <main className="flex-1">
+              <AnimatedRoutes />
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </MotionConfig>
     </HelmetProvider>
   );
 }

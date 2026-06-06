@@ -10,7 +10,7 @@ export function BlogContent({ paragraphs, products }: { paragraphs: Paragraph[],
         
         return (
           <div key={para.id}>
-            <p className="text-base md:text-[1.15rem] leading-[1.8] md:leading-[1.9] text-[#3d2e24] mb-8 font-normal tracking-[0.01em]">
+            <p className="text-lg md:text-[1.25rem] leading-[2.1] md:leading-[2.2] text-[var(--color-mocha)] md:text-[#3d2e24] mb-12 font-sans font-light tracking-wide md:tracking-normal selection:bg-[var(--color-sand)] selection:text-[var(--color-mocha)]">
               {para.text}
             </p>
             {relatedProduct && <AffiliateCTA product={relatedProduct} />}

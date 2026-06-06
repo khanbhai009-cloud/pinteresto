@@ -53,6 +53,15 @@ export default function Home() {
            />
         </div>
 
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2">
+          <span className="text-[10px] uppercase tracking-widest text-[var(--color-warm-white)] opacity-70">Scroll indicator</span>
+          <motion.div 
+            animate={{ y: [0, 8, 0] }} 
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            className="w-[1px] h-12 bg-gradient-to-b from-[var(--color-warm-white)] to-transparent opacity-50"
+          />
+        </div>
+
         <div className="lg:col-span-5 order-2 lg:order-1 mt-10 lg:mt-0 w-full text-center lg:text-left flex flex-col items-center lg:items-start z-10 relative text-[var(--color-warm-white)]">
           <motion.span 
             initial={{ opacity: 0, filter: 'blur(10px)' }}
@@ -177,18 +186,35 @@ export default function Home() {
              ))
           )}
           {!loading && niches.length === 0 && (
-            <div className="col-span-3 text-center text-sm text-[var(--color-muted)]">No collections found.</div>
+            <>
+               <motion.div whileHover={{ scale: 1.03 }} className="group bg-[var(--color-blush)] w-full aspect-[3/4] rounded-2xl overflow-hidden relative cursor-pointer pin-shadow">
+                 <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Home Decor" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                 <h3 className="absolute bottom-6 left-6 text-white font-serif text-2xl tracking-wide">Home Decor</h3>
+               </motion.div>
+               <motion.div whileHover={{ scale: 1.03 }} className="group bg-[var(--color-blush)] w-full aspect-[3/4] rounded-2xl overflow-hidden relative cursor-pointer pin-shadow">
+                 <img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80" alt="Bedroom" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                 <h3 className="absolute bottom-6 left-6 text-white font-serif text-2xl tracking-wide">Bedroom</h3>
+               </motion.div>
+               <motion.div whileHover={{ scale: 1.03 }} className="group bg-[var(--color-blush)] w-full aspect-[3/4] rounded-2xl overflow-hidden relative cursor-pointer pin-shadow">
+                 <img src="https://images.unsplash.com/photo-1600210491369-e753d80a41f3?auto=format&fit=crop&w=800&q=80" alt="Living Room" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                 <h3 className="absolute bottom-6 left-6 text-white font-serif text-2xl tracking-wide">Living Room</h3>
+               </motion.div>
+            </>
           )}
         </div>
       </section>
 
       {/* Gift Ideas Split Section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[520px]">
+      <section className="grid grid-cols-1 md:grid-cols-2 min-h-[520px] overflow-hidden">
         <div className="bg-[var(--color-cream)] flex items-center px-8 py-16 md:px-16 border-t border-b border-[var(--color-blush)]">
           <motion.div 
-            initial={{ opacity: 0, y: 28 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true, margin: "-100px" }}
             className="max-w-[420px] mx-auto md:mx-0"
           >
             <div className="text-[10px] tracking-widest uppercase text-[var(--color-accent)] mb-4 font-medium block">Affiliate Picks</div>
@@ -198,18 +224,26 @@ export default function Home() {
             <p className="text-[0.9rem] leading-[1.9] text-[var(--color-brown)] font-light mb-10">
               Every blog post comes with hand-picked affiliate products placed naturally in the content. Minimal clutter. High-quality curation. Just beautiful pieces with real purchase links — right where you need them.
             </p>
-            <Link to="/about" className="inline-flex items-center justify-center gap-4 bg-[var(--color-mocha)] text-[var(--color-warm-white)] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide transition-transform hover:-translate-y-0.5 hover:shadow-lg no-underline active:scale-95">
-              Read Our Story
-            </Link>
+            <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
+              <Link to="/about" className="inline-flex items-center justify-center gap-4 bg-[var(--color-mocha)] text-[var(--color-warm-white)] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide transition-shadow hover:shadow-lg no-underline">
+                Read Our Story
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
-        <div className="bg-[var(--color-blush)] relative overflow-hidden flex items-center justify-center min-h-[300px] md:min-h-full">
+        <motion.div 
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="bg-[var(--color-blush)] relative overflow-hidden flex items-center justify-center min-h-[400px] md:min-h-full py-16"
+        >
           <div className="absolute inset-0 bg-cover bg-center opacity-30 mix-blend-multiply" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=1000)' }}></div>
-          <div className="w-[260px] sm:w-[300px] h-[340px] sm:h-[400px] arch bg-[var(--color-cream)] flex items-center justify-center relative pin-shadow">
-            <div className="absolute inset-4 arch border border-[var(--color-mocha)] opacity-10"></div>
-            <span className="text-[4rem] saturate-50 opacity-80">🌾</span>
+          <div className="w-[260px] sm:w-[320px] h-[360px] sm:h-[440px] arch overflow-hidden relative pin-shadow group">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80" alt="Aesthetic living room" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" />
+            <div className="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.3)] arch pointer-events-none"></div>
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Popular Pins */}
@@ -222,24 +256,32 @@ export default function Home() {
           <Link to="/latest" className="text-[10px] uppercase tracking-widest text-[var(--color-mocha)] border-b border-[var(--color-mocha)] pb-0.5 mt-4 md:mt-0 hover:text-[var(--color-accent)] hover:border-[var(--color-accent)] transition-colors">View All Gallery</Link>
         </div>
         
-        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 max-w-7xl mx-auto">
+        <motion.div 
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+          className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-6 max-w-7xl mx-auto"
+        >
           {loading ? (
              Array(8).fill(0).map((_, i) => (
-                <div key={i} className="flex flex-col gap-3 break-inside-avoid mb-6">
+                <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} key={i} className="flex flex-col gap-3 break-inside-avoid mb-6">
                   <div className="bg-[var(--color-cream)] w-full aspect-[3/4] md:aspect-[4/5] rounded-2xl animate-pulse"></div>
                   <div className="bg-[var(--color-cream)] w-3/4 h-5 rounded animate-pulse"></div>
                   <div className="bg-[var(--color-cream)] w-1/2 h-4 rounded animate-pulse"></div>
-                </div>
+                </motion.div>
              ))
           ) : (
             latestPins.map((pin) => (
-              <PinCard key={pin.slug} post={pin} />
+              <motion.div key={pin.slug} variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
+                <PinCard post={pin} />
+              </motion.div>
             ))
           )}
           {!loading && latestPins.length === 0 && (
              <div className="col-span-full text-center text-sm text-[var(--color-muted)] w-full">No pins found.</div>
           )}
-        </div>
+        </motion.div>
       </section>
 
       {/* Talk To Staff */}
