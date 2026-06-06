@@ -34,7 +34,7 @@ export default function Home() {
     <>
       <Helmet>
         <title>Pinteresto — Aesthetic Home Decor Blog</title>
-        <meta name="description" content="Curated Decor Ideas That Last. AI-curated Pinterest-inspired blogs for every aesthetic." />
+        <meta name="description" content="Curated Decor Ideas That Last. Thoughtfully curated Pinterest-inspired blogs for every aesthetic." />
         <link rel="canonical" href="https://pinteresto.vercel.app/" />
       </Helmet>
 
@@ -296,7 +296,7 @@ export default function Home() {
           <div className="text-[10px] tracking-widest uppercase text-[var(--color-accent)] mb-4 font-medium">We're Here to Help</div>
           <h2 className="font-serif text-[clamp(2.5rem,5vw,3.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">Talk To Our Team</h2>
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-brown)] font-light mb-10">
-            Looking for a specific aesthetic or need help finding the perfect decor style for your space? Our AI-powered curation team is here to guide you — every step of the way.
+            Looking for a specific aesthetic or need help finding the perfect decor style for your space? Our editorial team is here to guide you — every step of the way.
           </p>
           <a href="mailto:finishertechai@gmail.com" className="inline-flex items-center gap-4 bg-transparent border border-[var(--color-mocha)] text-[var(--color-mocha)] px-10 py-4 rounded-full text-sm font-medium tracking-wide transition-colors hover:bg-[var(--color-mocha)] hover:text-white no-underline">
             Get in touch

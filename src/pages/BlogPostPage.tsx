@@ -73,35 +73,32 @@ export default function BlogPostPage() {
         <p className="text-base md:text-lg leading-[1.8] text-[var(--color-mocha)] opacity-90 max-w-2xl mx-auto font-light">{post.excerpt}</p>
       </div>
 
-      <div className="w-full relative flex items-center justify-center mb-16 overflow-hidden py-12 md:py-24">
-        {/* Blurred Background Layer for cinematic effect */}
-        {post.image_url ? (
-          <div 
-            className="absolute inset-0 bg-cover bg-center blur-3xl opacity-50 scale-110 saturate-150"
-            style={{ backgroundImage: `url(${post.image_url})` }}
-          ></div>
-        ) : (
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-blush)] to-[var(--color-sand)] opacity-40"></div>
-        )}
-        
-        {/* Editorial Cinematic Image */}
-        <div className="relative z-10 w-full max-w-5xl px-6">
-           <motion.div 
-             initial={{ opacity: 0, y: 30 }}
-             animate={{ opacity: 1, y: 0 }}
-             transition={{ duration: 1, delay: 0.2 }}
-             className="w-full aspect-[4/3] md:aspect-[16/9] rounded-2xl overflow-hidden pin-shadow bg-[var(--color-cream)] relative group"
-           >
-             {post.image_url ? (
-               <img src={post.image_url} alt={post.title} className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" />
-             ) : (
-               <div className="w-full h-full flex items-center justify-center">
-                 <span className="text-6xl opacity-50">🌺</span>
-               </div>
-             )}
-             <div className="absolute inset-0 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.2)] rounded-2xl pointer-events-none"></div>
-           </motion.div>
-        </div>
+      <div className="w-full relative flex items-center justify-center mb-16 px-0 md:px-6 max-w-6xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="relative w-full overflow-hidden bg-[var(--color-cream)] md:rounded-3xl pin-shadow group"
+        >
+          {post.image_url ? (
+            <>
+              <div 
+                className="absolute inset-0 bg-cover bg-center blur-[20px] scale-110 opacity-60 transition-transform duration-[2s] group-hover:scale-125"
+                style={{ backgroundImage: `url(${post.image_url})` }}
+              ></div>
+              <img 
+                src={post.image_url} 
+                alt={post.title} 
+                className="relative z-10 w-full h-auto object-contain block mx-auto transition-transform duration-[2s] group-hover:scale-[1.02]" 
+                style={{ maxHeight: '85vh' }}
+              />
+            </>
+          ) : (
+            <div className="w-full aspect-[16/9] flex items-center justify-center relative bg-gradient-to-br from-[var(--color-blush)] to-[var(--color-sand)] opacity-40">
+              <span className="text-6xl opacity-50 relative z-10">🌺</span>
+            </div>
+          )}
+        </motion.div>
       </div>
 
       <div className="max-w-2xl mx-auto px-6">

@@ -36,9 +36,16 @@ export default function AffiliateDisclosure() {
 
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">Our Commitment</h3>
           <p>
-            We only recommend products we genuinely believe in and think will add value to our readers' lives 
-            and home aesthetics. The commissions earned help support the maintenance and running of this website, 
-            allowing us to continue providing free, high-quality inspirational content.
+            We only recommend products from trusted, established brands that we genuinely believe will add value to your home and space.
+          </p>
+          <p className="mt-4">
+            That said, all purchases are made directly with the respective brand or retailer — Pinteresto acts solely as an affiliate and has no control over product quality, shipping, returns, or after-sale support.
+          </p>
+          <p className="mt-4">
+            If you face any issue with a product — including returns, refunds, damaged items, or delivery problems — please contact the brand or seller directly from whom you made the purchase. We recommend verifying product details, return policies, and seller terms before completing any purchase.
+          </p>
+          <p className="mt-4">
+            We only feature products from reputable brands. However, as an affiliate, Pinteresto is not liable for any loss, dispute, or dissatisfaction arising from your purchase. Your transaction is solely between you and the retailer.
           </p>
 
           <div className="mt-12 pt-6 border-t border-[rgba(196,149,106,0.3)] text-[0.75rem]">

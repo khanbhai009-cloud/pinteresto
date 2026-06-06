@@ -19,7 +19,7 @@ export default function About() {
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24">
       <Helmet>
         <title>About Us — Pinteresto</title>
-        <meta name="description" content="Learn about Pinteresto, our AI-curated Pinterest aesthetic blog, and our mission for beautiful content." />
+        <meta name="description" content="Learn about Pinteresto, our curated Pinterest aesthetic blog, and our mission for beautiful content." />
       </Helmet>
 
       {/* Hero */}
@@ -34,7 +34,7 @@ export default function About() {
           <div className="text-[0.65rem] tracking-[0.3em] uppercase text-[var(--color-accent)] mb-4">Our Story</div>
           <h1 className="font-serif text-[clamp(3rem,5vw,4.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">We Are Pinteresto</h1>
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-muted)] font-light max-w-lg mx-auto">
-            Pinteresto is an AI-curated aesthetic blog that brings Pinterest inspiration to life. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
+            Pinteresto is a thoughtfully curated aesthetic blog that brings Pinterest inspiration to life. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
           </p>
         </motion.div>
       </section>
@@ -92,7 +92,7 @@ export default function About() {
                 ></motion.div>
               </div>
               <h3 className="font-serif text-xl text-[var(--color-mocha)] mb-4">Curation</h3>
-              <p className="text-[0.85rem] leading-relaxed text-[var(--color-muted)] font-light max-w-xs mx-auto">Our AI writes a highly-detailed, engaging editorial post breaking down the elements.</p>
+              <p className="text-[0.85rem] leading-relaxed text-[var(--color-muted)] font-light max-w-xs mx-auto">Our editors craft a detailed, engaging post — breaking down the aesthetic, the vibe, and every product that makes it work.</p>
             </motion.div>
             
             <motion.div variants={fadeUp} className="relative z-10">

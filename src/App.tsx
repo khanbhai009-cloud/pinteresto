@@ -8,6 +8,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { AnimatePresence, MotionConfig } from 'motion/react';
 import { PageTransition } from './components/PageTransition';
+import { ScrollToTop } from './components/ScrollToTop';
 
 // Pages
 import Home from './pages/Home';
@@ -23,6 +24,7 @@ function AnimatedRoutes() {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
+      {/* @ts-expect-error `key` is valid for AnimatePresence to track route changes despite TS complaint */}
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<PageTransition><Home /></PageTransition>} />
         <Route path="/latest" element={<PageTransition className="pt-[88px]"><LatestPage /></PageTransition>} />
@@ -42,6 +44,7 @@ export default function App() {
     <HelmetProvider>
       <MotionConfig reducedMotion="user">
         <Router>
+          <ScrollToTop />
           <div className="min-h-screen flex flex-col bg-[var(--color-warm-white)]">
             <Navbar />
             <main className="flex-1">

@@ -9,7 +9,7 @@ export function Footer() {
             Pinteresto
           </div>
           <p className="text-[0.72rem] leading-[1.9] text-[var(--color-muted)] mb-6 max-w-sm">
-            AI-curated aesthetic home decor blogs with real affiliate picks. From Pinterest pin to purchase — beautifully.
+            Thoughtfully curated aesthetic home decor blogs with real affiliate picks. From Pinterest pin to purchase — beautifully.
           </p>
           <div className="flex mt-5 max-w-xs w-full">
             <input 
