@@ -33,9 +33,9 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Pinteresto — Aesthetic Home Decor Blog</title>
-        <meta name="description" content="Curated Decor Ideas That Last. Thoughtfully curated Pinterest-inspired blogs for every aesthetic." />
-        <link rel="canonical" href="https://pinteresto.vercel.app/" />
+        <title>Plinth — Curated spaces. Real products.</title>
+        <meta name="description" content="Plinth is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home." />
+        <link rel="canonical" href="https://plinth.vercel.app/" />
       </Helmet>
 
       {/* Hero */}

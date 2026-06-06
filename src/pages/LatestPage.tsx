@@ -30,7 +30,7 @@ export default function LatestPage() {
   return (
     <div className="min-h-[calc(100vh-88px)] bg-[var(--color-warm-white)] py-12 md:py-24">
       <Helmet>
-        <title>All Gallery - Pinteresto</title>
+        <title>All Gallery - Plinth</title>
         <meta name="description" content="View all our curated aesthetic home decor collections." />
       </Helmet>
 

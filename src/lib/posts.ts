@@ -6,7 +6,7 @@ const CACHE_TTL_MS = 3600 * 1000; // 3600 seconds (1 hour)
 
 async function withCache<T>(cacheKey: string, fetchFn: () => Promise<T>): Promise<T> {
   try {
-    const cachedItem = localStorage.getItem(`pinteresto_cache_${cacheKey}`);
+    const cachedItem = localStorage.getItem(`plinth_cache_${cacheKey}`);
     if (cachedItem) {
       const { timestamp, data } = JSON.parse(cachedItem);
       if (Date.now() - timestamp < CACHE_TTL_MS) {
@@ -20,7 +20,7 @@ async function withCache<T>(cacheKey: string, fetchFn: () => Promise<T>): Promis
   const data = await fetchFn();
 
   try {
-    localStorage.setItem(`pinteresto_cache_${cacheKey}`, JSON.stringify({
+    localStorage.setItem(`plinth_cache_${cacheKey}`, JSON.stringify({
       timestamp: Date.now(),
       data
     }));

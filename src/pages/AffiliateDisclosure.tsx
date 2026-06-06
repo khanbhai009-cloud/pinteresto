@@ -4,8 +4,8 @@ export default function AffiliateDisclosure() {
   return (
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24 pt-32 px-6 md:px-12">
       <Helmet>
-        <title>Affiliate Disclosure — Pinteresto</title>
-        <meta name="description" content="FTC compliant affiliate disclosure for Pinteresto." />
+        <title>Affiliate Disclosure — Plinth</title>
+        <meta name="description" content="FTC compliant affiliate disclosure for Plinth." />
       </Helmet>
 
       <div className="max-w-3xl mx-auto bg-[var(--color-cream)] p-8 md:p-12 shadow-sm border border-[rgba(92,61,46,0.05)]">
@@ -15,13 +15,13 @@ export default function AffiliateDisclosure() {
 
         <div className="space-y-6 text-[0.85rem] leading-[1.9] text-[var(--color-muted)]">
           <p>
-            This Affiliate Compensation Disclosure is provided by Pinteresto ("we", "us", or "our"), 
+            This Affiliate Compensation Disclosure is provided by Plinth ("we", "us", or "our"), 
             in compliance with the Federal Trade Commission's (FTC) guidelines. 
           </p>
 
           <h3 className="font-serif text-xl text-[var(--color-mocha)] mt-8">Amazon Associates Program</h3>
           <p>
-            Pinteresto is a participant in the Amazon Services LLC Associates Program, an affiliate 
+            Plinth is a participant in the Amazon Services LLC Associates Program, an affiliate 
             advertising program designed to provide a means for sites to earn advertising fees by advertising 
             and linking to Amazon.com. We earn commission from Amazon affiliate links inside our blog posts.
           </p>
@@ -39,13 +39,13 @@ export default function AffiliateDisclosure() {
             We only recommend products from trusted, established brands that we genuinely believe will add value to your home and space.
           </p>
           <p className="mt-4">
-            That said, all purchases are made directly with the respective brand or retailer — Pinteresto acts solely as an affiliate and has no control over product quality, shipping, returns, or after-sale support.
+            That said, all purchases are made directly with the respective brand or retailer — Plinth acts solely as an affiliate and has no control over product quality, shipping, returns, or after-sale support.
           </p>
           <p className="mt-4">
             If you face any issue with a product — including returns, refunds, damaged items, or delivery problems — please contact the brand or seller directly from whom you made the purchase. We recommend verifying product details, return policies, and seller terms before completing any purchase.
           </p>
           <p className="mt-4">
-            We only feature products from reputable brands. However, as an affiliate, Pinteresto is not liable for any loss, dispute, or dissatisfaction arising from your purchase. Your transaction is solely between you and the retailer.
+            We only feature products from reputable brands. However, as an affiliate, Plinth is not liable for any loss, dispute, or dissatisfaction arising from your purchase. Your transaction is solely between you and the retailer.
           </p>
 
           <div className="mt-12 pt-6 border-t border-[rgba(196,149,106,0.3)] text-[0.75rem]">

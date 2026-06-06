@@ -6,7 +6,7 @@ export function Footer() {
       <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10">
         <div>
           <div className="font-serif text-[1.4rem] font-semibold tracking-tight uppercase mb-4">
-            Pinteresto
+            Plinth
           </div>
           <p className="text-[0.72rem] leading-[1.9] text-[var(--color-muted)] mb-6 max-w-sm">
             Thoughtfully curated aesthetic home decor blogs with real affiliate picks. From Pinterest pin to purchase — beautifully.
@@ -42,7 +42,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[var(--color-sand)] pt-6 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-[var(--color-muted)]">
-        <div>&copy; 2026 Pinteresto Editorial</div>
+        <div>&copy; 2026 Plinth Editorial</div>
         <div className="flex space-x-6 mt-4 md:mt-0">
           <Link to="/affiliate-disclosure" className="hover:text-[var(--color-accent)] transition-colors">Affiliate Disclosure</Link>
           <Link to="/privacy-policy" className="hover:text-[var(--color-accent)] transition-colors">Privacy Policy</Link>

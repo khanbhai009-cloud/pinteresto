@@ -18,8 +18,8 @@ export default function About() {
   return (
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24">
       <Helmet>
-        <title>About Us — Pinteresto</title>
-        <meta name="description" content="Learn about Pinteresto, our curated Pinterest aesthetic blog, and our mission for beautiful content." />
+        <title>About Us — Plinth</title>
+        <meta name="description" content="Learn about Plinth, our curated editorial aesthetic blog, and our mission for beautiful content." />
       </Helmet>
 
       {/* Hero */}
@@ -32,9 +32,9 @@ export default function About() {
           className="relative z-10 max-w-2xl mx-auto"
         >
           <div className="text-[0.65rem] tracking-[0.3em] uppercase text-[var(--color-accent)] mb-4">Our Story</div>
-          <h1 className="font-serif text-[clamp(3rem,5vw,4.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">We Are Pinteresto</h1>
+          <h1 className="font-serif text-[clamp(3rem,5vw,4.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">We Are Plinth</h1>
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-muted)] font-light max-w-lg mx-auto">
-            Pinteresto is a thoughtfully curated aesthetic blog that brings Pinterest inspiration to life. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
+            Plinth is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
           </p>
         </motion.div>
       </section>
@@ -79,7 +79,7 @@ export default function About() {
                 ></motion.div>
               </div>
               <h3 className="font-serif text-xl text-[var(--color-mocha)] mb-4">Discovery</h3>
-              <p className="text-[0.85rem] leading-relaxed text-[var(--color-muted)] font-light max-w-xs mx-auto">A Pinterest Pin is discovered capturing a unique, viral aesthetic or room setup.</p>
+              <p className="text-[0.85rem] leading-relaxed text-[var(--color-muted)] font-light max-w-xs mx-auto">A beautifully designed space is discovered capturing a unique, aesthetic vibe or room setup.</p>
             </motion.div>
             
             <motion.div variants={fadeUp} className="relative z-10">

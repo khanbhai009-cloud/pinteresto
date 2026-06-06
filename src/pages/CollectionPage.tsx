@@ -28,7 +28,7 @@ export default function CollectionPage() {
   return (
     <div className="bg-[var(--color-cream)] min-h-screen pb-24">
       <Helmet>
-        <title>{titleText} — Pinteresto</title>
+        <title>{titleText} — Plinth</title>
         <meta name="description" content={`Curated ${formattedSubNiche} aesthetic home decor ideas.`} />
       </Helmet>
 

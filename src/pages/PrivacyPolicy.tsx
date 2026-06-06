@@ -4,8 +4,8 @@ export default function PrivacyPolicy() {
   return (
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24 pt-32 px-6 md:px-12">
       <Helmet>
-        <title>Privacy Policy — Pinteresto</title>
-        <meta name="description" content="Privacy Policy detailing data collection and usage practices for Pinteresto." />
+        <title>Privacy Policy — Plinth</title>
+        <meta name="description" content="Privacy Policy detailing data collection and usage practices for Plinth." />
       </Helmet>
 
       <div className="max-w-3xl mx-auto bg-[var(--color-cream)] p-8 md:p-12 shadow-sm border border-[rgba(92,61,46,0.05)]">
@@ -15,7 +15,7 @@ export default function PrivacyPolicy() {
 
         <div className="space-y-6 text-[0.85rem] leading-[1.9] text-[var(--color-muted)]">
           <p>
-            Welcome to Pinteresto. We respect your privacy and are committed to protecting your personal data. 
+            Welcome to Plinth. We respect your privacy and are committed to protecting your personal data. 
             This privacy policy will inform you as to how we look after your personal data when you visit our website.
           </p>
 

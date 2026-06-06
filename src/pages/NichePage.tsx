@@ -32,7 +32,7 @@ export default function NichePage() {
   return (
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24">
       <Helmet>
-        <title>{nicheData.title} Ideas — Pinteresto</title>
+        <title>{nicheData.title} Ideas — Plinth</title>
         <meta name="description" content={nicheData.description} />
       </Helmet>
 
