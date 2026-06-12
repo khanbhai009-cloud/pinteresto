@@ -6,10 +6,13 @@ import { getPostBySlug, getRelatedPosts } from '../lib/posts';
 import { BlogContent } from '../components/BlogContent';
 import { FAQSection } from '../components/FAQSection';
 import { PinCard } from '../components/PinCard';
+import { useBlogAnalytics } from '../hooks/useBlogAnalytics';
 
 export default function BlogPostPage() {
   const { niche, sub_niche, slug } = useParams<{ niche: string; sub_niche: string; slug: string }>();
   const navigate = useNavigate();
+
+  useBlogAnalytics(slug || null);
 
   const { data: post, isLoading: loadingPost } = useQuery({
     queryKey: ['post', slug],
