@@ -59,7 +59,7 @@ export function Navbar() {
 
         {/* Logo */}
         <Link to="/" className="font-serif text-3xl md:text-[2rem] font-medium tracking-tight text-[var(--color-mocha)] no-underline whitespace-nowrap mx-auto transition-transform hover:scale-[1.02]">
-          Plinth
+          The Cozy Canvas
         </Link>
 
         {/* Desktop Right Nav */}

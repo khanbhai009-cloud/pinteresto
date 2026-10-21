@@ -18,8 +18,8 @@ export default function About() {
   return (
     <div className="bg-[var(--color-warm-white)] min-h-screen pb-24">
       <Helmet>
-        <title>About Us — Plinth</title>
-        <meta name="description" content="Learn about Plinth, our curated editorial aesthetic blog, and our mission for beautiful content." />
+        <title>About Us — The Cozy Canvas</title>
+        <meta name="description" content="Learn about The Cozy Canvas, our curated editorial aesthetic blog, and our mission for beautiful content." />
       </Helmet>
 
       {/* Hero */}
@@ -32,9 +32,9 @@ export default function About() {
           className="relative z-10 max-w-2xl mx-auto"
         >
           <div className="text-[0.65rem] tracking-[0.3em] uppercase text-[var(--color-accent)] mb-4">Our Story</div>
-          <h1 className="font-serif text-[clamp(3rem,5vw,4.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">We Are Plinth</h1>
+          <h1 className="font-serif text-[clamp(3rem,5vw,4.5rem)] text-[var(--color-mocha)] mb-6 leading-tight">We Are The Cozy Canvas</h1>
           <p className="text-[0.9rem] leading-[1.9] text-[var(--color-muted)] font-light max-w-lg mx-auto">
-            Plinth is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
+            The Cozy Canvas is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home. We bridge the gap between beautiful inspiration and practical implementation, serving you shoppable ideas directly in beautiful editorial layouts.
           </p>
         </motion.div>
       </section>

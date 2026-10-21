@@ -22,9 +22,9 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Plinth — Curated spaces. Real products.</title>
-        <meta name="description" content="Plinth is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home." />
-        <link rel="canonical" href="https://plinth.vercel.app/" />
+        <title>The Cozy Canvas — Curated spaces. Real products.</title>
+        <meta name="description" content="The Cozy Canvas is an editorial home decor destination — curated spaces, handpicked products, and honest recommendations for your home." />
+        <link rel="canonical" href="https://pinteresto.vercel.app/" />
       </Helmet>
 
       {/* Hero */}
