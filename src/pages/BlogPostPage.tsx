@@ -98,8 +98,28 @@ export default function BlogPostPage() {
       </div>
 
       <div className="max-w-2xl mx-auto px-6">
+        {post.products && post.products.length > 0 && (
+          <p className="text-xs leading-relaxed text-[var(--color-muted)] border border-[var(--color-sand)] bg-[var(--color-cream)] rounded-lg px-4 py-3 mb-10">
+            This post may contain affiliate links — if you buy through them, we may earn a small commission at no extra cost to you.{' '}
+            <Link to="/affiliate-disclosure" className="underline hover:text-[var(--color-mocha)]">Read our disclosure</Link>
+          </p>
+        )}
         <BlogContent paragraphs={post.paragraphs || []} products={post.products || []} />
         <FAQSection faqs={post.faq || []} />
+
+        <div className="mt-16 text-center border border-[var(--color-sand)] bg-[var(--color-cream)] rounded-3xl px-6 py-10">
+          <div className="text-[0.6rem] tracking-[0.25em] uppercase text-[var(--color-muted)] mb-3">Love cozy spaces?</div>
+          <h3 className="font-serif text-2xl text-[var(--color-mocha)] mb-3">Follow The Cozy Canvas on Pinterest</h3>
+          <p className="text-sm text-[var(--color-mocha)] opacity-80 mb-6">New dream corners, organization ideas and curated finds — every day.</p>
+          <a
+            href="https://www.pinterest.com/swiftmart_fashion/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex justify-center items-center bg-[#e60023] text-white px-6 py-3 text-[0.7rem] tracking-[0.2em] uppercase rounded-full no-underline transition-transform active:scale-95 hover:opacity-90"
+          >
+            Follow @swiftmart_fashion
+          </a>
+        </div>
       </div>
 
       {related.length > 0 && (
