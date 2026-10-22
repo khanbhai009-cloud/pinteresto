@@ -10,7 +10,14 @@
   --color-brown: #8b5e3c;
   --color-muted: #9a7b67;
   --color-accent: #c4956a;
-  
+  /* The Cozy Canvas palette — matched to the Pinterest account's bright,
+     sunny, sage-and-cream pin world */
+  --color-sunshine: #f2b544;
+  --color-honey: #d98a2b;
+  --color-sage: #8ba888;
+  --color-leaf: #5f7d5a;
+  --color-mint: #e3eee0;
+
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
