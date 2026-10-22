@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import type { Product } from '../lib/types';
+import { productDisplayName } from './ShopTheLook';
 
 export function AffiliateCTA({ product }: { product: Product }) {
   return (
@@ -14,7 +15,7 @@ export function AffiliateCTA({ product }: { product: Product }) {
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-[var(--color-sunshine)] to-[var(--color-sage)]" />
       <div className="flex-1 w-full min-w-0 pl-2">
         <span className="text-sm font-medium text-[var(--color-mocha)] tracking-wide flex items-center gap-2 mb-2 md:mb-0 line-clamp-2">
-          🛒 {product.name}
+          🛒 {productDisplayName(product)}
         </span>
       </div>
       <div className="flex items-center justify-between w-full md:w-auto gap-4 shrink-0">
@@ -27,7 +28,7 @@ export function AffiliateCTA({ product }: { product: Product }) {
           rel="nofollow sponsored noreferrer"
           className="inline-flex justify-center items-center bg-[var(--color-mocha)] text-[var(--color-warm-white)] px-5 py-3 md:px-[22px] md:py-2.5 text-[0.65rem] tracking-[0.2em] uppercase rounded-full no-underline whitespace-nowrap transition-transform active:scale-95 hover:bg-[var(--color-honey)] hover:scale-[1.03] text-center w-full md:w-auto shadow-md"
         >
-          Check on Amazon →
+          Buy on Amazon →
         </a>
       </div>
     </motion.div>

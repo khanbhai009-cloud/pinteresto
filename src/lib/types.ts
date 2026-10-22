@@ -8,6 +8,11 @@ export interface Product {
   price: string;
   affiliate_url: string;
   insert_after_para: string; // id of paragraph
+  image_url?: string;
+  rating?: string | number;
+  orders?: string | number;
+  keyword?: string;
+  why_fits?: string;
 }
 
 export interface FAQ {

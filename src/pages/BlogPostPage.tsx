@@ -7,7 +7,7 @@ import { getPostBySlug, getRelatedPosts } from '../lib/posts';
 import { BlogContent } from '../components/BlogContent';
 import { FAQSection } from '../components/FAQSection';
 import { PinCard } from '../components/PinCard';
-import { AffiliateCTA } from '../components/AffiliateCTA';
+import { ShopTheLook } from '../components/ShopTheLook';
 import { useBlogAnalytics } from '../hooks/useBlogAnalytics';
 
 const PINTEREST_PROFILE = 'https://www.pinterest.com/swiftmart_fashion/';
@@ -77,7 +77,6 @@ export default function BlogPostPage() {
   const dateStr = formatDate((post as unknown as Record<string, unknown>).created_at);
   const wordCount = (post.paragraphs || []).reduce((n, p) => n + (p.text ? p.text.split(/\s+/).length : 0), 0);
   const readMins = Math.max(1, Math.round(wordCount / 200));
-  const firstProduct = post.products && post.products.length > 0 ? post.products[0] : null;
 
   const copyLink = async () => {
     try {
@@ -187,12 +186,7 @@ export default function BlogPostPage() {
           </motion.p>
         )}
 
-        {firstProduct && (
-          <div className="mb-4">
-            <div className="text-[0.6rem] tracking-[0.25em] uppercase text-[var(--color-honey)] font-semibold mb-3">★ Shop the look — featured pick</div>
-            <AffiliateCTA product={firstProduct} />
-          </div>
-        )}
+        <ShopTheLook products={post.products || []} />
 
         <BlogContent paragraphs={post.paragraphs || []} products={post.products || []} />
         <FAQSection faqs={post.faq || []} />
