@@ -1,20 +1,27 @@
 rules_version = '2';
+// The Cozy Canvas — Firestore rules (ARCHITECTURE §7).
+// Public gets NOTHING. The public site reads through the Admin SDK on the
+// server, which bypasses these rules. Only a signed-in user carrying the
+// `admin` custom claim (set once by scripts/make-admin.js) can read/write.
+// Deploy: firebase deploy --only firestore:rules  (see USER-STEPS.md)
+// NOTE (email-collection amendment, 2026-11-01): the `subscribers`
+// collection written server-side by POST /api/subscribe is covered by the
+// same catch-all deny below — clients get NO access to it; only the Admin
+// SDK on the server reads/writes it. No rule change was needed or made.
 service cloud.firestore {
   match /databases/{database}/documents {
-    // Allow public read access to niches and published blog posts
-    match /niches/{document=**} {
-      allow read: if true;
+    function isAdmin() {
+      return request.auth != null && request.auth.token.admin == true;
     }
-    
-    match /blog_posts/{document=**} {
-      // Allow public read for published posts
-      // Note: for simpler development, we allow all reads here, 
-      // but in production you'd want to restrict writes.
-      allow read: if true;
-    }
-    
     match /{document=**} {
-      allow read, write: if false; // Default deny for everything else
+      allow read, write: if isAdmin();
+    }
+    // Extra validation for posts:
+    match /posts/{id} {
+      allow write: if isAdmin()
+        && request.resource.data.title is string
+        && request.resource.data.title.size() < 200
+        && request.resource.data.status in ['draft', 'published', 'scheduled', 'trashed'];
     }
   }
 }

@@ -1,0 +1,15 @@
+rules_version = '2';
+// The Cozy Canvas — Storage rules (ARCHITECTURE §7).
+// Images under public/ are readable by anyone (the pages need them) and
+// writable only by the admin-claim user, images only, under 5 MB.
+// Deploy: firebase deploy --only storage  (see USER-STEPS.md)
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /public/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null && request.auth.token.admin == true
+        && request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* The Cozy Canvas design tokens — single source of truth (design guide §0/§2).
+   Ported from the Vite redesign-foundation step. Components must read colors,
+   radii and fonts ONLY from these variables, never hard-coded hex.
+   The layout injects settings/theme (Firestore) as inline overrides on <html>,
+   so an admin Design-tab change restyles the whole site (ARCHITECTURE §4.1). */
+:root {
+  --c-primary: #B85468;
+  --c-primary-pressed: #A04558;
+  --c-primary-soft: #F6DDE2;
+  --c-on-primary: #FFFFFF;
+  --c-ink: #2E2527;
+  --c-ink-muted: #6F6064;
+  --c-ink-faint: #9A8B8F;
+  --c-canvas: #FBF7F2;
+  --c-blush: #F7ECE8;
+  --c-lavender: #F1ECF8;
+  --c-sage: #EEF2EA;
+  --c-card: #FFFFFF;
+  --c-dark: #2B2024;
+  --c-on-dark: #FBF7F2;
+  --c-on-dark-muted: #CDBFC3;
+  --c-hairline: #EADFDA;
+  --c-disclosure-bg: #FFF6E8;
+  --c-disclosure-border: #F0D9B5;
+  --c-success: #5E8C61;
+  --c-danger: #B3402F;
+  --r-sm: 10px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-pill: 9999px;
+  /* Font stacks come from next/font/google (layout.tsx sets the variables). */
+  --font-display: var(--font-fraunces), "Playfair Display", Georgia, serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --shadow-image-fan: 0 12px 30px rgba(70, 40, 50, 0.18);
+  --shadow-card-soft: 0 4px 18px rgba(70, 40, 50, 0.06);
+}
+
+@theme {
+  --color-primary: var(--c-primary);
+  --color-primary-pressed: var(--c-primary-pressed);
+  --color-primary-soft: var(--c-primary-soft);
+  --color-on-primary: var(--c-on-primary);
+  --color-ink: var(--c-ink);
+  --color-ink-muted: var(--c-ink-muted);
+  --color-ink-faint: var(--c-ink-faint);
+  --color-canvas: var(--c-canvas);
+  --color-blush: var(--c-blush);
+  --color-lavender: var(--c-lavender);
+  --color-sage: var(--c-sage);
+  --color-card: var(--c-card);
+  --color-dark: var(--c-dark);
+  --color-on-dark: var(--c-on-dark);
+  --color-on-dark-muted: var(--c-on-dark-muted);
+  --color-hairline: var(--c-hairline);
+  --color-disclosure-bg: var(--c-disclosure-bg);
+  --color-disclosure-border: var(--c-disclosure-border);
+  --color-success: var(--c-success);
+  --color-danger: var(--c-danger);
+
+  --font-serif: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+
+  --shadow-image-fan: var(--shadow-image-fan);
+  --shadow-card-soft: var(--shadow-card-soft);
+}
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--c-canvas);
+    color: var(--c-ink);
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}
+
+@layer utilities {
+  .arch {
+    border-radius: 9999px 9999px 0 0;
+  }
+  .pin-shadow {
+    box-shadow: var(--shadow-card-soft);
+  }
+  /* Gentle one-time rise used by CardFan / cards on first view (guide §10). */
+  @keyframes rise-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .rise-in {
+    animation: rise-in 400ms ease-out both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rise-in { animation: none; }
+  }
+}
