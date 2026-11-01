@@ -131,7 +131,7 @@ export const products: Product[] = [
   {
     "id": "b0dw3lt68w",
     "name": "Velvet Throw Pillow Covers",
-    "description": "It is the five-minute change that makes a plain bed look styled on purpose. Velvet pillow covers add that soft sheen and layered depth you see in every saved bedroom pin \u2014 two blush, two cream, and suddenly the whole bed feels dressed. They zip off for washing and swap easily with the seasons, so pick the shades that fit your bedding and your light.",
+    "description": "Velvet pillow covers are a five-minute change that makes a plain bed look styled on purpose. The soft sheen and layered colours do the work: two blush, two cream, and the whole bed looks dressed. They zip off for washing and swap easily with the seasons, so pick shades that fit your bedding and your light.",
     "asin": "B0DW3LT68W",
     "amazonUrl": "https://www.amazon.com/s?k=velvet+throw+pillow+covers&tag=finisher090-20",
     "imageMode": "amazon",
@@ -140,13 +140,13 @@ export const products: Product[] = [
     "featured": true,
     "active": true,
     "bestFor": "Plain beds and sofas that need instant softness and colour.",
-    "whyWeLike": "The velvet sheen adds layered depth over flat bedding, and the covers zip off for washing.",
+    "whyWeLike": "The velvet sheen keeps flat bedding from looking plain, and the covers zip off for washing.",
     "keepInMind": "These are covers only \u2014 check your insert size before ordering."
   },
   {
     "id": "b0fsqp1f4f",
     "name": "Rose Pink Duvet Cover Set",
-    "description": "This is the layer that decides the mood of the whole room before anything else goes on the bed. A rose pink duvet wraps the bed in the soft blush tone cozy bedrooms are loved for, and a prewashed fabric feels gentle from the very first night. Choose the shade depth that suits your walls \u2014 pale for airy, deeper for cocoon.",
+    "description": "The duvet is the layer that decides the mood of the room before anything else goes on the bed. This rose pink cover wraps the bed in a soft blush tone, and the prewashed fabric feels gentle from the first night. Choose the shade depth that suits your walls: pale for airy, deeper for a cocoon feel.",
     "asin": "B0FSQP1F4F",
     "amazonUrl": "https://www.amazon.com/s?k=rose+pink+duvet+cover+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -155,13 +155,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Setting a soft blush mood across the whole bed in one step.",
-    "whyWeLike": "Prewashed fabric feels gentle from the first night, and the rose tone does the styling for you.",
+    "whyWeLike": "Prewashed fabric feels gentle from the first night, and the rose colour sets the palette for the whole bed.",
     "keepInMind": "Duvet insert and shams may be sold separately \u2014 check what the set includes."
   },
   {
     "id": "b0852wlh7m",
     "name": "Fluffy Shag Area Rug",
-    "description": "It is the first thing your feet meet in the morning, and it should feel like a small kindness. A deep, fluffy rug beside the bed takes away the cold-floor shock and quietly marks the sleeping corner off from the rest of the room. Cream and beige versions soften almost any palette \u2014 pick the size that tucks a little way under the bed.",
+    "description": "This is the first thing your feet meet in the morning, so it should be soft. A deep, fluffy rug beside the bed takes away the cold-floor shock and marks the sleeping corner off from the rest of the room. Cream and beige versions soften almost any palette. Pick the size that tucks a little way under the bed.",
     "asin": "B0852WLH7M",
     "amazonUrl": "https://www.amazon.com/s?k=fluffy+shag+area+rug&tag=finisher090-20",
     "imageMode": "amazon",
@@ -170,13 +170,13 @@ export const products: Product[] = [
     "featured": true,
     "active": true,
     "bestFor": "Cold floors beside the bed, first thing in the morning.",
-    "whyWeLike": "The deep shag pile softens the room and quietly zones off the sleeping corner.",
+    "whyWeLike": "The deep shag pile softens the room and marks off the sleeping corner.",
     "keepInMind": "Shag needs a shake-out and gentle vacuuming; measure so it tucks a little under the bed."
   },
   {
     "id": "b0cj6nl33d",
     "name": "Cream Linen Curtains",
-    "description": "These are what make the light itself look soft. Cream linen panels filter the sun into that golden, hazy glow bedroom pins are famous for, while still giving you privacy. The natural weave keeps the room feeling airy rather than dressed up \u2014 choose a length that just kisses the floor.",
+    "description": "Cream linen panels filter the sun into a golden, hazy glow while still giving you privacy. The natural weave keeps the room feeling airy rather than dressed up.",
     "asin": "B0CJ6NL33D",
     "amazonUrl": "https://www.amazon.com/s?k=cream+linen+curtains&tag=finisher090-20",
     "imageMode": "amazon",
@@ -191,7 +191,7 @@ export const products: Product[] = [
   {
     "id": "b0df87s24q",
     "name": "Chunky Knit Throw Blanket",
-    "description": "Draped over the foot of the bed, it is the layer that quietly whispers slow down. A chunky knit throw adds the hand-made texture plain bedding is missing, and it is always within reach for reading-in-bed evenings. Buttercream goes with nearly everything \u2014 pick the weight that fits your climate.",
+    "description": "Draped over the foot of the bed, a chunky knit throw adds the hand-made texture plain bedding is missing, and it stays within reach for reading-in-bed evenings. Buttercream goes with nearly everything. Pick the weight that fits your climate.",
     "asin": "B0DF87S24Q",
     "amazonUrl": "https://www.amazon.com/s?k=chunky+knit+throw+blanket&tag=finisher090-20",
     "imageMode": "amazon",
@@ -206,7 +206,7 @@ export const products: Product[] = [
   {
     "id": "b00jr5n0jm",
     "name": "Warm Fairy String Lights",
-    "description": "This is the light that makes the whole room glow after dark. A warm fairy-light strand looped along the headboard or a shelf replaces harsh ceiling light with a soft, sleepy shimmer, and it might be the simplest transformation in this whole guide. Choose a strand length that fits your headboard or window.",
+    "description": "A warm fairy-light strand looped along the headboard or a shelf replaces harsh ceiling light with a soft, sleepy shimmer, and it may be the simplest change in this whole guide. Choose a strand length that fits your headboard or window.",
     "asin": "B00JR5N0JM",
     "amazonUrl": "https://www.amazon.com/s?k=warm+fairy+string+lights&tag=finisher090-20",
     "imageMode": "amazon",
@@ -221,7 +221,7 @@ export const products: Product[] = [
   {
     "id": "b0f1sph2c5",
     "name": "Ceramic Vase with Faux Flowers",
-    "description": "It is the tiny corner-filler that makes a dresser look finished instead of forgotten. A small vase with soft faux blooms brings a gentle, living shape to flat surfaces \u2014 and it never wilts, drops petals or asks for watering. Pick bloom tones that echo your bedding for an easy, pulled-together feel.",
+    "description": "A small vase with soft faux blooms makes a dresser look finished instead of forgotten. The blooms bring a soft, living shape to flat surfaces, and they never wilt, drop petals or need watering. Pick bloom tones that echo your bedding for an easy, pulled-together feel.",
     "asin": "B0F1SPH2C5",
     "amazonUrl": "https://www.amazon.com/s?k=ceramic+vase+with+faux+flowers&tag=finisher090-20",
     "imageMode": "amazon",
@@ -236,7 +236,7 @@ export const products: Product[] = [
   {
     "id": "b0dw3s8pm3",
     "name": "Faux Hanging Plants",
-    "description": "Greenery trailing from a shelf makes the whole room feel alive \u2014 without a single watering can. Faux hanging plants soften high, empty corners and borrow a little of nature's calm for the bedroom. Choose a trailing length that fits your shelf height and let it spill.",
+    "description": "Faux hanging plants soften high, empty corners and bring trailing greenery into the bedroom without a single watering can. Choose a trailing length that fits your shelf height and let it spill.",
     "asin": "B0DW3S8PM3",
     "amazonUrl": "https://www.amazon.com/s?k=faux+hanging+plants&tag=finisher090-20",
     "imageMode": "own",
@@ -245,13 +245,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "High, empty corners and shelves that need softening.",
-    "whyWeLike": "Trailing greenery borrows nature's calm with zero watering to remember.",
+    "whyWeLike": "Trailing greenery brings the outdoors in, with zero watering to remember.",
     "keepInMind": "Dust settles on the leaves \u2014 a quick wipe now and then keeps them looking real."
   },
   {
     "id": "b0f5wdc64g",
     "name": "Nightstand with Charging Station",
-    "description": "No more cable tangle glowing in the dark \u2014 this is the bedside that finally behaves. A nightstand with built-in charging and a soft LED glow keeps your phone, book and glass of water in one calm place, while the drawers hide the clutter that used to live on top. Pick the finish that matches your bed frame.",
+    "description": "No more cable tangle glowing in the dark. A nightstand with built-in charging and a soft LED glow keeps your phone, book and glass of water in one place, and the drawers hide the clutter that used to live on top. Pick the finish that matches your bed frame.",
     "asin": "B0F5WDC64G",
     "amazonUrl": "https://www.amazon.com/s?k=nightstand+with+charging+station&tag=finisher090-20",
     "imageMode": "amazon",
@@ -266,7 +266,7 @@ export const products: Product[] = [
   {
     "id": "b0f2mbl1l2",
     "name": "Arched Gold Wall Mirror",
-    "description": "It is the one piece that makes the room feel twice as bright, and quietly grand. An arched gold mirror above the dresser bounces daylight around, softens all the straight lines of bedroom furniture and gives you a proper getting-ready moment. Choose the size that suits your dresser width \u2014 a little oversized is the trick.",
+    "description": "An arched gold mirror above the dresser bounces daylight around the room, softens all the straight lines of bedroom furniture and gives you a proper getting-ready spot. Choose the size that suits your dresser width. A little oversized is the trick.",
     "asin": "B0F2MBL1L2",
     "amazonUrl": "https://www.amazon.com/s?k=arched+gold+wall+mirror&tag=finisher090-20",
     "imageMode": "amazon",
@@ -281,7 +281,7 @@ export const products: Product[] = [
   {
     "id": "b0f5h17s8v",
     "name": "Boucle Cloud Bed Frame",
-    "description": "This is the statement the whole room quietly organises itself around. A blush boucle bed frame with a cloud-soft headboard turns the bed into a padded, cocooning centrepiece you can lean into with a book. If your room leans neutral, the pink is softer than you think \u2014 pick the size that fits your mattress and your space.",
+    "description": "A blush boucle bed frame with a cloud-soft headboard turns the bed into a padded centrepiece you can lean into with a book. If your room leans neutral, the pink is softer than you think. Pick the size that fits your mattress and your space.",
     "asin": "B0F5H17S8V",
     "amazonUrl": "https://www.amazon.com/s?k=boucle+upholstered+bed+frame&tag=finisher090-20",
     "imageMode": "amazon",
@@ -296,7 +296,7 @@ export const products: Product[] = [
   {
     "id": "b0g42qlwxf",
     "name": "Botanical Framed Canvas Wall Art Set",
-    "description": "Bare wall above the bed? This is the calm, finished answer. A set of botanical framed canvases brings gentle green shapes and a gallery rhythm to the biggest empty surface in the room, without the commitment of paint or wallpaper. Hang them in a row or a loose grid \u2014 choose the set size that fits your wall.",
+    "description": "For the bare wall above the bed, a set of botanical framed canvases brings gentle green shapes and a gallery rhythm to the biggest empty surface in the room, without the commitment of paint or wallpaper. Hang them in a row or a loose grid, and choose the set size that fits your wall.",
     "asin": "B0G42QLWXF",
     "amazonUrl": "https://www.amazon.com/s?k=botanical+framed+canvas+wall+art+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -311,7 +311,7 @@ export const products: Product[] = [
   {
     "id": "b0g3qtvwm7",
     "name": "Deep Seat Loveseat",
-    "description": "It is the seat everyone quietly hopes is free when they walk into the room. A deep, sink-in loveseat gives the living room a true anchor \u2014 somewhere to curl up sideways with a book, a blanket and nowhere to be. Soft neutral upholstery keeps it easy to style around \u2014 pick the shade that sits happily with your rug and cushions.",
+    "description": "Everyone hopes this seat is free when they walk into the room. A deep, sink-in loveseat gives the living room a true anchor, somewhere to curl up sideways with a book, a blanket and nowhere to be. Soft neutral upholstery keeps it easy to style around. Pick the shade that sits happily with your rug and cushions.",
     "asin": "B0G3QTVWM7",
     "amazonUrl": "https://www.amazon.com/s?k=deep+seat+loveseat&tag=finisher090-20",
     "imageMode": "amazon",
@@ -326,7 +326,7 @@ export const products: Product[] = [
   {
     "id": "b013i50z30",
     "name": "Rustic Wood Coffee Table",
-    "description": "It is the warm centre everything else gathers around. A solid wood coffee table grounds the seating area with real grain and a little rustic character, and it is sturdy enough for feet, trays and board games alike. Choose the finish that picks up the warm tones already in your room.",
+    "description": "A solid wood coffee table grounds the seating area with real grain and a little rustic character, and it is sturdy enough for feet, trays and board games alike. Choose the finish that picks up the warm tones already in your room.",
     "asin": "B013I50Z30",
     "amazonUrl": "https://www.amazon.com/s?k=rustic+wood+coffee+table&tag=finisher090-20",
     "imageMode": "amazon",
@@ -341,7 +341,7 @@ export const products: Product[] = [
   {
     "id": "b0g5yhlmz4",
     "name": "Scented Soy Candle Set",
-    "description": "It is the glow that makes an ordinary evening feel like an occasion. A set of little scented soy candles scattered on a tray or shelf wraps the room in warm flickering light and a soft, calming scent \u2014 the finishing layer cozy corners are made of. Pick the scent family that feels like you, and keep a few in reserve for slow Sundays.",
+    "description": "A set of little scented soy candles scattered on a tray or shelf gives the room warm flickering light and a soft, calming scent. Pick the scent family that feels like you, and keep a few in reserve for slow Sundays.",
     "asin": "B0G5YHLMZ4",
     "amazonUrl": "https://www.amazon.com/s?k=scented+soy+candle+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -356,7 +356,7 @@ export const products: Product[] = [
   {
     "id": "search-living-room-pouf",
     "name": "Knit Pouf Ottoman",
-    "description": "It is the piece every cozy living room is secretly missing. A chunky knit pouf adds soft, handmade texture at ankle height, works as a footrest, extra seat or a side table for a cup of tea, and tucks happily into any empty corner. Pick the colour that echoes your cushions and throw.",
+    "description": "A chunky knit pouf adds soft, handmade texture at ankle height. It works as a footrest, an extra seat or a side table for a cup of tea, and it tucks happily into any empty corner. Pick the colour that echoes your cushions and throw.",
     "asin": "B07RXKXMTS",
     "amazonUrl": "https://www.amazon.com/s?k=knitted+pouf+ottoman&tag=finisher090-20",
     "imageMode": "amazon",
@@ -371,7 +371,7 @@ export const products: Product[] = [
   {
     "id": "b0f9pfb5st",
     "name": "Floating Wall Shelves",
-    "description": "That blank stretch of wall is quietly asking for this. Floating shelves turn dead space above a sofa, desk or vanity into a styled little gallery for plants, frames and favourite things \u2014 without a bulky bookcase eating the floor. Choose the wood tone that matches your other furniture, and the length that fits your wall.",
+    "description": "Floating shelves turn dead space above a sofa, desk or vanity into a styled little gallery for plants, frames and favourite things, without a bulky bookcase eating the floor. Choose the wood tone that matches your other furniture, and the length that fits your wall.",
     "asin": "B0F9PFB5ST",
     "amazonUrl": "https://www.amazon.com/s?k=floating+wall+shelves&tag=finisher090-20",
     "imageMode": "amazon",
@@ -386,7 +386,7 @@ export const products: Product[] = [
   {
     "id": "b0fwr8fm83",
     "name": "Fluted Vanity Desk with LED Mirror",
-    "description": "It is the piece that turns a bedroom corner into your own tiny boutique. A fluted vanity desk with a built-in LED mirror and charging gives you light, storage and a beautiful surface in one footprint \u2014 no more getting ready hunched over a bathroom sink. Pick the size that fits your corner and let it anchor the whole ritual.",
+    "description": "A fluted vanity desk with a built-in LED mirror and charging gives you light, storage and a beautiful surface in one footprint, so there is no more getting ready hunched over a bathroom sink. Pick the size that fits your corner.",
     "asin": "B0FWR8FM83",
     "amazonUrl": "https://www.amazon.com/s?k=vanity+desk+with+led+mirror&tag=finisher090-20",
     "imageMode": "amazon",
@@ -401,7 +401,7 @@ export const products: Product[] = [
   {
     "id": "b07sdlk4zg",
     "name": "Hollywood Lighted Makeup Mirror",
-    "description": "This is the light that never lies to you. A Hollywood mirror ringed with dimmable bulbs gives even, shadow-free light, so makeup goes on the way it will actually look outside \u2014 and the glow alone makes the vanity feel glamorous. Choose the bulb warmth and size that suit your space.",
+    "description": "A Hollywood mirror ringed with dimmable bulbs gives even, shadow-free light, so makeup goes on the way it will actually look outside. Choose the bulb warmth and size that suit your space.",
     "asin": "B07SDLK4ZG",
     "amazonUrl": "https://www.amazon.com/s?k=hollywood+lighted+makeup+mirror&tag=finisher090-20",
     "imageMode": "amazon",
@@ -410,13 +410,13 @@ export const products: Product[] = [
     "featured": true,
     "active": true,
     "bestFor": "Makeup that has to look the same outdoors as it does indoors.",
-    "whyWeLike": "Dimmable bulbs give even, shadow-free light \u2014 and the glow alone feels glamorous.",
+    "whyWeLike": "Dimmable bulbs give even, shadow-free light, and the ring of bulbs looks glamorous on the vanity.",
     "keepInMind": "It needs counter depth and a nearby outlet; bulb warmth varies by model."
   },
   {
     "id": "b0fz8nhll7",
     "name": "Rotating Makeup Organizer",
-    "description": "No more digging through a makeup bag while your foundation sets. A rotating organizer keeps lipsticks, brushes and skincare standing upright and visible, one gentle spin away \u2014 and it makes the countertop look deliberately styled instead of crowded. Pick the tier size that fits your collection.",
+    "description": "No more digging through a makeup bag while your foundation sets. A rotating organizer keeps lipsticks, brushes and skincare standing upright and visible, one gentle spin away, and it keeps the countertop looking styled instead of crowded. Pick the tier size that fits your collection.",
     "asin": "B0FZ8NHLL7",
     "amazonUrl": "https://www.amazon.com/s?k=rotating+makeup+organizer&tag=finisher090-20",
     "imageMode": "amazon",
@@ -425,13 +425,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Countertops crowded with bottles, brushes and skincare.",
-    "whyWeLike": "Everything stands upright and visible, one gentle spin away \u2014 the top looks styled, not stored.",
+    "whyWeLike": "Everything stands upright and visible, one gentle spin away.",
     "keepInMind": "Measure your tallest bottles against the tier height before ordering."
   },
   {
     "id": "b0c4km4c94",
     "name": "Travertine Perfume Tray",
-    "description": "It is the smallest upgrade with the most expensive-looking effect. A natural travertine tray gathers perfume bottles and little luxuries into one grounded, spa-like arrangement, and its soft stone texture flatters everything placed on it. Choose the shape that fits your vanity top.",
+    "description": "A natural travertine tray gathers perfume bottles and little luxuries into one grounded, spa-like arrangement, and its soft stone texture flatters everything placed on it. Choose the shape that fits your vanity top.",
     "asin": "B0C4KM4C94",
     "amazonUrl": "https://www.amazon.com/s?k=travertine+perfume+tray&tag=finisher090-20",
     "imageMode": "amazon",
@@ -440,13 +440,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Gathering perfume bottles into one spa-like arrangement.",
-    "whyWeLike": "Natural stone weight and texture make everything placed on it look expensive.",
+    "whyWeLike": "Natural stone weight and texture make even small bottles look deliberate.",
     "keepInMind": "Stone is heavy and can stain \u2014 wipe spills quickly and lift it, do not drag."
   },
   {
     "id": "b0g5175pzq",
     "name": "Rotating Brush Holder with Lid",
-    "description": "Dust on your brushes is the detail nobody talks about \u2014 and this quietly fixes it. A rotating brush holder with a lid keeps tools upright, sorted and clean under cover, while the spin makes every brush easy to reach mid-routine. Pick the compartment layout that matches the brushes you actually use.",
+    "description": "Dust settles on brushes left standing open on the counter. A rotating brush holder with a lid keeps tools upright, sorted and clean under cover, and the spin makes every brush easy to reach mid-routine. Pick the compartment layout that matches the brushes you actually use.",
     "asin": "B0G5175PZQ",
     "amazonUrl": "https://www.amazon.com/s?k=rotating+makeup+brush+holder+with+lid&tag=finisher090-20",
     "imageMode": "amazon",
@@ -461,7 +461,7 @@ export const products: Product[] = [
   {
     "id": "b0b41ybq9j",
     "name": "Electric Standing Desk",
-    "description": "It is the desk that moves with your energy instead of trapping you in one position. An electric standing desk lets you float from sitting focus to standing stretch at the touch of a button, and a clean, light finish keeps even a small room feeling open. Choose the desktop size that fits your corner and your screens.",
+    "description": "An electric standing desk lets you move from sitting to standing at the touch of a button, and a clean, light finish keeps even a small room feeling open. Choose the desktop size that fits your corner and your screens.",
     "asin": "B0B41YBQ9J",
     "amazonUrl": "https://www.amazon.com/s?k=electric+standing+desk&tag=finisher090-20",
     "imageMode": "amazon",
@@ -476,7 +476,7 @@ export const products: Product[] = [
   {
     "id": "b0dzckgdyz",
     "name": "Wireless Mechanical Keyboard",
-    "description": "It is the one thing your hands touch all day \u2014 it may as well make you happy. A wireless mechanical keyboard brings that soft, satisfying key feel and a splash of gentle colour to the desk, with no cable snaking across it. Pick the layout and switch feel that suit how you type.",
+    "description": "A wireless mechanical keyboard brings a soft, satisfying key feel and a splash of gentle colour to the desk, with no cable snaking across it. Pick the layout and switch feel that suit how you type.",
     "asin": "B0DZCKGDYZ",
     "amazonUrl": "https://www.amazon.com/s?k=wireless+mechanical+keyboard&tag=finisher090-20",
     "imageMode": "amazon",
@@ -491,7 +491,7 @@ export const products: Product[] = [
   {
     "id": "b0frmndrdy",
     "name": "Ergonomic Gaming Chair",
-    "description": "Long sessions stop being kind to an ordinary chair \u2014 this is the upgrade your back has been asking for. An ergonomic gaming chair with real lumbar support and a footrest turns marathon workdays and game nights into sink-in comfort, and the soft colour keeps it pretty, not plasticky. Choose the shade that fits your setup's palette.",
+    "description": "Long sessions are not kind to an ordinary chair. An ergonomic gaming chair with real lumbar support and a footrest is built for marathon workdays and game nights, and the soft colour keeps it pretty, not plasticky. Choose the shade that fits your setup's palette.",
     "asin": "B0FRMNDRDY",
     "amazonUrl": "https://www.amazon.com/s?k=ergonomic+gaming+chair&tag=finisher090-20",
     "imageMode": "amazon",
@@ -506,7 +506,7 @@ export const products: Product[] = [
   {
     "id": "b09dvl5gk9",
     "name": "Wireless Mouse",
-    "description": "It is the smallest piece on the desk, and somehow the one that ties the whole palette together. A soft-coloured wireless mouse glides quietly beside the keyboard, frees you from one more cable and feels comfortable through a full day of clicks. Pick the colour that matches your mat and keyboard.",
+    "description": "A soft-coloured wireless mouse frees you from one more cable and stays comfortable through a full day of clicks. Pick the colour that matches your mat and keyboard, and it ties the whole palette together.",
     "asin": "B09DVL5GK9",
     "amazonUrl": "https://www.amazon.com/s?k=wireless+mouse&tag=finisher090-20",
     "imageMode": "amazon",
@@ -521,7 +521,7 @@ export const products: Product[] = [
   {
     "id": "b0d3fgfppb",
     "name": "27-Inch QHD Monitor",
-    "description": "A black monitor can bully a soft setup \u2014 this one politely blends in. A 27-inch QHD screen with a pale bezel keeps the desk feeling light and airy while giving you crisp space for work, study and streams. Choose the panel that fits your desk depth, and prop it at eye level for the calmest posture.",
+    "description": "A 27-inch QHD screen with a pale bezel keeps the desk feeling light and airy, where a black monitor can bully a soft setup, and gives you crisp space for work, study and streams. Choose the panel that fits your desk depth, and prop it at eye level for the calmest posture.",
     "asin": "B0D3FGFPPB",
     "amazonUrl": "https://www.amazon.com/s?k=27+inch+qhd+monitor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -536,7 +536,7 @@ export const products: Product[] = [
   {
     "id": "b0f1crd5wy",
     "name": "Pink Desk Mat",
-    "description": "It is the fastest way to make a plain desk look intentionally styled. A wide pink desk mat draws a soft boundary around your workspace, cushions your wrists and gives the keyboard and mouse a shared, pretty home. Pick the size that spans your setup, from laptop-only to full dual-screen.",
+    "description": "A wide pink desk mat draws a soft boundary around your workspace, cushions your wrists and gives the keyboard and mouse a shared home. Pick the size that spans your setup, from laptop-only to full dual-screen.",
     "asin": "B0F1CRD5WY",
     "amazonUrl": "https://www.amazon.com/s?k=pink+desk+mat&tag=finisher090-20",
     "imageMode": "amazon",
@@ -551,7 +551,7 @@ export const products: Product[] = [
   {
     "id": "b07n1cmgqq",
     "name": "Smart RGB LED Strip Lights",
-    "description": "This is the glow that makes the whole setup feel finished after dark. Smart RGB strips tucked behind the desk wash the wall in soft colour you can change with your voice or an app \u2014 warm amber for focus, pink for game night. Choose the length that traces your desk and monitor edges.",
+    "description": "Smart RGB strips tucked behind the desk wash the wall in soft colour you can change with your voice or an app: warm amber for focus, pink for game night. Choose the length that traces your desk and monitor edges.",
     "asin": "B07N1CMGQQ",
     "amazonUrl": "https://www.amazon.com/s?k=smart+rgb+led+strip+lights&tag=finisher090-20",
     "imageMode": "amazon",
@@ -566,7 +566,7 @@ export const products: Product[] = [
   {
     "id": "b004g7ri76",
     "name": "Pre-Lit Artificial Christmas Tree",
-    "description": "It is the moment the season officially moves into your home. A full, pre-lit tree fills the corner with warm white glow the second it stands up \u2014 no wrestling with tangled light strings, no bare patches to hide at the back. Hinged branches fall into shape almost on their own, so the decorating fun starts right away. Pick the height that suits your ceiling and let everything else in this guide gather around it.",
+    "description": "A full, pre-lit tree fills the corner with warm white glow the second it stands up: no wrestling with tangled light strings, no bare patches to hide at the back. Hinged branches fall into shape almost on their own, so the decorating fun starts right away. Pick the height that suits your ceiling, and let everything else in this guide gather around it.",
     "asin": "B004G7RI76",
     "amazonUrl": "https://www.amazon.com/s?k=pre+lit+artificial+christmas+tree&tag=finisher090-20",
     "imageMode": "amazon",
@@ -581,7 +581,7 @@ export const products: Product[] = [
   {
     "id": "b0dxl27rnt",
     "name": "Shatterproof Christmas Ornament Set",
-    "description": "This is the sparkle that makes the whole tree feel dressed, not just decorated. A coordinated set of shatterproof baubles in mixed finishes \u2014 shiny, matte and glitter \u2014 layers colour and light through every branch, and it survives curious kids, wagging tails and the annual tumble out of storage. Choose the palette that matches your wrapping paper and let it run through the whole room.",
+    "description": "A coordinated set of shatterproof baubles in mixed finishes (shiny, matte and glitter) layers colour and light through every branch, and it survives curious kids, wagging tails and the annual tumble out of storage. Choose the palette that matches your wrapping paper and let it run through the whole room.",
     "asin": "B0DXL27RNT",
     "amazonUrl": "https://www.amazon.com/s?k=shatterproof+christmas+ornaments+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -590,13 +590,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Homes with kids, pets and the annual tumble out of storage.",
-    "whyWeLike": "Mixed shiny, matte and glitter finishes layer the tree the way a stylist would.",
+    "whyWeLike": "Mixed shiny, matte and glitter finishes layer colour and light through the tree.",
     "keepInMind": "Shatterproof means plastic \u2014 beautiful and light, but not the weight of glass."
   },
   {
     "id": "b00lkrmnwk",
     "name": "Pre-Lit Christmas Wreath",
-    "description": "It is the welcome your front door gives before anyone even knocks. A lush pre-lit wreath with berries and pinecones glows softly at dusk, turning an ordinary door into the prettiest one on the street \u2014 and it works just as beautifully above a mantel or on a bare hallway wall. Pick a size that fills your door without crowding it, and let it set the tone for everything inside.",
+    "description": "A lush pre-lit wreath with berries and pinecones glows softly at dusk on the front door, and it works just as beautifully above a mantel or on a bare hallway wall. Pick a size that fills your door without crowding it.",
     "asin": "B00LKRMNWK",
     "amazonUrl": "https://www.amazon.com/s?k=pre+lit+christmas+wreath&tag=finisher090-20",
     "imageMode": "amazon",
@@ -611,7 +611,7 @@ export const products: Product[] = [
   {
     "id": "b00lkrmwey",
     "name": "Pre-Lit Christmas Garland",
-    "description": "Draped along the mantel, it is the green thread that ties the whole room together. A generous pre-lit garland with warm lights woven through the branches softens the fireplace, the staircase or a doorway in minutes, and makes every stocking and candle in front of it look twice as pretty. Choose the length that swags the way you like \u2014 deep and lazy is the cozy way.",
+    "description": "A generous pre-lit garland with warm lights woven through the branches softens the fireplace, the staircase or a doorway in minutes, and makes every stocking and candle in front of it look twice as pretty. Choose the length that swags the way you like: deep and lazy is the cozy way.",
     "asin": "B00LKRMWEY",
     "amazonUrl": "https://www.amazon.com/s?k=pre+lit+christmas+garland&tag=finisher090-20",
     "imageMode": "amazon",
@@ -626,7 +626,7 @@ export const products: Product[] = [
   {
     "id": "b0cdbhg318",
     "name": "Cable Knit Christmas Stockings",
-    "description": "Hung in a row, they are the promise that Christmas morning is coming. Chunky cable-knit stockings bring the same hand-made softness as your favourite winter sweater to the mantel, and they are roomy enough for the good stuff \u2014 oranges, chocolates and small wrapped surprises. Pick a matching set for the whole family, or mix cream and blush for that collected-over-years feel.",
+    "description": "Hung in a row, chunky cable-knit stockings bring the same hand-made softness as your favourite winter sweater to the mantel, and they are roomy enough for the good stuff: oranges, chocolates and small wrapped surprises. Pick a matching set for the whole family, or mix cream and blush for that collected-over-years feel.",
     "asin": "B0CDBHG318",
     "amazonUrl": "https://www.amazon.com/s?k=cable+knit+christmas+stockings&tag=finisher090-20",
     "imageMode": "amazon",
@@ -641,7 +641,7 @@ export const products: Product[] = [
   {
     "id": "b07g43ks2g",
     "name": "Faux Fur Christmas Tree Skirt",
-    "description": "It is the soft white landing that makes the tree look finished from floor to star. A plush faux fur skirt hides the stand and the tangle of cords, pools like fresh snow under the branches and gives presents a beautiful place to sit. Against warm tree lights it glows almost on its own \u2014 choose the diameter that lets gifts spill a little beyond its edge.",
+    "description": "A plush faux fur skirt hides the stand and the tangle of cords, pools like fresh snow under the branches and gives presents a beautiful place to sit. Choose the diameter that lets gifts spill a little beyond its edge.",
     "asin": "B07G43KS2G",
     "amazonUrl": "https://www.amazon.com/s?k=faux+fur+christmas+tree+skirt&tag=finisher090-20",
     "imageMode": "amazon",
@@ -656,7 +656,7 @@ export const products: Product[] = [
   {
     "id": "b08d6692yj",
     "name": "Lighted Star Tree Topper",
-    "description": "Every tree needs its final full stop \u2014 and this one throws a little magic on the ceiling while it is at it. A lighted star topper crowns the tree with a warm glow and projects drifting snowflakes above it, so the whole corner feels like the inside of a snow globe after dark. Pick the finish that matches your ornaments, gold for classic or silver for frosty.",
+    "description": "A lighted star topper crowns the tree with a warm glow and projects drifting snowflakes onto the ceiling above it, so the corner feels like the inside of a snow globe after dark. Pick the finish that matches your ornaments: gold for classic, silver for frosty.",
     "asin": "B08D6692YJ",
     "amazonUrl": "https://www.amazon.com/s?k=lighted+star+christmas+tree+topper&tag=finisher090-20",
     "imageMode": "amazon",
@@ -671,7 +671,7 @@ export const products: Product[] = [
   {
     "id": "b07k46vs42",
     "name": "Christmas Throw Pillow Covers",
-    "description": "It is the ten-minute makeover your sofa has been waiting for all year. Swapping plain cushion covers for festive ones \u2014 little trees, gentle lettering, soft winter reds \u2014 changes the mood of the whole room without buying a single new cushion. They zip on and off, so the everyday covers come back in January. Pick the set whose colours already live in your room.",
+    "description": "Swapping plain cushion covers for festive ones (little trees, gentle lettering, soft winter reds) changes the mood of the whole room without buying a single new cushion. They zip on and off, so the everyday covers come back in January. Pick the set whose colours already live in your room.",
     "asin": "B07K46VS42",
     "amazonUrl": "https://www.amazon.com/s?k=christmas+pillow+covers&tag=finisher090-20",
     "imageMode": "amazon",
@@ -686,7 +686,7 @@ export const products: Product[] = [
   {
     "id": "b0cdkxvk32",
     "name": "Christmas Throw Blanket",
-    "description": "This is the layer that turns watching a holiday film into an occasion. A soft Christmas throw in a gentle plaid drapes over the sofa arm all season \u2014 part decoration, part invitation \u2014 and it is always within reach when the cocoa is ready. The cream-and-red check flatters almost any palette; pick the size that covers two people and a small dog.",
+    "description": "A soft Christmas throw in a gentle plaid drapes over the sofa arm all season, part decoration and part invitation, and it is always within reach when the cocoa is ready. The cream-and-red check flatters almost any palette. Pick the size that covers two people and a small dog.",
     "asin": "B0CDKXVK32",
     "amazonUrl": "https://www.amazon.com/s?k=christmas+throw+blanket&tag=finisher090-20",
     "imageMode": "amazon",
@@ -701,7 +701,7 @@ export const products: Product[] = [
   {
     "id": "b0bd7pm599",
     "name": "Wooden Nutcracker Ornament Set",
-    "description": "They are the tiny storytellers of the tree \u2014 a little parade of painted soldiers standing guard among the branches. A set of wooden nutcracker ornaments adds the nostalgic, collected-over-generations charm that plain baubles cannot, and each one becomes a small treasure kids look for every year. Scatter them evenly, or cluster a few where the lights are warmest.",
+    "description": "A set of wooden nutcracker ornaments adds a nostalgic, collected-over-generations charm that plain baubles cannot match, and each one becomes a small treasure kids look for every year. Scatter them evenly, or cluster a few where the lights are warmest.",
     "asin": "B0BD7PM599",
     "amazonUrl": "https://www.amazon.com/s?k=wooden+nutcracker+christmas+decorations&tag=finisher090-20",
     "imageMode": "amazon",
@@ -716,7 +716,7 @@ export const products: Product[] = [
   {
     "id": "b0ckplrbln",
     "name": "Rattan Pendant Ceiling Light",
-    "description": "The light above the bed does more styling than almost anything else in the room. A woven rattan shade turns harsh ceiling light into a warm, patterned glow and gives plain ceilings that boutique-hotel finish bedroom pins always have. Hang one over the bed or a pair over the nightstands, and pick a shade size that suits your ceiling height.",
+    "description": "The light above the bed does more styling than almost anything else in the room. A woven rattan shade turns harsh ceiling light into a warm, patterned glow and gives plain ceilings that boutique-hotel finish. Hang one over the bed or a pair over the nightstands, and pick a shade size that suits your ceiling height.",
     "asin": "B0CKPLRBLN",
     "amazonUrl": "https://www.amazon.com/s?k=pendant+light+fixture+aesthetic+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -731,7 +731,7 @@ export const products: Product[] = [
   {
     "id": "b0b8d2k76v",
     "name": "Wood Base Bedside Table Lamp",
-    "description": "Bedside light should feel like a sunset, not a spotlight. A warm wood base with a soft fabric shade gives you exactly that glow for reading and winding down, and the natural texture sits beautifully against linen bedding and pale walls. Choose the bulb warmth and shade size that fit your nightstand.",
+    "description": "Bedside light should feel like a sunset, not a spotlight. A warm wood base with a soft fabric shade gives you that glow for reading and winding down, and the natural texture sits beautifully against linen bedding and pale walls. Choose the bulb warmth and shade size that fit your nightstand.",
     "asin": "B0B8D2K76V",
     "amazonUrl": "https://www.amazon.com/s?k=wood+base+bedside+table+lamp&tag=finisher090-20",
     "imageMode": "amazon",
@@ -746,7 +746,7 @@ export const products: Product[] = [
   {
     "id": "b082413mwq",
     "name": "Chubby Seal Plush Pillow",
-    "description": "Every styled bed needs one soft, silly finishing touch. A chubby plush propped against the pillows instantly makes the whole bed look huggable and photo-ready \u2014 it is the detail that turns a made bed into a cozy scene. Pick the size and character that match your room's colours.",
+    "description": "Every styled bed needs one soft, silly finishing touch. A chubby plush propped against the pillows makes the whole bed look huggable and photo-ready. Pick the size and character that match your room's colours.",
     "asin": "B082413MWQ",
     "amazonUrl": "https://www.amazon.com/s?k=cute+plush+pillow+for+bed+decor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -776,7 +776,7 @@ export const products: Product[] = [
   {
     "id": "b0fgxnz4tp",
     "name": "Woven Cotton Rope Storage Basket",
-    "description": "Clutter is the fastest way to kill a calm bedroom, and woven baskets are the prettiest way to hide it. A cotton rope basket swallows spare throws, chargers and bedtime bits while adding soft, handmade texture beside the bed or dresser. Pick the size that fits your spare-blanket pile.",
+    "description": "A cotton rope basket swallows spare throws, chargers and bedtime bits while adding soft, handmade texture beside the bed or dresser. Pick the size that fits your spare-blanket pile.",
     "asin": "B0FGXNZ4TP",
     "amazonUrl": "https://www.amazon.com/s?k=woven+storage+basket+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -791,7 +791,7 @@ export const products: Product[] = [
   {
     "id": "b0bm7kj56g",
     "name": "Sheer Canopy Bed Curtains",
-    "description": "Nothing transforms a plain bed frame like draping it. Sheer canopy curtains soften every edge, filter the morning light into a haze, and give the bed that floating, fairytale volume bedroom pins are famous for. Choose a length that pools slightly for the full effect, in white or a blush tone to match your palette.",
+    "description": "Sheer canopy curtains soften every edge of a plain bed frame, filter the morning light into a haze, and give the bed a floating, fairytale volume. Choose a length that pools slightly for the full effect, in white or a blush tone to match your palette.",
     "asin": "B0BM7KJ56G",
     "amazonUrl": "https://www.amazon.com/s?k=canopy+bed+curtains+sheer&tag=finisher090-20",
     "imageMode": "amazon",
@@ -806,7 +806,7 @@ export const products: Product[] = [
   {
     "id": "b07pt6qrxn",
     "name": "Macrame Wall Hanging Set",
-    "description": "Bare walls above the bed make the whole room feel unfinished. A macrame hanging brings hand-knotted texture and gentle boho pattern that flat prints cannot, and a small set lets you build a mini gallery around it. Pick the width that suits the wall above your headboard.",
+    "description": "A macrame hanging brings hand-knotted texture and gentle boho pattern to the wall above the bed, and a small set lets you build a mini gallery around it. Pick the width that suits the wall above your headboard.",
     "asin": "B07PT6QRXN",
     "amazonUrl": "https://www.amazon.com/s?k=macrame+wall+hanging+bedroom+decor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -821,7 +821,7 @@ export const products: Product[] = [
   {
     "id": "b0dcty6yg9",
     "name": "Scented Soy Candle Gift Set",
-    "description": "Candlelight is what makes a bedroom feel like the end of the day. A small set of soy candles on the nightstand or dresser adds warm flicker and a soft scent that settles the room before sleep \u2014 styling and wind-down in one. Pick the scents that suit your evenings, from clean linen to warm vanilla.",
+    "description": "A small set of soy candles on the nightstand or dresser adds warm flicker and a soft scent that settles the room before sleep. Pick the scents that suit your evenings, from clean linen to warm vanilla.",
     "asin": "B0DCTY6YG9",
     "amazonUrl": "https://www.amazon.com/s?k=scented+candles+gift+set+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -830,13 +830,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Nightstands and dressers at the end of the day.",
-    "whyWeLike": "Warm flicker plus a soft scent settles the room before sleep \u2014 styling and wind-down in one.",
+    "whyWeLike": "Warm flicker plus a soft scent settles the room before sleep.",
     "keepInMind": "Soy burns slower with a softer scent throw; keep flames well away from bedding."
   },
   {
     "id": "b0h7wxs3qb",
     "name": "Vanity Desk with LED Mirror and Drawers",
-    "description": "A little getting-ready corner turns a bedroom into a suite. A compact vanity desk with a lit mirror and drawers keeps makeup and morning routines in one pretty spot instead of spread across the bed. Choose a finish that matches your other bedroom furniture, and a size that fits your corner.",
+    "description": "A compact vanity desk with a lit mirror and drawers keeps makeup and morning routines in one pretty spot instead of spread across the bed. Choose a finish that matches your other bedroom furniture, and a size that fits your corner.",
     "asin": "B0H7WXS3QB",
     "amazonUrl": "https://www.amazon.com/s?k=small+vanity+desk+with+mirror+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -851,7 +851,7 @@ export const products: Product[] = [
   {
     "id": "b0fj8y1j9s",
     "name": "Walnut Floating Wall Shelves",
-    "description": "Bedroom walls earn their keep when they hold the pretty things. Walnut floating shelves give books, plants and framed photos a warm, furniture-like ledge that echoes wooden nightstands and dressers. Style them in odd numbers and pick the length that suits the wall beside your bed or above the dresser.",
+    "description": "Walnut floating shelves give books, plants and framed photos a warm, furniture-like ledge that echoes wooden nightstands and dressers. Style them in odd numbers, and pick the length that suits the wall beside your bed or above the dresser.",
     "asin": "B0FJ8Y1J9S",
     "amazonUrl": "https://www.amazon.com/s?k=walnut+floating+shelves+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -866,7 +866,7 @@ export const products: Product[] = [
   {
     "id": "b0d3w6xks4",
     "name": "Velvet Round Storage Pouf",
-    "description": "A soft pouf at the foot of the bed is part seat, part footrest, part styling. Velvet upholstery adds a jewel of texture where you sit to put on shoes or rest a folded throw, and it tucks neatly under a vanity too. Choose a colour that picks up your bedding or curtains.",
+    "description": "A soft pouf at the foot of the bed works as both a seat and a footrest. The velvet adds texture where you sit to put on shoes or rest a folded throw, and it tucks neatly under a vanity too. Choose a colour that picks up your bedding or curtains.",
     "asin": "B0D3W6XKS4",
     "amazonUrl": "https://www.amazon.com/s?k=velvet+pouf+ottoman+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -875,13 +875,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "The foot of the bed, or tucked under a vanity.",
-    "whyWeLike": "Part seat, part footrest, part jewel of texture \u2014 with storage hidden inside.",
+    "whyWeLike": "Part seat, part footrest, with storage hidden inside.",
     "keepInMind": "The storage is modest: a throw or two, not bedding sets."
   },
   {
     "id": "b0bxkzc8qp",
     "name": "Round Lighted Vanity Mirror",
-    "description": "The bedroom's vanity corner deserves light that flatters. A round lighted mirror softens the hard angles of a dresser top, gives even, shadow-free light for makeup, and doubles as a warm glow piece after dark. Pick a finish \u2014 white, gold or black \u2014 that matches your hardware.",
+    "description": "A round lighted mirror softens the hard angles of a dresser top, gives even, shadow-free light for makeup, and doubles as a warm glow piece after dark. Pick a finish (white, gold or black) that matches your hardware.",
     "asin": "B0BXKZC8QP",
     "amazonUrl": "https://www.amazon.com/s?k=round+lighted+vanity+mirror&tag=finisher090-20",
     "imageMode": "amazon",
@@ -911,7 +911,7 @@ export const products: Product[] = [
   {
     "id": "b0cpc1nczs",
     "name": "Corduroy Throw Pillow Covers",
-    "description": "Sofa cushions are the living room's quickest makeover. Soft corduroy covers in warm neutrals add ribbed texture that reads cozy even before you sit down, and they zip over the inserts you already own. Mix two colours from the same family and pick the size that suits your sofa's depth.",
+    "description": "Soft corduroy covers in warm neutrals add ribbed texture that reads cozy even before you sit down, and they zip over the inserts you already own. Mix two colours from the same family, and pick the size that suits your sofa's depth.",
     "asin": "B0CPC1NCZS",
     "amazonUrl": "https://www.amazon.com/s?k=throw+pillow+covers+for+couch&tag=finisher090-20",
     "imageMode": "amazon",
@@ -919,14 +919,14 @@ export const products: Product[] = [
     "ctaLabel": "View these corduroy covers on Amazon",
     "featured": false,
     "active": true,
-    "bestFor": "The quickest living-room refresh there is.",
+    "bestFor": "A fast sofa refresh that zips over the inserts you already own.",
     "whyWeLike": "Ribbed corduroy texture reads cozy instantly, in warm neutrals that mix easily.",
     "keepInMind": "Covers only \u2014 order the size that matches the inserts you already own."
   },
   {
     "id": "b0g48sldzh",
     "name": "Washable Vintage Area Rug",
-    "description": "A living room rug has to survive movie nights, guests and Monday vacuuming \u2014 washable is the upgrade that matters. A vintage-patterned low-pile rug anchors the sofa and coffee table with old-soul character, then goes in the wash when life happens. Choose the size that lets at least the sofa's front legs sit on it.",
+    "description": "A vintage-patterned low-pile rug anchors the sofa and coffee table with old-soul character, and it goes in the wash when life happens: movie nights, guests and Monday vacuuming. Choose the size that lets at least the sofa's front legs sit on it.",
     "asin": "B0G48SLDZH",
     "amazonUrl": "https://www.amazon.com/s?k=washable+vintage+rug+for+living+room&tag=finisher090-20",
     "imageMode": "amazon",
@@ -941,7 +941,7 @@ export const products: Product[] = [
   {
     "id": "b0b3544gym",
     "name": "White Sheer Curtains",
-    "description": "Living rooms glow when the windows wear something soft. Sheer white panels filter harsh daylight into an even, photo-friendly wash, make low ceilings feel taller, and keep the room private without going dark. Hang them high and wide, and pick a length that just kisses the floor.",
+    "description": "Sheer white panels filter harsh daylight into an even, photo-friendly wash, make low ceilings feel taller, and keep the room private without going dark. Hang them high and wide, and pick a length that just kisses the floor.",
     "asin": "B0B3544GYM",
     "amazonUrl": "https://www.amazon.com/s?k=white+sheer+curtains+for+living+room&tag=finisher090-20",
     "imageMode": "amazon",
@@ -956,7 +956,7 @@ export const products: Product[] = [
   {
     "id": "b0dczmz1lf",
     "name": "Faux Fur Throw Blanket",
-    "description": "The sofa throw is where guests decide your living room is cozy. A thick faux fur throw draped over the arm adds instant luxury texture and is the layer everyone reaches for during films. Fold it long over the back or scrunch it on a seat corner, in a shade that suits your cushions.",
+    "description": "A thick faux fur throw draped over the sofa arm adds deep texture and is the layer everyone reaches for during films. Fold it long over the back or scrunch it on a seat corner, in a shade that suits your cushions.",
     "asin": "B0DCZMZ1LF",
     "amazonUrl": "https://www.amazon.com/s?k=faux+fur+throw+blanket+for+couch&tag=finisher090-20",
     "imageMode": "amazon",
@@ -965,13 +965,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "The sofa arm everyone reaches for during films.",
-    "whyWeLike": "Thick faux fur reads as instant luxury texture, folded long or scrunched on a corner.",
+    "whyWeLike": "Thick faux fur adds deep texture, folded long over the back or scrunched on a seat corner.",
     "keepInMind": "Faux fur can shed a little at first and prefers a shake-out or cool wash."
   },
   {
     "id": "b0cghvjcck",
     "name": "Globe String Lights",
-    "description": "String lights are not just for bedrooms \u2014 a run of soft globe lights along a living room shelf or window frame gives the whole room a caf\u00e9-evening glow after dark. The round bulbs read more grown-up than fairy strands and flatter wood and plants alike. Choose the length that spans your shelf or mantel.",
+    "description": "A run of soft globe lights along a living room shelf or window frame gives the whole room a caf\u00e9-evening glow after dark. The round bulbs read more grown-up than fairy strands and flatter wood and plants alike. Choose the length that spans your shelf or mantel.",
     "asin": "B0CGHVJCCK",
     "amazonUrl": "https://www.amazon.com/s?k=globe+string+lights+indoor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1016,7 +1016,7 @@ export const products: Product[] = [
   {
     "id": "b00zf1qr88",
     "name": "Battery Globe String Lights",
-    "description": "Vanity styling loves light with no wires. Battery globe lights loop around the mirror or along a shelf edge and switch on for the full getting-ready glow \u2014 no outlet, no cables crossing your perfumes. The mini globes read like little moons against the glass. Pick a strand length that frames your mirror.",
+    "description": "Battery globe lights loop around the mirror or along a shelf edge and switch on for the full getting-ready glow, with no outlet needed and no cables crossing your perfumes. The mini globes read like little moons against the glass. Pick a strand length that frames your mirror.",
     "asin": "B00ZF1QR88",
     "amazonUrl": "https://www.amazon.com/s?k=battery+operated+globe+string+lights&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1046,7 +1046,7 @@ export const products: Product[] = [
   {
     "id": "b0gf7rtcxq",
     "name": "Amber Jar Soy Candle Set",
-    "description": "Every vanity tray deserves one warm flame. Amber glass jar candles glow like little lanterns among the perfume bottles, and a small set means one for the vanity, one for the shelf, one spare. Their soft scent makes the whole corner feel like a boutique dressing room. Pick the pack size that suits your surfaces.",
+    "description": "Amber glass jar candles glow like little lanterns among the perfume bottles, and a small set means one for the vanity, one for the shelf, one spare. Their soft scent fills the corner. Pick the pack size that suits your surfaces.",
     "asin": "B0GF7RTCXQ",
     "amazonUrl": "https://www.amazon.com/s?k=amber+jar+scented+candles+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1061,7 +1061,7 @@ export const products: Product[] = [
   {
     "id": "b099596f3b",
     "name": "Mini Faux Potted Plants Set",
-    "description": "Green is the colour vanity corners are missing. A set of mini potted plants tucks life into the gaps between bottles and brushes \u2014 on the desk corner, the shelf, beside the mirror \u2014 with zero watering to remember. Mix the shapes across your surfaces and pick pots that suit your palette.",
+    "description": "A set of mini potted plants tucks a little green into the gaps between bottles and brushes (the desk corner, the shelf, beside the mirror), with zero watering to remember. Mix the shapes across your surfaces and pick pots that suit your palette.",
     "asin": "B099596F3B",
     "amazonUrl": "https://www.amazon.com/s?k=mini+fake+plants+set+for+shelf+decor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1076,7 +1076,7 @@ export const products: Product[] = [
   {
     "id": "b09lyf93bq",
     "name": "Round Faux Fur Vanity Rug",
-    "description": "The spot where you sit every morning deserves something soft underfoot. A small round faux fur rug under the vanity stool adds a cloud of texture, photographs beautifully, and warms up hard floors. Choose white or blush to match your corner, sized to sit under the stool and your feet.",
+    "description": "A small round faux fur rug under the vanity stool adds a cloud of texture and warms up hard floors. Choose white or blush to match your corner, sized to sit under the stool and your feet.",
     "asin": "B09LYF93BQ",
     "amazonUrl": "https://www.amazon.com/s?k=round+fluffy+rug+small&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1085,13 +1085,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "The floor spot where you sit every single morning.",
-    "whyWeLike": "A cloud of texture under the stool that warms hard floors and photographs beautifully.",
+    "whyWeLike": "A cloud of texture under the stool that warms up hard floors.",
     "keepInMind": "Round sizing is snug \u2014 measure so it fits under both the stool and your feet."
   },
   {
     "id": "b0c9t7j41y",
     "name": "Pink Sheer Curtains",
-    "description": "Vanity light is makeup light, and pink sheers make it flattering. Blush voile panels soften window glare into a rosy wash that skin loves, while turning the whole corner pastel and dreamy. Hang them behind or beside the vanity and pick a length that pools a little for softness.",
+    "description": "Blush voile panels soften window glare into a rosy wash that skin loves, and turn the whole corner pastel. Hang them behind or beside the vanity and pick a length that pools a little for softness.",
     "asin": "B0C9T7J41Y",
     "amazonUrl": "https://www.amazon.com/s?k=pink+sheer+curtains&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1106,7 +1106,7 @@ export const products: Product[] = [
   {
     "id": "b0bbfxcwfj",
     "name": "Acrylic Floating Shelves",
-    "description": "Perfume bottles are too pretty to hide in drawers. Clear acrylic floating shelves turn the wall beside the mirror into a floating display \u2014 bottles, brushes and small plants lined up like a boutique shelf, with nothing visual competing. Choose the pack size that fits your collection's growth.",
+    "description": "Clear acrylic floating shelves turn the wall beside the mirror into a floating display: bottles, brushes and small plants lined up in the open, with nothing visual competing. Choose the pack size that fits your collection's growth.",
     "asin": "B0BBFXCWFJ",
     "amazonUrl": "https://www.amazon.com/s?k=acrylic+floating+shelves+for+wall&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1115,13 +1115,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "Perfume collections too pretty to hide in drawers.",
-    "whyWeLike": "Clear shelves turn the wall into a floating boutique display that competes with nothing.",
+    "whyWeLike": "Clear shelves turn the wall into a floating display that competes with nothing.",
     "keepInMind": "Acrylic needs the right anchors, and heavy bottles belong on the lowest shelf."
   },
   {
     "id": "b0895ddn47",
     "name": "Photo Clip String Lights",
-    "description": "The wall above a desk is prime cozy real estate. Photo clip string lights turn it into a glowing gallery \u2014 polaroids, postcards and prints clipped along a warm strand above the monitor and shelves. USB power means it runs straight from the setup. Pick a strand long enough to zigzag your wall.",
+    "description": "Photo clip string lights turn the wall above a desk into a glowing gallery: polaroids, postcards and prints clipped along a warm strand above the monitor and shelves. USB power means it runs straight from the setup. Pick a strand long enough to zigzag your wall.",
     "asin": "B0895DDN47",
     "amazonUrl": "https://www.amazon.com/s?k=photo+clip+string+lights&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1129,7 +1129,7 @@ export const products: Product[] = [
     "ctaLabel": "See these photo clip lights on Amazon",
     "featured": false,
     "active": true,
-    "bestFor": "The wall above a desk \u2014 prime cozy real estate.",
+    "bestFor": "The wall above a desk.",
     "whyWeLike": "Polaroids and prints clip along a warm strand, and USB power runs straight from the setup.",
     "keepInMind": "The clips hold light paper only \u2014 heavy prints will slide down."
   },
@@ -1151,7 +1151,7 @@ export const products: Product[] = [
   {
     "id": "b0h4vhspvg",
     "name": "Washable Low-Pile Desk Rug",
-    "description": "A chair rolling on bare floor makes a setup feel temporary. A low-pile washable rug under the desk anchors the whole zone, quiets the wheels, and adds the colour block desk setups are styled around \u2014 then washes clean when coffee happens. Choose a size that fits the chair's full roll range.",
+    "description": "A low-pile washable rug under the desk anchors the whole zone, quiets the chair wheels, and adds the colour block desk setups are styled around, then washes clean when coffee happens. Choose a size that fits the chair's full roll range.",
     "asin": "B0H4VHSPVG",
     "amazonUrl": "https://www.amazon.com/s?k=washable+area+rug+for+home+office&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1166,7 +1166,7 @@ export const products: Product[] = [
   {
     "id": "b0dpzpfkdp",
     "name": "Black Floating Wall Shelves",
-    "description": "Desk walls work hardest as shelves. Black-framed floating shelves give figures, books and gear a bold ledge that matches monitor arms and gaming hardware, and they make RGB lighting pop after dark. Stack two above the desk for the classic setup wall, and pick the pack size that fits your collection.",
+    "description": "Black-framed floating shelves give figures, books and gear a bold ledge that matches monitor arms and gaming hardware, and they make RGB lighting pop after dark. Stack two above the desk for the classic setup wall, and pick the pack size that fits your collection.",
     "asin": "B0DPZPFKDP",
     "amazonUrl": "https://www.amazon.com/s?k=black+floating+shelves+for+wall&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1181,7 +1181,7 @@ export const products: Product[] = [
   {
     "id": "b09bldcg64",
     "name": "Small Ceramic Desk Vase",
-    "description": "One small vase is the desk stylist's secret. A matte ceramic vase with a few dried stems adds height and softness next to all that tech glass and plastic, without taking space the keyboard needs. Tuck it on a shelf corner or beside the monitor, in black or white to suit your theme.",
+    "description": "A matte ceramic vase with a few dried stems adds height and softness next to all that tech glass and plastic, without taking space the keyboard needs. Tuck it on a shelf corner or beside the monitor, in black or white to suit your theme.",
     "asin": "B09BLDCG64",
     "amazonUrl": "https://www.amazon.com/s?k=small+ceramic+vase+for+dried+flowers&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1196,7 +1196,7 @@ export const products: Product[] = [
   {
     "id": "b07xs89q9b",
     "name": "Clear Christmas String Lights",
-    "description": "The tree's glow is Christmas itself. Clear warm string lights wind through the branches and turn the whole tree into the room's lantern \u2014 the base layer every ornament hangs on. Wrap from the trunk outward for depth, and choose the count that matches your tree's height.",
+    "description": "Clear warm string lights wind through the branches and turn the whole tree into the room's lantern: the base layer every ornament hangs on. Wrap from the trunk outward for depth, and choose the count that matches your tree's height.",
     "asin": "B07XS89Q9B",
     "amazonUrl": "https://www.amazon.com/s?k=christmas+string+lights+indoor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1211,7 +1211,7 @@ export const products: Product[] = [
   {
     "id": "b0h6w64l4q",
     "name": "Holiday Scented Candle Gift Set",
-    "description": "Holiday scents are half the Christmas feeling. A gift set of winter candles \u2014 pine, cinnamon, warm spice \u2014 flickers on the mantel and coffee table and makes the room smell like the season before the tree is even up. Light one per room corner and pick the set size that covers your spaces.",
+    "description": "A gift set of winter candles (pine, cinnamon, warm spice) flickers on the mantel and coffee table and makes the room smell like the season before the tree is even up. Light one per room corner and pick the set size that covers your spaces.",
     "asin": "B0H6W64L4Q",
     "amazonUrl": "https://www.amazon.com/s?k=christmas+scented+candles+gift+set&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1241,7 +1241,7 @@ export const products: Product[] = [
   {
     "id": "b07jk99mb1",
     "name": "Faux Floral Garland",
-    "description": "A floral garland softens the hardest lines in a bedroom \u2014 draped along the headboard, a shelf edge or around the mirror, it brings garden colour indoors with no watering and no wilting. Mix it with fairy lights for the full pin look, and pick a flower colour that echoes your bedding.",
+    "description": "A floral garland draped along the headboard, a shelf edge or around the mirror brings garden colour indoors with no watering and no wilting. Mix it with fairy lights for the full pin look, and pick a flower colour that echoes your bedding.",
     "asin": "B07JK99MB1",
     "amazonUrl": "https://www.amazon.com/s?k=artificial+flower+garland+for+decor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1256,7 +1256,7 @@ export const products: Product[] = [
   {
     "id": "b07xgkx327",
     "name": "LED Strip Lights for Bed",
-    "description": "Ambient light behind the bed changes the whole room after dark. An LED strip along the headboard or under the bed frame washes the wall in a soft halo that makes the bed feel like it is floating \u2014 the glow bedroom pins love. Choose a warm-to-RGB strip with a remote and cut it to your bed's width.",
+    "description": "Ambient light behind the bed changes the whole room after dark. An LED strip along the headboard or under the bed frame washes the wall in a soft halo that makes the bed feel like it is floating. Choose a warm-to-RGB strip with a remote and cut it to your bed's width.",
     "asin": "B07XGKX327",
     "amazonUrl": "https://www.amazon.com/s?k=led+strip+lights+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1265,13 +1265,13 @@ export const products: Product[] = [
     "featured": false,
     "active": true,
     "bestFor": "After-dark ambience behind or underneath the bed.",
-    "whyWeLike": "A soft halo wash makes the bed feel like it is floating \u2014 the glow pins love.",
+    "whyWeLike": "A soft halo wash that makes the bed feel like it is floating.",
     "keepInMind": "Measure your bed's width first; strips can be cut but not easily re-joined."
   },
   {
     "id": "b08xx3xybb",
     "name": "Small Bedroom Bookshelf",
-    "description": "A small bookshelf turns a bedroom corner into a library moment. Shelves of books, plants and framed prints add the collected, lived-in layers flat furniture cannot, and give bedtime reading a home that is not the floor. Pick a height that suits your corner and a finish that matches your other pieces.",
+    "description": "A small bookshelf turns a bedroom corner into a library corner. Shelves of books, plants and framed prints add the collected, lived-in layers flat furniture cannot, and give bedtime reading a home that is not the floor. Pick a height that suits your corner and a finish that matches your other pieces.",
     "asin": "B08XX3XYBB",
     "amazonUrl": "https://www.amazon.com/s?k=small+bookshelf+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1331,7 +1331,7 @@ export const products: Product[] = [
   {
     "id": "b08nvvv76q",
     "name": "LED Neon Wall Sign",
-    "description": "One glowing word turns a bedroom wall into a statement. An LED neon sign above the bed or desk corner adds the playful, after-dark personality plain prints cannot \u2014 part lamp, part artwork. Choose a word or shape that fits your vibe, and a colour that matches your lighting scheme.",
+    "description": "An LED neon sign above the bed or desk corner adds a playful, after-dark personality that plain prints cannot: part lamp, part artwork. Choose a word or shape that fits your vibe, and a colour that matches your lighting scheme.",
     "asin": "B08NVVV76Q",
     "amazonUrl": "https://www.amazon.com/s?k=led+neon+sign+for+bedroom+wall&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1346,7 +1346,7 @@ export const products: Product[] = [
   {
     "id": "b0dxdshtsc",
     "name": "Decorative Wall Clock",
-    "description": "A clock can be decor, not just information. A decorative wall clock fills the awkward blank wall every bedroom has and gives the room a gentle focal point that is not a screen. Pick a size readable from the bed and a style that suits your walls.",
+    "description": "A decorative wall clock fills the awkward blank wall every bedroom has and gives the room a gentle focal point that is not a screen. Pick a size readable from the bed and a style that suits your walls.",
     "asin": "B0DXDSHTSC",
     "amazonUrl": "https://www.amazon.com/s?k=decorative+wall+clock+for+bedroom&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1391,7 +1391,7 @@ export const products: Product[] = [
   {
     "id": "b0b4d5nkft",
     "name": "Indoor Plant Stand",
-    "description": "Plants deserve better than the floor. A plant stand lifts a trailing pot to window height, where the leaves catch light and spill over the edge \u2014 instant garden corner, even with faux plants. Tiered stands let you build a little green cluster; pick a finish that suits your furniture.",
+    "description": "A plant stand lifts a trailing pot to window height, where the leaves catch light and spill over the edge, even with faux plants. Tiered stands let you build a little green cluster. Pick a finish that suits your furniture.",
     "asin": "B0B4D5NKFT",
     "amazonUrl": "https://www.amazon.com/s?k=plant+stand+indoor&tag=finisher090-20",
     "imageMode": "amazon",
@@ -1422,7 +1422,7 @@ export const posts: Post[] = [
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed5.webp",
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed9.webp"
     ],
-    "intro": "A tired, dark bedroom becomes the calmest room in the house with the same quiet ingredients our most-saved pins use: layered bedding, something soft underfoot, curtains that glow at golden hour and a little warm light after dark. The finds below are those ingredients, one by one \u2014 pick the version that fits your space.",
+    "intro": "A tired, dark bedroom gets calmer with the same ingredients our most-saved pins use: layered bedding, something soft underfoot, curtains that glow at golden hour and a little warm light after dark. The finds below go through them one by one, so you can pick the versions that fit your space.",
     "closingNote": "Start with one layer \u2014 the rug or the fairy lights \u2014 and the whole room softens. Save this guide to your bedroom board so the list is there when you are ready to shop the look.",
     "trackingId": "finisher090-20",
     "blocks": [
@@ -1545,7 +1545,7 @@ export const posts: Post[] = [
     },
     "createdAt": 1761000000000,
     "updatedAt": 1761000000000,
-    "howToChoose": "Start with a tape measure, not a shopping cart: rug size against the bed, curtain length against the window, shelf length against the wall \u2014 most decor returns happen because measuring stayed in the drawer. Then fix the light. One warm source at bed height \u2014 a lamp, a strand of fairy lights \u2014 does more for the mood than any single statement piece. Build the palette from the biggest thing you own, usually the bedding, and let everything else echo its two softest colours. Add in layers rather than all at once: soft underfoot, soft to touch, soft to look at, in that order."
+    "howToChoose": "Start with a tape measure, not a shopping cart: rug size against the bed, curtain length against the window, shelf length against the wall. Most decor returns happen because measuring stayed in the drawer. Then fix the light. One warm source at bed height (a lamp, a strand of fairy lights) does more for the mood than any single statement piece. Build the palette from the biggest thing you own, usually the bedding, and let everything else echo its two softest colours. Add in layers rather than all at once: soft underfoot, soft to touch, soft to look at, in that order."
   },
   {
     "id": "post-living-room",
@@ -1563,7 +1563,7 @@ export const posts: Post[] = [
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv2.webp",
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv9.webp"
     ],
-    "intro": "A flat living room becomes the room everyone drifts to with one gentle formula: something sink-in to sit on, something soft underfoot, warm wood, pools of lamplight and texture you can feel. The finds below are that formula, piece by piece \u2014 pick the version that fits your space.",
+    "intro": "A flat living room becomes the room everyone drifts to when it has something sink-in to sit on, something soft underfoot, warm wood, pools of lamplight and texture you can feel. The finds below go through that list piece by piece, so you can pick the versions that fit your space.",
     "closingNote": "You do not need a full makeover \u2014 two or three of these in the right corner change the whole mood. Pin this guide for your next slow Sunday refresh.",
     "trackingId": "finisher090-20",
     "blocks": [
@@ -1611,7 +1611,7 @@ export const posts: Post[] = [
     },
     "createdAt": 1760913600000,
     "updatedAt": 1760913600000,
-    "howToChoose": "Begin with the sofa and work outward: the rug should reach at least under the sofa's front legs, the coffee table should sit a comfortable arm's length away, and everything after that is layering. Choose one hero piece \u2014 the loveseat, the rug, the art set \u2014 and let it set the palette; smaller pieces should echo its colours, not compete with them. Keep light low and warm, from lamps and string lights rather than ceiling glare. And leave one surface nearly empty: a calm room needs a place for the eye to rest."
+    "howToChoose": "Begin with the sofa and work outward: the rug should reach at least under the sofa's front legs, the coffee table should sit a comfortable arm's length away, and everything after that is layering. Choose one hero piece (the loveseat, the rug, the art set) and let it set the palette; smaller pieces should echo its colours, not compete with them. Keep light low and warm, from lamps and string lights rather than ceiling glare. And leave one surface nearly empty: a calm room needs a place for the eye to rest."
   },
   {
     "id": "post-vanity",
@@ -1629,7 +1629,7 @@ export const posts: Post[] = [
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van3.webp",
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van8.webp"
     ],
-    "intro": "A crowded dresser top becomes a tiny boutique corner when you build it the way our most-saved vanity pins do: good light first, a mirror you love, and every small thing given a pretty place to live. The finds below build that corner step by step \u2014 pick the version that fits your space.",
+    "intro": "A crowded dresser top turns into a proper getting-ready corner when you build it the way our most-saved vanity pins do: good light first, a mirror you love, and a place for every small thing. The finds below build that corner step by step, so you can pick the versions that fit your space.",
     "closingNote": "Light first, mirror second, then the little luxuries \u2014 that order never fails. Save this to your vanity board for later.",
     "trackingId": "finisher090-20",
     "blocks": [
@@ -1677,7 +1677,7 @@ export const posts: Post[] = [
     },
     "createdAt": 1760827200000,
     "updatedAt": 1760827200000,
-    "howToChoose": "Light comes first, always: choose the mirror and its lighting before any organiser, because good light changes how every product you own performs. Next, measure your surface honestly \u2014 a tray, an organiser and shelves should hold what you use daily, with drawers swallowing the rest. Keep the palette tight: glass, stone and one metal finish is plenty, so small bottles read as a collection instead of clutter. And leave a hand's width of counter empty \u2014 that small gap is the difference between a boutique corner and a busy one."
+    "howToChoose": "Light comes first, always: choose the mirror and its lighting before any organiser, because good light changes how every product you own performs. Next, measure your surface honestly: a tray, an organiser and shelves should hold what you use daily, with drawers swallowing the rest. Keep the palette tight: glass, stone and one metal finish is plenty, so small bottles read as a collection instead of clutter. And leave a hand's width of counter empty. That small gap is the difference between a tidy corner and a busy one."
   },
   {
     "id": "post-desk",
@@ -1695,7 +1695,7 @@ export const posts: Post[] = [
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok7.webp",
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok4.webp"
     ],
-    "intro": "A desk you rush away from becomes a corner you happily settle into when it glows a little after dark, keeps one soft colour running through it, and hides every cable out of sight. The finds below build that feeling piece by piece \u2014 pick the version that fits your setup.",
+    "intro": "A desk you rush away from becomes a corner you happily settle into when it glows a little after dark, keeps one soft colour running through it, and hides every cable out of sight. The finds below build that feeling piece by piece, so you can pick the versions that fit your setup.",
     "closingNote": "One warm light and one tidy tray can change how a whole workday feels. Pin this guide to your desk-inspiration board.",
     "trackingId": "finisher090-20",
     "blocks": [
@@ -1743,7 +1743,7 @@ export const posts: Post[] = [
     },
     "createdAt": 1760740800000,
     "updatedAt": 1760740800000,
-    "howToChoose": "Start with ergonomics, because you will feel them longer than any colour: screen at eye level, a chair that genuinely supports your back, and a desk height that lets your elbows rest easy. Then run one colour through the small things \u2014 mat, mouse, keyboard \u2014 so the setup reads as a single idea. Hide the cables before buying anything pretty; a tidy desk photographs better than a decorated messy one. Add the glow last: a strip behind the desk or monitor is the cheapest 'finished' feeling there is."
+    "howToChoose": "Start with ergonomics, because you will feel them longer than any colour: screen at eye level, a chair that genuinely supports your back, and a desk height that lets your elbows rest easy. Then run one colour through the small things (mat, mouse, keyboard) so the setup reads as a single idea. Hide the cables before buying anything pretty; a tidy desk photographs better than a decorated messy one. Add the glow last: a strip behind the desk or monitor is the cheapest 'finished' feeling there is."
   },
   {
     "id": "post-christmas",
@@ -1761,7 +1761,7 @@ export const posts: Post[] = [
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv15.webp",
       "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed17.webp"
     ],
-    "intro": "An ordinary room becomes the one everyone wants to be in all December when it is built layer by layer, the way our most-saved Christmas pins are: the tree first, then the light, then the soft things people can touch. The finds below follow that exact order \u2014 pick the version that fits your home and your tree.",
+    "intro": "An ordinary room becomes the one everyone wants to be in all December when it is built layer by layer, the way our most-saved Christmas pins are: the tree first, then the light, then the soft things people can touch. The finds below follow that same order, so you can pick the versions that fit your home and your tree.",
     "closingNote": "Start with the glow \u2014 tree lights and one strand of fairy lights \u2014 and the rest can arrive a little at a time, the way the best Christmases always do. Save this guide to your Christmas board so it is ready when the boxes come down from storage.",
     "trackingId": "finisher090-20",
     "blocks": [
@@ -1809,6 +1809,6 @@ export const posts: Post[] = [
     },
     "createdAt": 1761868800000,
     "updatedAt": 1761868800000,
-    "howToChoose": "Work in the order the room comes together: tree first \u2014 measure ceiling height and floor space before choosing \u2014 then lights, then ornaments, then the soft layers people actually touch. Pick one colour story (classic red-and-cream, frosty silver, blush-and-gold) and let the wreath, garland and stockings all speak it, so separately bought pieces feel collected over years. Buy with storage in mind too: shatterproof, foldable pieces survive December after December. And keep one corner deliberately simple \u2014 a candle and a strand of lights \u2014 for the quiet evenings."
+    "howToChoose": "Work in the order the room comes together: tree first (measure ceiling height and floor space before choosing), then lights, then ornaments, then the soft layers people actually touch. Pick one colour story (classic red-and-cream, frosty silver, blush-and-gold) and let the wreath, garland and stockings all speak it, so separately bought pieces feel collected over years. Buy with storage in mind too: shatterproof, foldable pieces survive December after December. And keep one corner deliberately simple, with just a candle and a strand of lights, for the quiet evenings."
   }
 ];

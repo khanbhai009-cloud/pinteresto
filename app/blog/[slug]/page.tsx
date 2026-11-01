@@ -55,7 +55,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
   "top-bedroom-products": {
     kitTitle: "Want the whole look in one ready kit?",
     kitLine:
-      "The Home Decor Kit gathers the soft layers from guides like this one — the colors, textures and pieces that already work together — so you can recreate the look at home without hunting piece by piece.",
+      "The Home Decor Kit gathers the soft layers from guides like this one (the colors, textures and pieces that already work together), so you can recreate the look at home without hunting piece by piece.",
     kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
     kitLabel: "Get the Home Decor Kit",
     trustLine:
@@ -68,7 +68,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
   "top-living-room-products": {
     kitTitle: "Want the whole look in one ready kit?",
     kitLine:
-      "The Home Decor Kit gathers the cozy layers from guides like this one — the colors, textures and pieces that already work together — so you can recreate the look at home without hunting piece by piece.",
+      "The Home Decor Kit gathers the cozy layers from guides like this one (the colors, textures and pieces that already work together), so you can recreate the look at home without hunting piece by piece.",
     kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
     kitLabel: "Get the Home Decor Kit",
     trustLine:
@@ -81,7 +81,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
   "top-vanity-products": {
     kitTitle: "Want the whole look in one ready kit?",
     kitLine:
-      "The Home Decor Kit gathers the pretty, practical pieces from guides like this one — the colors, textures and little luxuries that already work together — so you can recreate the look at home without hunting piece by piece.",
+      "The Home Decor Kit gathers the pretty, practical pieces from guides like this one (the colors, textures and little luxuries that already work together), so you can recreate the look at home without hunting piece by piece.",
     kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
     kitLabel: "Get the Home Decor Kit",
     trustLine:
@@ -94,7 +94,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
   "cozy-desk-setup-finds": {
     kitTitle: "Want the whole setup in one ready bundle?",
     kitLine:
-      "The Complete Bundle gathers the cozy essentials from guides like this one — home and desk pieces in colors and textures that already work together — so you can recreate the look at home without hunting piece by piece.",
+      "The Complete Bundle gathers the cozy essentials from guides like this one (home and desk pieces in colors and textures that already work together), so you can recreate the look at home without hunting piece by piece.",
     kitHref: "https://cozycanvasstudio.gumroad.com/l/tunog",
     kitLabel: "Get the Complete Bundle",
     trustLine:
@@ -107,7 +107,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
   "christmas-decor-finds": {
     kitTitle: "Gifting the whole cozy look?",
     kitLine:
-      "The Complete Bundle gathers every Cozy Canvas kit in one place — the colors, textures and pieces that already work together — so you can hand someone a whole beautiful room as a gift, or recreate the look at home without hunting piece by piece.",
+      "The Complete Bundle gathers every Cozy Canvas kit in one place (the colors, textures and pieces that already work together), so you can hand someone a whole beautiful room as a gift, or recreate the look at home without hunting piece by piece.",
     kitHref: "https://cozycanvasstudio.gumroad.com/l/tunog",
     kitLabel: "Get the Complete Bundle",
     trustLine:
