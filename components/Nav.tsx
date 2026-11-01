@@ -39,12 +39,15 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
+    <>
     <header
       className="fixed top-0 left-0 right-0 z-50 h-16"
       style={{
-        background: "color-mix(in srgb, var(--c-canvas) 85%, transparent)",
-        backdropFilter: "blur(12px)",
-        WebkitBackdropFilter: "blur(12px)",
+        background: open
+          ? "var(--c-canvas)"
+          : "color-mix(in srgb, var(--c-canvas) 85%, transparent)",
+        backdropFilter: open ? "none" : "blur(12px)",
+        WebkitBackdropFilter: open ? "none" : "blur(12px)",
         borderBottom: "1px solid var(--c-hairline)",
         boxShadow: scrolled ? "var(--shadow-card-soft)" : "none",
       }}
@@ -95,7 +98,14 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
           </button>
         </div>
       </div>
+    </header>
 
+      {/* Mobile sheet — MUST stay a sibling of <header>, never a child:
+          the header's backdrop-filter makes it the containing block for
+          fixed descendants, which collapsed this sheet to 0px height
+          (transparent menu over the hero, 1 Nov bug). As a sibling it is
+          positioned against the viewport and its solid canvas background
+          paints the full sheet. */}
       {open && (
         <div
           className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 flex flex-col px-6 pt-6 gap-1"
@@ -122,6 +132,6 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
           </Link>
         </div>
       )}
-    </header>
+    </>
   );
 }
