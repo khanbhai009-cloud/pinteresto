@@ -11,7 +11,24 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
+/* Owner-device exclusion: if the cc_nocount flag is set (cookie or
+   localStorage, via /nocount), this device is never counted — the beacon
+   sends nothing at all: no pageview, no end event, no click. */
+function isNoCount(): boolean {
+  try {
+    if (window.localStorage?.getItem("cc_nocount") === "1") return true;
+  } catch {
+    /* storage unavailable — fall through to the cookie check */
+  }
+  try {
+    return document.cookie.split(";").some((c) => c.trim() === "cc_nocount=1");
+  } catch {
+    return false;
+  }
+}
+
 function send(payload: Record<string, unknown>) {
+  if (isNoCount()) return;
   try {
     const body = JSON.stringify(payload);
     if (navigator.sendBeacon) {

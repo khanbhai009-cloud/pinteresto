@@ -54,6 +54,13 @@ function num(v: unknown): number | undefined {
 
 export async function POST(req: Request): Promise<Response> {
   try {
+    // Owner-device exclusion (defense in depth): a request carrying the
+    // cc_nocount cookie gets the normal 204 but is never written anywhere.
+    const cookieHeader = req.headers.get("cookie") || "";
+    if (cookieHeader.split(";").some((c) => c.trim() === "cc_nocount=1")) {
+      return NO_CONTENT;
+    }
+
     const ua = req.headers.get("user-agent") || "";
     if (BOT_UA.test(ua)) return NO_CONTENT;
     if (!hostAllowed(req)) return NO_CONTENT;
