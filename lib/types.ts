@@ -89,6 +89,9 @@ export interface Post {
   heroImages: string[]; // 5+ for the Hero Fan
   intro: string;
   closingNote: string;
+  /** Short practical buying guidance rendered near the end of the post
+      (editorial pass); optional — older posts/docs may not carry it. */
+  howToChoose?: string;
   trackingId: string; // Amazon tracking ID used in this post's links
   blocks: PostBlock[];
   seo: PostSeo;
@@ -104,6 +107,11 @@ export interface Product {
   amazonUrl: string;
   imageMode: "amazon" | "own";
   image: string;
+  /** Editorial bullets rendered in the product card (optional — older
+      docs may not carry them; the card renders whichever are present). */
+  bestFor?: string;
+  whyWeLike?: string;
+  keepInMind?: string;
   ctaLabel: string;
   featured: boolean;
   active: boolean;

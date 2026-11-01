@@ -52,7 +52,7 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
         boxShadow: scrolled ? "var(--shadow-card-soft)" : "none",
       }}
     >
-      <div className="max-w-[1200px] mx-auto h-full px-4 md:px-8 flex items-center justify-between gap-4">
+      <div className="max-w-[1200px] mx-auto h-full px-4 md:px-6 flex items-center justify-between gap-4">
         <Link
           href="/"
           className="flex items-center gap-2.5 font-serif font-semibold text-[20px] md:text-[22px] text-[var(--c-ink)] no-underline shrink-0"
@@ -108,7 +108,7 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
           paints the full sheet. */}
       {open && (
         <div
-          className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 flex flex-col px-6 pt-6 gap-1"
+          className="md:hidden fixed inset-x-0 top-16 bottom-0 z-40 flex flex-col px-4 pt-6 gap-1"
           style={{ background: "var(--c-canvas)" }}
         >
           {LINKS.map((l) => (

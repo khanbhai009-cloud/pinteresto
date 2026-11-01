@@ -122,7 +122,7 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
 function KitCtaCard({ extras }: { extras: GuideExtras }) {
   return (
     <div
-      className="rounded-[var(--r-lg)] p-6 md:p-8 text-center mb-10"
+      className="rounded-[var(--r-lg)] p-6 md:p-8 text-center"
       style={{ background: "var(--c-primary-soft)", boxShadow: "var(--shadow-card-soft)" }}
     >
       <h3 className="font-serif text-[22px] md:text-[24px] font-semibold text-[var(--c-ink)] leading-[1.2] mb-2">
@@ -184,8 +184,26 @@ export async function generateMetadata({
   };
 }
 
-function readingTime(post: { intro: string; closingNote: string; resolvedBlocks: { description: string }[] }) {
-  const words = [post.intro, post.closingNote, ...post.resolvedBlocks.map((b) => b.description)]
+function readingTime(post: {
+  intro: string;
+  closingNote: string;
+  howToChoose?: string;
+  resolvedBlocks: {
+    description: string;
+    product: { bestFor?: string; whyWeLike?: string; keepInMind?: string };
+  }[];
+}) {
+  const words = [
+    post.intro,
+    post.closingNote,
+    post.howToChoose ?? "",
+    ...post.resolvedBlocks.flatMap((b) => [
+      b.description,
+      b.product.bestFor ?? "",
+      b.product.whyWeLike ?? "",
+      b.product.keepInMind ?? "",
+    ]),
+  ]
     .join(" ")
     .split(/\s+/).length;
   return Math.max(2, Math.round(words / 180));
@@ -235,13 +253,13 @@ export default async function BlogPostPage({
       <JsonLd data={blogPostingJsonLd(post, site)} />
       <JsonLd data={breadcrumbJsonLd(crumbs)} />
       {/* HERO FAN on the post tint */}
-      <section className="pt-[88px] md:pt-[104px] pb-8 px-4" style={{ background: TINT_BG[post.tint] }}>
-        <div className="max-w-[900px] mx-auto">
+      <section className="pt-[88px] md:pt-[104px] pb-8 px-4 md:px-6" style={{ background: TINT_BG[post.tint] }}>
+        <div className="mx-auto w-full max-w-2xl">
           <HeroFan images={post.heroImages.map((src) => ({ src, alt: post.title }))} />
         </div>
       </section>
 
-      <div className="max-w-[760px] mx-auto px-4 md:px-6">
+      <div className="mx-auto w-full max-w-2xl px-4 md:px-6">
         {/* TITLE BLOCK */}
         <header className="pt-8 text-center">
           <h1 className="font-serif text-[28px] md:text-[40px] font-semibold text-[var(--c-ink)] leading-[1.15]">
@@ -253,6 +271,9 @@ export default async function BlogPostPage({
             </p>
           )}
           <div className="flex items-center justify-center gap-2.5 mt-5 flex-wrap">
+            <span className="text-[13px] font-semibold text-[var(--c-ink)]">
+              By {site.name}
+            </span>
             {post.collection && (
               <Chip label={post.collection.name} href={`/collections/${post.collection.slug}`} />
             )}
@@ -268,32 +289,49 @@ export default async function BlogPostPage({
 
         {/* INTRO */}
         {post.intro && (
-          <p className="text-[16px] leading-[1.6] text-[var(--c-ink)] mt-8">{post.intro}</p>
+          <p className="text-[16px] leading-[1.7] text-[var(--c-ink)] mt-8">{post.intro}</p>
         )}
 
-        {/* PRODUCT BLOCKS — kit CTA after block 4 (with the trust note) and
-            after block 8, for posts that have guide extras */}
-        <div className="mt-10">
+        {/* PRODUCT BLOCKS — one shared column rhythm: gap-10 between
+            cards (the card itself uses gap-3 internally). Kit CTA after
+            block 4 (with the trust note) and after block 8, for posts
+            that have guide extras. */}
+        <div className="mt-10 flex flex-col gap-10">
           {post.resolvedBlocks.map((block, i) => (
             <div key={block.product.id}>
-              {i > 0 && <hr className="border-[var(--c-hairline)] mb-10" />}
               <ProductBlock block={block} index={i + 1} postSlug={post.slug} trackingId={post.trackingId} />
               {extras && i === 3 && (
                 <>
-                  <p className="text-[13px] leading-[1.6] italic text-[var(--c-ink-muted)] text-center max-w-[560px] mx-auto mb-6">
+                  <p className="text-[13px] leading-[1.6] italic text-[var(--c-ink-muted)] text-center max-w-[560px] mx-auto mt-10 mb-6">
                     {extras.trustLine}
                   </p>
                   <KitCtaCard extras={extras} />
                 </>
               )}
-              {extras && i === 7 && <KitCtaCard extras={extras} />}
+              {extras && i === 7 && (
+                <div className="mt-10">
+                  <KitCtaCard extras={extras} />
+                </div>
+              )}
             </div>
           ))}
         </div>
 
+        {/* HOW TO CHOOSE — short practical buying guidance near the end */}
+        {post.howToChoose && (
+          <section className="mt-12">
+            <h2 className="font-serif text-[24px] md:text-[28px] font-semibold text-[var(--c-ink)] leading-[1.2]">
+              How to choose
+            </h2>
+            <p className="text-[16px] leading-[1.7] text-[var(--c-ink)] mt-3">
+              {post.howToChoose}
+            </p>
+          </section>
+        )}
+
         {/* CLOSING + SAVE */}
         {post.closingNote && (
-          <p className="text-[16px] leading-[1.6] text-[var(--c-ink)] mt-4">{post.closingNote}</p>
+          <p className="text-[16px] leading-[1.7] text-[var(--c-ink)] mt-8">{post.closingNote}</p>
         )}
         <div className="flex justify-center mt-8 mb-4">
           <Button href={pinSaveUrl} external>
@@ -312,7 +350,9 @@ export default async function BlogPostPage({
             action once, then one engagement question */}
         {extras && (
           <div className="pb-14">
-            <KitCtaCard extras={extras} />
+            <div className="mb-10">
+              <KitCtaCard extras={extras} />
+            </div>
             <p className="text-center text-[16px] leading-[1.6] font-semibold text-[var(--c-ink)]">
               {extras.closingAction}
             </p>
