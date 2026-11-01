@@ -70,6 +70,7 @@ export function CardFan({ images, className = "" }: CardFanProps) {
               alt={img.alt}
               width={400}
               height={600}
+              sizes="(max-width: 768px) 20vw, (max-width: 1024px) 13vw, 110px"
               draggable={false}
               loading="lazy"
               className="w-full h-full object-cover"

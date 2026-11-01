@@ -135,6 +135,7 @@ export function HeroFan({
             alt={img.alt}
             width={560}
             height={840}
+            sizes="(max-width: 768px) 52vw, 280px"
             draggable={false}
             priority={i === 0}
             style={getImageStyle(i)}

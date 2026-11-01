@@ -15,7 +15,9 @@ import type { ResolvedBlock } from "@/lib/types";
      into a /api/t 'click' and reads the final href at click time;
    - rel="sponsored nofollow noopener", target="_blank";
    - Amazon-served images render `unoptimized` (§11.4) so Next never caches
-     a copy; our own lifestyle images use the optimizer normally;
+     a copy — but the src is first normalized to Amazon's own 800px
+     variant (`amazonDisplaySrc` below) so phones don't pull 1500px
+     originals; our own lifestyle images use the optimizer normally;
    - NO price is ever rendered (§11.3); a short "affiliate link" note sits
      near the CTA (§11.2).
    Editorial pass (Nov 2026): one uniform 4/3 image frame on a soft blush
@@ -30,10 +32,23 @@ interface ProductBlockProps {
   trackingId: string;
 }
 
+/* Speed pass (Nov 2026): Amazon serves the same photo at any size through
+   the `_AC_SL<n>_` token in the file name. The library URLs point at the
+   1000–1500px originals (~270 KB each); the card never displays wider
+   than ~716 device px, so the DISPLAY src is normalized to the 800px
+   variant (~97 KB, −64%) — visually identical, still `unoptimized`
+   (§11.4: Next caches nothing). This touches ONLY the image src below;
+   the affiliate `href` is built separately and never passes through here.
+   URLs without the token are returned untouched. */
+function amazonDisplaySrc(url: string): string {
+  return url.replace(/_AC_SL\d+_/, "_AC_SL800_");
+}
+
 export function ProductBlock({ block, index, postSlug, trackingId }: ProductBlockProps) {
   const { product } = block;
   const href = withTrackingTag(product.amazonUrl, trackingId);
   const isAmazonImage = product.imageMode === "amazon";
+  const imageSrc = isAmazonImage ? amazonDisplaySrc(product.image) : product.image;
 
   const bullets: { label: string; text?: string }[] = [
     { label: "Best for", text: product.bestFor },
@@ -60,10 +75,11 @@ export function ProductBlock({ block, index, postSlug, trackingId }: ProductBloc
           style={{ background: "var(--c-blush)" }}
         >
           <Image
-            src={product.image}
+            src={imageSrc}
             alt={block.name}
             width={800}
             height={600}
+            sizes="(max-width: 768px) 100vw, 672px"
             loading="lazy"
             unoptimized={isAmazonImage}
             className="w-full aspect-[4/3] object-cover shadow-[var(--shadow-image-fan)] transition-transform duration-500 group-hover:scale-[1.01]"

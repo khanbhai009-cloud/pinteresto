@@ -10,12 +10,20 @@ import { getLegalSettings, getSiteSettings, getThemeSettings } from "@/lib/db";
 import { JsonLd } from "@/components/JsonLd";
 import { websiteJsonLd } from "@/lib/jsonld";
 
+/* Font audit (speed pass, Nov 2026): the site uses Fraunces 600 for
+   headlines, Fraunces 400 italic for hooks/taglines, and Inter 400/600
+   for body + semibold UI — every face below is genuinely rendered
+   somewhere. Preload only the two files every first paint needs
+   (Fraunces 600 headlines, Inter 400 body); the italic and Inter 600
+   files still load on demand via font-display: swap, just without
+   competing with the hero image for first-load bandwidth. */
 const fraunces = Fraunces({
   subsets: ["latin"],
   weight: ["400", "600"],
   style: ["normal", "italic"],
   variable: "--font-fraunces",
   display: "swap",
+  preload: false,
 });
 
 const inter = Inter({
@@ -23,6 +31,7 @@ const inter = Inter({
   weight: ["400", "600"],
   variable: "--font-inter",
   display: "swap",
+  preload: false,
 });
 
 /* SEO defaults for the whole site. The branded share image

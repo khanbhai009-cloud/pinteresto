@@ -218,7 +218,7 @@ export default async function HomePage() {
                     <Link key={p.id} href={post ? `/blog/${post.slug}` : "/blog"} className="block no-underline group">
                       <div className="bg-[var(--c-card)] rounded-[var(--r-lg)] overflow-hidden" style={{ boxShadow: "var(--shadow-card-soft)" }}>
                         {p.image && (
-                          <Image src={p.image} alt={p.name} width={500} height={625} className="w-full aspect-[4/5] object-cover" />
+                          <Image src={p.image} alt={p.name} width={500} height={625} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 33vw, 25vw" className="w-full aspect-[4/5] object-cover" />
                         )}
                         <div className="p-4">
                           <div className="font-serif text-[18px] font-semibold text-[var(--c-ink)] line-clamp-2">{p.name}</div>
