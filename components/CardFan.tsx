@@ -16,9 +16,13 @@ export interface CardFanImage {
 interface CardFanProps {
   images: CardFanImage[];
   className?: string;
+  /** Set when the fan is the page's hero visual (collection header): the
+      first/cover image gets preload (priority) and the fan loads eagerly
+      instead of lazy, so the page's main visual doesn't pop in late. */
+  priority?: boolean;
 }
 
-export function CardFan({ images, className = "" }: CardFanProps) {
+export function CardFan({ images, className = "", priority = false }: CardFanProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
 
@@ -72,7 +76,8 @@ export function CardFan({ images, className = "" }: CardFanProps) {
               height={600}
               sizes="(max-width: 768px) 20vw, (max-width: 1024px) 13vw, 110px"
               draggable={false}
-              loading="lazy"
+              priority={priority && i === 0}
+              loading={priority ? "eager" : "lazy"}
               className="w-full h-full object-cover"
             />
           </div>

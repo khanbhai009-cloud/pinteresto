@@ -128,7 +128,15 @@ export function HeroFan({
         role="region"
         aria-label="Image carousel"
       >
-        {images.map((img, i) => (
+        {images.map((img, i) => {
+          // Fan slots visible in the initial render (|offset| ≤ 2 around the
+          // centre) must load eagerly — lazy side images popped in late and
+          // made the hero feel slow. Off-fan images (offset > 2, opacity 0)
+          // stay lazy. The centre image keeps priority/preload as before.
+          const d0 = i; // activeIndex starts at 0
+          const signed0 = d0 > n / 2 ? d0 - n : d0;
+          const initiallyVisible = Math.abs(signed0) <= 2;
+          return (
           <Image
             key={img.src + i}
             src={img.src}
@@ -138,6 +146,7 @@ export function HeroFan({
             sizes="(max-width: 768px) 52vw, 280px"
             draggable={false}
             priority={i === 0}
+            loading={i === 0 ? undefined : initiallyVisible ? "eager" : "lazy"}
             style={getImageStyle(i)}
             onClick={() => {
               const d = (i - activeIndex + n) % n;
@@ -145,7 +154,8 @@ export function HeroFan({
               if (signedD !== 0) handleManualNavigate(i);
             }}
           />
-        ))}
+          );
+        })}
       </div>
 
       <div className="flex items-center justify-center gap-1.5 mt-4" role="tablist" aria-label="Choose image">

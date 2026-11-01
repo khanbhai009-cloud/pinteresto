@@ -2,6 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    // Prefer AVIF derivatives (smaller than WebP at the same quality);
+    // verified live after the hero-speed pass. Falls back to WebP.
+    formats: ["image/avif", "image/webp"],
+    // Optimizer responses were going stale after 60s (default), and every
+    // MISS costs a slow Supabase origin round-trip (~1.6–2.4s per image).
+    // Pin/hero originals change rarely, so cache derivatives for 30 days.
+    minimumCacheTTL: 2592000,
     // Own images live in /public; Amazon product images (when imageMode is
     // "amazon") are hotlinked from Amazon media hosts and rendered with
     // `unoptimized` per ARCHITECTURE §11.4 so Next never caches copies.

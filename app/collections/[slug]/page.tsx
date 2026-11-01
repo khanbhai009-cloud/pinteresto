@@ -67,7 +67,7 @@ export default async function CollectionPage({
       <JsonLd data={breadcrumbJsonLd(collectionBreadcrumbCrumbs(collection))} />
       <section className="pt-[96px] md:pt-[112px] pb-12 px-4 md:px-8" style={{ background: TINT_BG[collection.tint] }}>
         <div className="max-w-[560px] mx-auto text-center">
-          <CardFan images={collection.coverImages.map((src) => ({ src, alt: collection.name }))} />
+          <CardFan priority images={collection.coverImages.map((src) => ({ src, alt: collection.name }))} />
           <h1 className="font-serif text-[32px] md:text-[44px] font-semibold text-[var(--c-ink)] leading-[1.15] mt-8">
             {collection.name}
           </h1>
