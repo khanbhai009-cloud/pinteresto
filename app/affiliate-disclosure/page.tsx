@@ -5,8 +5,9 @@ import { getLegalSettings } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Affiliate Disclosure | The Cozy Canvas",
+  title: "Affiliate Disclosure",
   description: "How affiliate links work on The Cozy Canvas — plainly explained.",
+  alternates: { canonical: "/affiliate-disclosure" },
 };
 
 /* Content lives in settings/legal (admin-editable, ARCHITECTURE §3).

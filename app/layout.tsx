@@ -5,7 +5,10 @@ import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { Beacon } from "@/components/Beacon";
+import { NewsletterPopup } from "@/components/NewsletterPopup";
 import { getLegalSettings, getSiteSettings, getThemeSettings } from "@/lib/db";
+import { JsonLd } from "@/components/JsonLd";
+import { websiteJsonLd } from "@/lib/jsonld";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -22,16 +25,55 @@ const inter = Inter({
   display: "swap",
 });
 
+/* SEO defaults for the whole site. The branded share image
+   (public/og-default.png, 1200×630) is the fallback social image wherever
+   a page has no specific one; posts and collections override with their
+   own imagery. Google Search Console verification is env-driven: set
+   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in Vercel and the meta tag renders
+   automatically — no code change needed. */
+const OG_DEFAULT_IMAGE = {
+  url: "/og-default.png",
+  width: 1200,
+  height: 630,
+  alt: "The Cozy Canvas — cozy home decor ideas and finds",
+};
+
 export async function generateMetadata(): Promise<Metadata> {
   const site = await getSiteSettings();
   return {
     metadataBase: new URL(process.env.SITE_URL || "http://localhost:3000"),
-    title: site.seoDefaults.title,
+    title: {
+      default: site.seoDefaults.title,
+      template: "%s | The Cozy Canvas",
+    },
     description: site.seoDefaults.description,
     openGraph: {
+      type: "website",
+      siteName: site.name,
+      locale: "en_US",
       title: site.seoDefaults.title,
       description: site.seoDefaults.description,
-      images: [{ url: site.seoDefaults.ogImage, width: 1000, height: 1500 }],
+      images: [OG_DEFAULT_IMAGE],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: site.seoDefaults.title,
+      description: site.seoDefaults.description,
+      images: [OG_DEFAULT_IMAGE.url],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
     },
   };
 }
@@ -69,6 +111,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
       style={themeStyle(theme)}
     >
       <body>
+        <JsonLd data={websiteJsonLd(site)} />
         <Nav siteName={site.name} />
         <main>{children}</main>
         <Footer
@@ -78,6 +121,7 @@ export default async function RootLayout({ children }: { children: ReactNode }) 
           footerDisclaimer={legal.footerDisclaimer}
         />
         <Beacon enabled={site.analyticsOn} />
+        <NewsletterPopup />
       </body>
     </html>
   );

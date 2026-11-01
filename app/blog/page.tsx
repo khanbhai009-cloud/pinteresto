@@ -6,8 +6,13 @@ import { getPublishedPosts } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Blog — Cozy Decor Guides | The Cozy Canvas",
+  title: "Blog — Cozy Decor Guides",
   description: "Shop-the-look guides for cozy bedrooms, living rooms, vanities and desks — the products behind our most-saved Pinterest pins.",
+  alternates: { canonical: "/blog" },
+  openGraph: {
+    title: "Blog — Cozy Decor Guides | The Cozy Canvas",
+    description: "Shop-the-look guides for cozy bedrooms, living rooms, vanities and desks — the products behind our most-saved Pinterest pins.",
+  },
 };
 
 export default async function BlogIndexPage() {

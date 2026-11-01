@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>The Cozy Canvas</title>
+  <path d="M15 57 V31 a17 17 0 0 1 34 0 V57" fill="none" stroke="#B85468" stroke-width="5" stroke-linecap="round"/>
+  <path d="M32 46.2c-3.9-4.1-7.8-7.2-7.8-10.5 0-2.7 2-4.5 4.4-4.5 1.4 0 2.7.8 3.4 2 .7-1.2 2-2 3.4-2 2.4 0 4.4 1.8 4.4 4.5 0 3.3-3.9 6.4-7.8 10.5z" fill="#B85468"/>
+</svg>

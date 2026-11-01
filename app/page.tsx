@@ -6,6 +6,7 @@
    Guide extras retained: Pick a Vibe chips, Fresh from the Blog (sage).
    Section order/visibility and all hero content come from
    settings/homepage (ARCHITECTURE §4.2), read via the data layer. */
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { HeroFan } from "@/components/HeroFan";
@@ -25,6 +26,12 @@ import {
 import type { Collection } from "@/lib/types";
 
 export const revalidate = 60;
+
+/* Title/description/OG come from the layout defaults (site SEO settings);
+   the homepage only pins its own canonical so it never inherits one. */
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const TINTS = ["var(--c-card)", "var(--c-blush)", "var(--c-sage)", "var(--c-primary-soft)"];
 

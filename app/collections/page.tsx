@@ -8,8 +8,13 @@ import { getCollections, getPostsByCollection } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Collections — Cozy Decor Themes | The Cozy Canvas",
+  title: "Collections — Cozy Decor Themes",
   description: "Browse cozy decor collections: bedroom, living room, vanity and desk guides with the products behind the pins.",
+  alternates: { canonical: "/collections" },
+  openGraph: {
+    title: "Collections — Cozy Decor Themes | The Cozy Canvas",
+    description: "Browse cozy decor collections: bedroom, living room, vanity and desk guides with the products behind the pins.",
+  },
 };
 
 const TINT_BG = {

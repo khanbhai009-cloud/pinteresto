@@ -1,7 +1,8 @@
 "use client";
 
-/* Navigation — design guide §5 + HOMEPAGE-SPEC: logo left in Fraunces 600,
-   links Home / Collections / Blog / About, primary "Explore" pill on the
+/* Navigation — design guide §5 + HOMEPAGE-SPEC: brand lockup left (logo
+   mark + wordmark in Fraunces 600), links Home / Collections / Blog /
+   About, primary "Explore" pill on the
    right, hairline border, canvas glass background, sticky. Mobile: hamburger
    opening a full-height sheet. The public site carries NO admin/login links
    (ARCHITECTURE §1 rule 2 — the admin panel is a separate app). */
@@ -9,6 +10,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { LogoMark } from "@/components/LogoMark";
 
 const LINKS = [
   { href: "/", label: "Home" },
@@ -50,8 +52,10 @@ export function Nav({ siteName = "The Cozy Canvas" }: { siteName?: string }) {
       <div className="max-w-[1200px] mx-auto h-full px-4 md:px-8 flex items-center justify-between gap-4">
         <Link
           href="/"
-          className="font-serif font-semibold text-[20px] md:text-[22px] text-[var(--c-ink)] no-underline shrink-0"
+          className="flex items-center gap-2.5 font-serif font-semibold text-[20px] md:text-[22px] text-[var(--c-ink)] no-underline shrink-0"
+          aria-label={`${siteName} — home`}
         >
+          <LogoMark size={30} />
           {siteName}
         </Link>
 

@@ -24,6 +24,8 @@ import {
   getPublishedPosts,
   getSiteSettings,
 } from "@/lib/db";
+import { JsonLd } from "@/components/JsonLd";
+import { blogPostingJsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 
 export const revalidate = 60;
 
@@ -102,6 +104,19 @@ const GUIDE_EXTRAS: Record<string, GuideExtras> = {
     closingQuestion:
       "What would make your desk feel finished — the light, the chair, or finally hiding the cables? Save this guide to your desk board and tell us on Pinterest.",
   },
+  "christmas-decor-finds": {
+    kitTitle: "Gifting the whole cozy look?",
+    kitLine:
+      "The Complete Bundle gathers every Cozy Canvas kit in one place — the colors, textures and pieces that already work together — so you can hand someone a whole beautiful room as a gift, or recreate the look at home without hunting piece by piece.",
+    kitHref: "https://cozycanvasstudio.gumroad.com/l/tunog",
+    kitLabel: "Get the Complete Bundle",
+    trustLine:
+      "A quick honest note: the photos in this guide are inspiration looks, and each pick below is a close match we chose for that look. If you shop through our links it never costs you anything extra — it simply helps keep The Cozy Canvas going.",
+    closingAction:
+      "Ready to begin? Browse the picks above, or gift the whole look in one go with the Complete Bundle.",
+    closingQuestion:
+      "What goes up first at your home — the tree, the lights, or the wreath on the door? Save this guide to your Christmas board and tell us on Pinterest.",
+  },
 };
 
 function KitCtaCard({ extras }: { extras: GuideExtras }) {
@@ -128,6 +143,13 @@ export async function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
 
+/* Stored SEO titles already end with "| The Cozy Canvas" (data convention
+   in settings/posts); strip that suffix so the layout title template can
+   re-apply it exactly once. */
+function bareTitle(raw: string): string {
+  return raw.replace(/\s*\|\s*The Cozy Canvas\s*$/, "");
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -136,13 +158,28 @@ export async function generateMetadata({
   const { slug } = await params;
   const post = await getPostBySlug(slug);
   if (!post) return {};
+  const title = bareTitle(post.seo.title || post.title);
+  const description = post.seo.description || post.hook;
+  const ogTitle = post.seo.title || post.title;
+  const image = post.seo.ogImage || post.heroImages[0];
   return {
-    title: post.seo.title || post.title,
-    description: post.seo.description || post.hook,
+    title,
+    description,
+    alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
-      title: post.seo.title || post.title,
-      description: post.seo.description || post.hook,
-      images: [{ url: post.seo.ogImage || post.heroImages[0], width: 1000, height: 1500 }],
+      type: "article",
+      title: ogTitle,
+      description,
+      url: `/blog/${post.slug}`,
+      publishedTime: new Date(post.createdAt).toISOString(),
+      modifiedTime: new Date(post.updatedAt).toISOString(),
+      images: [{ url: image, width: 1000, height: 1500, alt: post.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: ogTitle,
+      description,
+      images: [image],
     },
   };
 }
@@ -184,8 +221,19 @@ export default async function BlogPostPage({
   )}&description=${encodeURIComponent(post.title)}`;
   const extras = GUIDE_EXTRAS[post.slug];
 
+  const crumbs = [
+    { name: "Home", path: "/" },
+    { name: "Blog", path: "/blog" },
+    ...(post.collection
+      ? [{ name: post.collection.name, path: `/collections/${post.collection.slug}` }]
+      : []),
+    { name: post.title, path: `/blog/${post.slug}` },
+  ];
+
   return (
     <article>
+      <JsonLd data={blogPostingJsonLd(post, site)} />
+      <JsonLd data={breadcrumbJsonLd(crumbs)} />
       {/* HERO FAN on the post tint */}
       <section className="pt-[88px] md:pt-[104px] pb-8 px-4" style={{ background: TINT_BG[post.tint] }}>
         <div className="max-w-[900px] mx-auto">

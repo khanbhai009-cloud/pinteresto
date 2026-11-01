@@ -14,7 +14,7 @@ export const dynamic = "force-dynamic";
 const NO_CONTENT = new Response(null, { status: 204 });
 
 const KNOWN_FIELDS = new Set([
-  "t", "path", "slug", "pid", "ref",
+  "t", "path", "slug", "pid", "ref", "url",
   "utm_source", "utm_campaign", "w", "dur", "scroll",
 ]);
 
@@ -85,6 +85,7 @@ export async function POST(req: Request): Promise<Response> {
       path: str(obj.path, 200),
       slug: str(obj.slug, 120),
       pid: str(obj.pid, 120),
+      url: str(obj.url, 400),
       ref: str(obj.ref, 300),
       utm_source: str(obj.utm_source, 80),
       utm_campaign: str(obj.utm_campaign, 120),

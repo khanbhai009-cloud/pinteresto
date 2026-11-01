@@ -17,6 +17,7 @@ export interface BeaconEvent {
   path?: string;
   slug?: string;
   pid?: string;
+  url?: string;
   ref?: string;
   utm_source?: string;
   utm_campaign?: string;
@@ -35,6 +36,19 @@ export function sourceOf(ev: BeaconEvent): "pinterest" | "google" | "direct" | "
   if (utm.includes("pinterest") || ref.includes("pinterest")) return "pinterest";
   if (utm.includes("google") || ref.includes("google.")) return "google";
   if (!utm && !ref) return "direct";
+  return "other";
+}
+
+/** Which Amazon storefront a clicked URL points at (geo-CTA split). */
+export function storeOf(url?: string): "in" | "com" | "other" {
+  if (!url) return "other";
+  try {
+    const host = new URL(url).hostname;
+    if (host.endsWith("amazon.in")) return "in";
+    if (host.endsWith("amazon.com")) return "com";
+  } catch {
+    /* fall through */
+  }
   return "other";
 }
 
@@ -152,7 +166,15 @@ export async function recordEvent(
     );
     batch.set(
       db.doc(`analytics_clicks/${date}_${ev.slug}_${ev.pid}`),
-      { date, postSlug: ev.slug, productId: ev.pid, clicks: inc(), [`sources.${source}`]: inc() },
+      {
+        date,
+        postSlug: ev.slug,
+        productId: ev.pid,
+        clicks: inc(),
+        [`sources.${source}`]: inc(),
+        // Geo-CTA split: which storefront the clicked URL actually used.
+        [`stores.${storeOf(ev.url)}`]: inc(),
+      },
       { merge: true }
     );
     batch.set(

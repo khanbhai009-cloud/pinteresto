@@ -4,8 +4,9 @@ import { getLegalSettings } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | The Cozy Canvas",
+  title: "Privacy Policy",
   description: "How The Cozy Canvas handles privacy: no accounts, no tracking cookies, anonymous aggregate counts only.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 /* Content lives in settings/legal (admin-editable, ARCHITECTURE §3). */

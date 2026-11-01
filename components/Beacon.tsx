@@ -63,6 +63,10 @@ export function Beacon({ enabled }: { enabled: boolean }) {
         t: "click",
         pid: a.dataset.pid,
         slug: a.dataset.slug,
+        // The URL actually clicked, read at click time — after GeoLink's
+        // mount swap this is the amazon.in URL for India visitors and
+        // the .com URL for everyone else, never a guessed destination.
+        url: a.href,
         ...basePayload(),
       });
     };

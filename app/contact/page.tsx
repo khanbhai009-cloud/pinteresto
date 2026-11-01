@@ -5,8 +5,13 @@ import { getSiteSettings } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "Contact | The Cozy Canvas",
+  title: "Contact",
   description: "Say hello to The Cozy Canvas — questions, pin requests and kind words welcome.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    title: "Contact | The Cozy Canvas",
+    description: "Say hello to The Cozy Canvas — questions, pin requests and kind words welcome.",
+  },
 };
 
 /* Footer-only page (guide §9). There is deliberately no public form

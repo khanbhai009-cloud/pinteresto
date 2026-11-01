@@ -6,8 +6,13 @@ import { getSiteSettings } from "@/lib/db";
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "About | The Cozy Canvas",
+  title: "About",
   description: "The story behind The Cozy Canvas — cozy corners, honest picks, and the pins that started it all.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    title: "About | The Cozy Canvas",
+    description: "The story behind The Cozy Canvas — cozy corners, honest picks, and the pins that started it all.",
+  },
 };
 
 export default async function AboutPage() {

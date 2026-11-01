@@ -103,4 +103,15 @@
   @media (prefers-reduced-motion: reduce) {
     .rise-in { animation: none; }
   }
+  /* Newsletter popup entrance: soft fade + small rise (NewsletterPopup). */
+  @keyframes cc-popup-in {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .cc-popup {
+    animation: cc-popup-in 320ms ease-out both;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cc-popup { animation: none; }
+  }
 }

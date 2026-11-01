@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CardFan } from "@/components/CardFan";
 import { PostCard } from "@/components/PostCard";
+import { JsonLd } from "@/components/JsonLd";
+import { breadcrumbJsonLd, collectionBreadcrumbCrumbs } from "@/lib/jsonld";
 import { getCollectionBySlug, getCollections, getPostsByCollection } from "@/lib/db";
 
 export const revalidate = 60;
@@ -28,11 +30,24 @@ export async function generateMetadata({
   const { slug } = await params;
   const collection = await getCollectionBySlug(slug);
   if (!collection) return {};
+  const description = `Cozy ${collection.name.toLowerCase()} ideas and shop-the-look guides from The Cozy Canvas.`;
   return {
-    title: `${collection.name} — Cozy Decor Guides | The Cozy Canvas`,
-    description: `Cozy ${collection.name.toLowerCase()} ideas and shop-the-look guides from The Cozy Canvas.`,
+    title: `${collection.name} — Cozy Decor Guides`,
+    description,
+    alternates: { canonical: `/collections/${collection.slug}` },
     openGraph: {
-      images: [{ url: collection.coverImages[0], width: 1000, height: 1500 }],
+      title: `${collection.name} — Cozy Decor Guides | The Cozy Canvas`,
+      description,
+      url: `/collections/${collection.slug}`,
+      images: [
+        { url: collection.coverImages[0], width: 1000, height: 1500, alt: collection.name },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${collection.name} — Cozy Decor Guides | The Cozy Canvas`,
+      description,
+      images: [collection.coverImages[0]],
     },
   };
 }
@@ -49,6 +64,7 @@ export default async function CollectionPage({
 
   return (
     <>
+      <JsonLd data={breadcrumbJsonLd(collectionBreadcrumbCrumbs(collection))} />
       <section className="pt-[96px] md:pt-[112px] pb-12 px-4 md:px-8" style={{ background: TINT_BG[collection.tint] }}>
         <div className="max-w-[560px] mx-auto text-center">
           <CardFan images={collection.coverImages.map((src) => ({ src, alt: collection.name }))} />
