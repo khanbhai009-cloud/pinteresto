@@ -26,7 +26,7 @@ export default async function AboutPage() {
         </p>
         <div className="mt-8 rounded-[var(--r-lg)] overflow-hidden shadow-[var(--shadow-image-fan)]">
           <Image
-            src="/images/gar1.webp"
+            src="https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/gar1.webp"
             alt="A thatched cottage beside a lily pond — the cozy corner that started The Cozy Canvas"
             width={1000}
             height={1250}

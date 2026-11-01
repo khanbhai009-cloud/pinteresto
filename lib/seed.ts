@@ -16,7 +16,7 @@ export const siteSettings: SiteSettings = {
   seoDefaults: {
     title: "The Cozy Canvas — Cozy Home Decor Ideas & Finds",
     description: "Curated cozy home decor ideas and honest product picks — from our Pinterest boards straight to your home.",
-    ogImage: "/images/gar1.webp",
+    ogImage: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/gar1.webp",
   },
   analyticsOn: true,
 };
@@ -42,11 +42,11 @@ export const homepageSettings: HomepageSettings = {
   heroCtaLabel: "Explore Collections",
   heroCtaLink: "/collections",
   heroSlides: [
-    { imageUrl: "/images/gar1.webp", alt: "Thatched cottage beside a lily pond with a small waterfall", link: "/collections/bedroom", order: 1, active: true },
-    { imageUrl: "/images/bath3.webp", alt: "Freestanding bathtub in a plant-filled boho bathroom", link: "/collections/living-room", order: 2, active: true },
-    { imageUrl: "/images/liv3.webp", alt: "Pastel living room with a lilac velvet sofa and marble table", link: "/collections/living-room", order: 3, active: true },
-    { imageUrl: "/images/bal3.webp", alt: "Balcony sofa under hanging wisteria and fairy lights", link: "/collections/bedroom", order: 4, active: true },
-    { imageUrl: "/images/bed23.webp", alt: "Pink round bed under a glowing cloud ceiling", link: "/collections/bedroom", order: 5, active: true },
+    { imageUrl: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/gar1.webp", alt: "Thatched cottage beside a lily pond with a small waterfall", link: "/collections/bedroom", order: 1, active: true },
+    { imageUrl: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bath3.webp", alt: "Freestanding bathtub in a plant-filled boho bathroom", link: "/collections/living-room", order: 2, active: true },
+    { imageUrl: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv3.webp", alt: "Pastel living room with a lilac velvet sofa and marble table", link: "/collections/living-room", order: 3, active: true },
+    { imageUrl: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bal3.webp", alt: "Balcony sofa under hanging wisteria and fairy lights", link: "/collections/bedroom", order: 4, active: true },
+    { imageUrl: "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed23.webp", alt: "Pink round bed under a glowing cloud ceiling", link: "/collections/bedroom", order: 5, active: true },
   ],
   autoSlide: true,
   slideMs: 3500,
@@ -66,9 +66,9 @@ export const collections: Collection[] = [
     "slug": "bedroom",
     "tint": "blush",
     "coverImages": [
-      "/images/bed15.webp",
-      "/images/bed23.webp",
-      "/images/bed3.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed15.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed23.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed3.webp"
     ],
     "order": 1,
     "showOnHome": true
@@ -79,9 +79,9 @@ export const collections: Collection[] = [
     "slug": "living-room",
     "tint": "lavender",
     "coverImages": [
-      "/images/liv5.webp",
-      "/images/liv3.webp",
-      "/images/liv7.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv7.webp"
     ],
     "order": 2,
     "showOnHome": true
@@ -92,9 +92,9 @@ export const collections: Collection[] = [
     "slug": "vanity",
     "tint": "sage",
     "coverImages": [
-      "/images/van5.webp",
-      "/images/van6.webp",
-      "/images/van2.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van6.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van2.webp"
     ],
     "order": 3,
     "showOnHome": true
@@ -105,9 +105,9 @@ export const collections: Collection[] = [
     "slug": "cozy-desk",
     "tint": "card",
     "coverImages": [
-      "/images/nok2.webp",
-      "/images/nok3.webp",
-      "/images/nok5.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok2.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok5.webp"
     ],
     "order": 4,
     "showOnHome": true
@@ -122,7 +122,7 @@ export const products: Product[] = [
     "asin": "B0DW3LT68W",
     "amazonUrl": "https://www.amazon.com/dp/B0DW3LT68W/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed3.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed3.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": true,
     "active": true
@@ -134,7 +134,7 @@ export const products: Product[] = [
     "asin": "B0FSQP1F4F",
     "amazonUrl": "https://www.amazon.com/dp/B0FSQP1F4F/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed5.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed5.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -146,7 +146,7 @@ export const products: Product[] = [
     "asin": "B0852WLH7M",
     "amazonUrl": "https://www.amazon.com/dp/B0852WLH7M/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed7.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed7.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": true,
     "active": true
@@ -158,7 +158,7 @@ export const products: Product[] = [
     "asin": "B0CJ6NL33D",
     "amazonUrl": "https://www.amazon.com/dp/B0CJ6NL33D/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed9.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed9.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -170,7 +170,7 @@ export const products: Product[] = [
     "asin": "B0DF87S24Q",
     "amazonUrl": "https://www.amazon.com/dp/B0DF87S24Q/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed11.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed11.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -182,7 +182,7 @@ export const products: Product[] = [
     "asin": "B00JR5N0JM",
     "amazonUrl": "https://www.amazon.com/dp/B00JR5N0JM/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed13.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed13.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": true,
     "active": true
@@ -194,7 +194,7 @@ export const products: Product[] = [
     "asin": "B0F1SPH2C5",
     "amazonUrl": "https://www.amazon.com/dp/B0F1SPH2C5/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed17.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed17.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -206,7 +206,7 @@ export const products: Product[] = [
     "asin": "B0DW3S8PM3",
     "amazonUrl": "https://www.amazon.com/dp/B0DW3S8PM3/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed19.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed19.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -218,7 +218,7 @@ export const products: Product[] = [
     "asin": "B0F5WDC64G",
     "amazonUrl": "https://www.amazon.com/dp/B0F5WDC64G/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed3.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed3.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -230,7 +230,7 @@ export const products: Product[] = [
     "asin": "B0F2MBL1L2",
     "amazonUrl": "https://www.amazon.com/dp/B0F2MBL1L2/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed5.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed5.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -242,7 +242,7 @@ export const products: Product[] = [
     "asin": "B0F5H17S8V",
     "amazonUrl": "https://www.amazon.com/dp/B0F5H17S8V/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed7.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed7.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -254,7 +254,7 @@ export const products: Product[] = [
     "asin": "B0G42QLWXF",
     "amazonUrl": "https://www.amazon.com/dp/B0G42QLWXF/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/bed9.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed9.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -266,7 +266,7 @@ export const products: Product[] = [
     "asin": "B0G3QTVWM7",
     "amazonUrl": "https://www.amazon.com/dp/B0G3QTVWM7/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/liv2.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv2.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -278,7 +278,7 @@ export const products: Product[] = [
     "asin": "B013I50Z30",
     "amazonUrl": "https://www.amazon.com/dp/B013I50Z30/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/liv4.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv4.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -290,7 +290,7 @@ export const products: Product[] = [
     "asin": "B0G5YHLMZ4",
     "amazonUrl": "https://www.amazon.com/dp/B0G5YHLMZ4/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/liv6.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv6.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -302,7 +302,7 @@ export const products: Product[] = [
     "asin": "",
     "amazonUrl": "https://www.amazon.com/s?k=knitted+pouf+ottoman&tag=finisher090-20 (search link)",
     "imageMode": "own",
-    "image": "/images/liv8.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv8.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -314,7 +314,7 @@ export const products: Product[] = [
     "asin": "B0F9PFB5ST",
     "amazonUrl": "https://www.amazon.com/dp/B0F9PFB5ST/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/liv9.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv9.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -326,7 +326,7 @@ export const products: Product[] = [
     "asin": "B0FWR8FM83",
     "amazonUrl": "https://www.amazon.com/dp/B0FWR8FM83/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/van2.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van2.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -338,7 +338,7 @@ export const products: Product[] = [
     "asin": "B07SDLK4ZG",
     "amazonUrl": "https://www.amazon.com/dp/B07SDLK4ZG/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/van3.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van3.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": true,
     "active": true
@@ -350,7 +350,7 @@ export const products: Product[] = [
     "asin": "B0FZ8NHLL7",
     "amazonUrl": "https://www.amazon.com/dp/B0FZ8NHLL7/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/van4.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van4.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -362,7 +362,7 @@ export const products: Product[] = [
     "asin": "B0C4KM4C94",
     "amazonUrl": "https://www.amazon.com/dp/B0C4KM4C94/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/van7.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van7.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -374,7 +374,7 @@ export const products: Product[] = [
     "asin": "B0G5175PZQ",
     "amazonUrl": "https://www.amazon.com/dp/B0G5175PZQ/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/van8.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van8.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -386,7 +386,7 @@ export const products: Product[] = [
     "asin": "B0B41YBQ9J",
     "amazonUrl": "https://www.amazon.com/dp/B0B41YBQ9J/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok4.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok4.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -398,7 +398,7 @@ export const products: Product[] = [
     "asin": "B0DZCKGDYZ",
     "amazonUrl": "https://www.amazon.com/dp/B0DZCKGDYZ/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok6.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok6.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -410,7 +410,7 @@ export const products: Product[] = [
     "asin": "B0FRMNDRDY",
     "amazonUrl": "https://www.amazon.com/dp/B0FRMNDRDY/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok7.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok7.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -422,7 +422,7 @@ export const products: Product[] = [
     "asin": "B09DVL5GK9",
     "amazonUrl": "https://www.amazon.com/dp/B09DVL5GK9/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok8.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok8.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -434,7 +434,7 @@ export const products: Product[] = [
     "asin": "B0D3FGFPPB",
     "amazonUrl": "https://www.amazon.com/dp/B0D3FGFPPB/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok9.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok9.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -446,7 +446,7 @@ export const products: Product[] = [
     "asin": "B0F1CRD5WY",
     "amazonUrl": "https://www.amazon.com/dp/B0F1CRD5WY/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok10.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok10.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": false,
     "active": true
@@ -458,7 +458,7 @@ export const products: Product[] = [
     "asin": "B07N1CMGQQ",
     "amazonUrl": "https://www.amazon.com/dp/B07N1CMGQQ/?tag=finisher090-20",
     "imageMode": "own",
-    "image": "/images/nok4.webp",
+    "image": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok4.webp",
     "ctaLabel": "Check Price on Amazon",
     "featured": true,
     "active": true
@@ -476,11 +476,11 @@ export const posts: Post[] = [
     "publishAt": null,
     "tint": "blush",
     "heroImages": [
-      "/images/bed23.webp",
-      "/images/bed15.webp",
-      "/images/bed3.webp",
-      "/images/bed5.webp",
-      "/images/bed9.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed23.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed15.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed9.webp"
     ],
     "intro": "Every bedroom in our most-saved pins is built from the same quiet ingredients: layered bedding, something soft underfoot, curtains that glow at golden hour and a little warm light after dark. These are the exact kinds of pieces that create that look, gathered in one place.",
     "closingNote": "Start with one layer — the rug or the fairy lights — and the whole room softens. Save this guide to your bedroom board so the list is there when you are ready to shop the look.",
@@ -526,7 +526,7 @@ export const posts: Post[] = [
     "seo": {
       "title": "Top Bedroom Products — Shop the Look | The Cozy Canvas",
       "description": "Soft layers, warm light and the little pieces that make a bedroom feel like a hug.",
-      "ogImage": "/images/bed23.webp"
+      "ogImage": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/bed23.webp"
     },
     "createdAt": 1761000000000,
     "updatedAt": 1761000000000
@@ -541,11 +541,11 @@ export const posts: Post[] = [
     "publishAt": null,
     "tint": "lavender",
     "heroImages": [
-      "/images/liv3.webp",
-      "/images/liv5.webp",
-      "/images/liv7.webp",
-      "/images/liv2.webp",
-      "/images/liv9.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv7.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv2.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv9.webp"
     ],
     "intro": "Our living room pins that get saved again and again all share a formula: a soft base, pillows you can sink into, warm pools of light and a few natural textures. Here are the pieces that build that feeling, one corner at a time.",
     "closingNote": "You do not need a full makeover — two or three of these in the right corner change the whole mood. Pin this guide for your next slow Sunday refresh.",
@@ -591,7 +591,7 @@ export const posts: Post[] = [
     "seo": {
       "title": "Top Living Room Products — Shop the Look | The Cozy Canvas",
       "description": "The cushions, rugs and glowy corners behind our most-loved living room pins.",
-      "ogImage": "/images/liv3.webp"
+      "ogImage": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/liv3.webp"
     },
     "createdAt": 1760913600000,
     "updatedAt": 1760913600000
@@ -606,11 +606,11 @@ export const posts: Post[] = [
     "publishAt": null,
     "tint": "sage",
     "heroImages": [
-      "/images/van5.webp",
-      "/images/van6.webp",
-      "/images/van2.webp",
-      "/images/van3.webp",
-      "/images/van8.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van6.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van2.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van8.webp"
     ],
     "intro": "A vanity is the smallest room-within-a-room, and our favourite pins treat it like a tiny boutique: good light, a beautiful mirror, and every small thing given a pretty place to live. These picks recreate that corner piece by piece.",
     "closingNote": "Light first, mirror second, then the little luxuries — that order never fails. Save this to your vanity board for later.",
@@ -656,7 +656,7 @@ export const posts: Post[] = [
     "seo": {
       "title": "Top Vanity Products — Shop the Look | The Cozy Canvas",
       "description": "Mirrors, trays and little luxuries for a vanity corner that feels like a boutique.",
-      "ogImage": "/images/van5.webp"
+      "ogImage": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/van5.webp"
     },
     "createdAt": 1760827200000,
     "updatedAt": 1760827200000
@@ -671,11 +671,11 @@ export const posts: Post[] = [
     "publishAt": null,
     "tint": "card",
     "heroImages": [
-      "/images/nok2.webp",
-      "/images/nok3.webp",
-      "/images/nok5.webp",
-      "/images/nok7.webp",
-      "/images/nok4.webp"
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok2.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok3.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok5.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok7.webp",
+      "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok4.webp"
     ],
     "intro": "The desk setups our followers save most are never the stark ones — they glow a little, they have something green nearby, and every cable has gone into hiding. These finds build that warm, focused corner.",
     "closingNote": "One warm light and one tidy tray can change how a whole workday feels. Pin this guide to your desk-inspiration board.",
@@ -721,7 +721,7 @@ export const posts: Post[] = [
     "seo": {
       "title": "Cozy Desk Setup Finds — Shop the Look | The Cozy Canvas",
       "description": "Warm light, soft colour and calm order for a desk you actually want to sit at.",
-      "ogImage": "/images/nok2.webp"
+      "ogImage": "https://brroybwnppxbouxqqofz.supabase.co/storage/v1/object/public/The%20cozy%20Canvas/nok2.webp"
     },
     "createdAt": 1760740800000,
     "updatedAt": 1760740800000
