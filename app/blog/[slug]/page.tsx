@@ -35,6 +35,94 @@ const TINT_BG = {
   "primary-soft": "var(--c-primary-soft)",
 } as const;
 
+/* Per-post guide extras (category-model posts): the digital-product kit CTA
+   shown mid-post (after blocks 4 and 8) and at the end, an honest trust note
+   beside the first kit CTA, and a closing action line + engagement question
+   after the end CTA. Only posts listed here render any of it. */
+interface GuideExtras {
+  kitTitle: string;
+  kitLine: string;
+  kitHref: string;
+  kitLabel: string;
+  trustLine: string;
+  closingAction: string;
+  closingQuestion: string;
+}
+
+const GUIDE_EXTRAS: Record<string, GuideExtras> = {
+  "top-bedroom-products": {
+    kitTitle: "Want the whole look in one ready kit?",
+    kitLine:
+      "The Home Decor Kit gathers the soft layers from guides like this one — the colors, textures and pieces that already work together — so you can recreate the look at home without hunting piece by piece.",
+    kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
+    kitLabel: "Get the Home Decor Kit",
+    trustLine:
+      "A quick honest note: the photos in this guide are inspiration looks, and each pick below is a close match we chose for that look. If you shop through our links it never costs you anything extra — it simply helps keep The Cozy Canvas going.",
+    closingAction:
+      "Ready to begin? Browse the picks above, or get the whole look in one go with the Home Decor Kit.",
+    closingQuestion:
+      "Which corner of your bedroom would you start with — the bed, the window light, or that one bare wall? Save this guide to your bedroom board and tell us on Pinterest.",
+  },
+  "top-living-room-products": {
+    kitTitle: "Want the whole look in one ready kit?",
+    kitLine:
+      "The Home Decor Kit gathers the cozy layers from guides like this one — the colors, textures and pieces that already work together — so you can recreate the look at home without hunting piece by piece.",
+    kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
+    kitLabel: "Get the Home Decor Kit",
+    trustLine:
+      "A quick honest note: the photos in this guide are inspiration looks, and each pick below is a close match we chose for that look. If you shop through our links it never costs you anything extra — it simply helps keep The Cozy Canvas going.",
+    closingAction:
+      "Ready to begin? Browse the picks above, or get the whole look in one go with the Home Decor Kit.",
+    closingQuestion:
+      "Which corner of your living room would you start with — the sofa, the coffee table, or that one empty wall? Save this guide to your living room board and tell us on Pinterest.",
+  },
+  "top-vanity-products": {
+    kitTitle: "Want the whole look in one ready kit?",
+    kitLine:
+      "The Home Decor Kit gathers the pretty, practical pieces from guides like this one — the colors, textures and little luxuries that already work together — so you can recreate the look at home without hunting piece by piece.",
+    kitHref: "https://cozycanvasstudio.gumroad.com/l/ictsf",
+    kitLabel: "Get the Home Decor Kit",
+    trustLine:
+      "A quick honest note: the photos in this guide are inspiration looks, and each pick below is a close match we chose for that look. If you shop through our links it never costs you anything extra — it simply helps keep The Cozy Canvas going.",
+    closingAction:
+      "Ready to begin? Browse the picks above, or get the whole look in one go with the Home Decor Kit.",
+    closingQuestion:
+      "If you could change one thing about your getting-ready corner first — the light, the mirror, or the clutter — which would it be? Save this guide to your vanity board and tell us on Pinterest.",
+  },
+  "cozy-desk-setup-finds": {
+    kitTitle: "Want the whole setup in one ready bundle?",
+    kitLine:
+      "The Complete Bundle gathers the cozy essentials from guides like this one — home and desk pieces in colors and textures that already work together — so you can recreate the look at home without hunting piece by piece.",
+    kitHref: "https://cozycanvasstudio.gumroad.com/l/tunog",
+    kitLabel: "Get the Complete Bundle",
+    trustLine:
+      "A quick honest note: the photos in this guide are inspiration looks, and each pick below is a close match we chose for that look. If you shop through our links it never costs you anything extra — it simply helps keep The Cozy Canvas going.",
+    closingAction:
+      "Ready to begin? Browse the picks above, or get the whole look in one go with the Complete Bundle.",
+    closingQuestion:
+      "What would make your desk feel finished — the light, the chair, or finally hiding the cables? Save this guide to your desk board and tell us on Pinterest.",
+  },
+};
+
+function KitCtaCard({ extras }: { extras: GuideExtras }) {
+  return (
+    <div
+      className="rounded-[var(--r-lg)] p-6 md:p-8 text-center mb-10"
+      style={{ background: "var(--c-primary-soft)", boxShadow: "var(--shadow-card-soft)" }}
+    >
+      <h3 className="font-serif text-[22px] md:text-[24px] font-semibold text-[var(--c-ink)] leading-[1.2] mb-2">
+        {extras.kitTitle}
+      </h3>
+      <p className="text-[15px] leading-[1.6] text-[var(--c-ink-muted)] mb-5 max-w-[520px] mx-auto">
+        {extras.kitLine}
+      </p>
+      <Button href={extras.kitHref} external>
+        {extras.kitLabel}
+      </Button>
+    </div>
+  );
+}
+
 export async function generateStaticParams() {
   const posts = await getPublishedPosts();
   return posts.map((p) => ({ slug: p.slug }));
@@ -94,6 +182,7 @@ export default async function BlogPostPage({
   const pinSaveUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(
     `${process.env.SITE_URL || ""}/blog/${post.slug}`
   )}&description=${encodeURIComponent(post.title)}`;
+  const extras = GUIDE_EXTRAS[post.slug];
 
   return (
     <article>
@@ -134,12 +223,22 @@ export default async function BlogPostPage({
           <p className="text-[16px] leading-[1.6] text-[var(--c-ink)] mt-8">{post.intro}</p>
         )}
 
-        {/* PRODUCT BLOCKS */}
+        {/* PRODUCT BLOCKS — kit CTA after block 4 (with the trust note) and
+            after block 8, for posts that have guide extras */}
         <div className="mt-10">
           {post.resolvedBlocks.map((block, i) => (
             <div key={block.product.id}>
               {i > 0 && <hr className="border-[var(--c-hairline)] mb-10" />}
               <ProductBlock block={block} index={i + 1} postSlug={post.slug} trackingId={post.trackingId} />
+              {extras && i === 3 && (
+                <>
+                  <p className="text-[13px] leading-[1.6] italic text-[var(--c-ink-muted)] text-center max-w-[560px] mx-auto mb-6">
+                    {extras.trustLine}
+                  </p>
+                  <KitCtaCard extras={extras} />
+                </>
+              )}
+              {extras && i === 7 && <KitCtaCard extras={extras} />}
             </div>
           ))}
         </div>
@@ -160,6 +259,20 @@ export default async function BlogPostPage({
           </a>{" "}
           for daily cozy inspiration.
         </p>
+
+        {/* END KIT CTA + CLOSING (guide-extras posts only): repeat the main
+            action once, then one engagement question */}
+        {extras && (
+          <div className="pb-14">
+            <KitCtaCard extras={extras} />
+            <p className="text-center text-[16px] leading-[1.6] font-semibold text-[var(--c-ink)]">
+              {extras.closingAction}
+            </p>
+            <p className="text-center text-[15px] leading-[1.6] text-[var(--c-ink-muted)] mt-3">
+              {extras.closingQuestion}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* MORE COLLECTIONS */}
