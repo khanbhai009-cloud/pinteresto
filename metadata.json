@@ -1,6 +1,0 @@
-{
-  "name": "The Cozy Canvas",
-  "description": "The Cozy Canvas is an editorial home decor destination.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
