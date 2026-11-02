@@ -37,6 +37,18 @@ const TINT_BG = {
   "primary-soft": "var(--c-primary-soft)",
 } as const;
 
+/* Prompt Pack promo: a second digital-product card shown mid-post on the
+   same guide-extras posts as the kit CTA (see placement in the block loop
+   below). Aimed at readers who run their own Pinterest account and need
+   realistic home decor / garden images. */
+// Live Gumroad listing (listed 2 Nov 2026) — this constant is the only
+// place the URL lives.
+const PROMPT_PACK_URL = "https://cozycanvasstudio.gumroad.com/l/igopxj";
+const PROMPT_PACK_TITLE = "Running a Pinterest account of your own?";
+const PROMPT_PACK_LINE =
+  "If you post home decor or garden content, you know the hardest part is finding images that look real. This pack gives you 350 ready-to-use prompts for realistic home decor and gardening photos — picture the corner you want, create the image, post the pin.";
+const PROMPT_PACK_LABEL = "Get the 350 Prompt Pack";
+
 /* Per-post guide extras (category-model posts): the digital-product kit CTA
    shown mid-post (after blocks 4 and 8) and at the end, an honest trust note
    beside the first kit CTA, and a closing action line + engagement question
@@ -133,6 +145,28 @@ function KitCtaCard({ extras }: { extras: GuideExtras }) {
       </p>
       <Button href={extras.kitHref} external>
         {extras.kitLabel}
+      </Button>
+    </div>
+  );
+}
+
+/* Same card shell and styling as KitCtaCard — the prompt-pack promo sits in
+   the same mid-post rhythm (see the block loop), just with its own copy and
+   the single PROMPT_PACK_URL constant. */
+function PromptPackCard() {
+  return (
+    <div
+      className="rounded-[var(--r-lg)] p-6 md:p-8 text-center"
+      style={{ background: "var(--c-primary-soft)", boxShadow: "var(--shadow-card-soft)" }}
+    >
+      <h3 className="font-serif text-[22px] md:text-[24px] font-semibold text-[var(--c-ink)] leading-[1.2] mb-2">
+        {PROMPT_PACK_TITLE}
+      </h3>
+      <p className="text-[15px] leading-[1.6] text-[var(--c-ink-muted)] mb-5 max-w-[520px] mx-auto">
+        {PROMPT_PACK_LINE}
+      </p>
+      <Button href={PROMPT_PACK_URL} external>
+        {PROMPT_PACK_LABEL}
       </Button>
     </div>
   );
@@ -294,7 +328,8 @@ export default async function BlogPostPage({
 
         {/* PRODUCT BLOCKS — one shared column rhythm: gap-10 between
             cards (the card itself uses gap-3 internally). Kit CTA after
-            block 4 (with the trust note) and after block 8, for posts
+            block 4 (with the trust note) and after block 8, Prompt Pack
+            card after block 6 (between the two kit CTAs), for posts
             that have guide extras. */}
         <div className="mt-10 flex flex-col gap-10">
           {post.resolvedBlocks.map((block, i) => (
@@ -307,6 +342,11 @@ export default async function BlogPostPage({
                   </p>
                   <KitCtaCard extras={extras} />
                 </>
+              )}
+              {extras && i === 5 && (
+                <div className="mt-10">
+                  <PromptPackCard />
+                </div>
               )}
               {extras && i === 7 && (
                 <div className="mt-10">
