@@ -1,6 +1,15 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    staleTimes: {
+      // Fully static pages (blog posts are ISR-cached server renders):
+      // keep a prefetched copy in the client Router Cache for 3 minutes
+      // so Back-then-click navigation between posts is instant instead
+      // of refetching a fresh RSC payload on every click.
+      static: 180,
+    },
+  },
   images: {
     // Prefer AVIF derivatives (smaller than WebP at the same quality);
     // verified live after the hero-speed pass. Falls back to WebP.
