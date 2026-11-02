@@ -37,9 +37,9 @@ const inter = Inter({
 /* SEO defaults for the whole site. The branded share image
    (public/og-default.png, 1200×630) is the fallback social image wherever
    a page has no specific one; posts and collections override with their
-   own imagery. Google Search Console verification is env-driven: set
-   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION in Vercel and the meta tag renders
-   automatically — no code change needed. */
+   own imagery. Google Search Console verification uses a built-in default
+   code in generateMetadata below; NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+   if ever set, overrides it. */
 const OG_DEFAULT_IMAGE = {
   url: "/og-default.png",
   width: 1200,
@@ -82,7 +82,9 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     verification: {
-      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || undefined,
+      google:
+        process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION ||
+        "9FwwyR43dd6UxjN9shKh4E1rxVk4OVN5_CeY3GRWXAw",
     },
   };
 }
