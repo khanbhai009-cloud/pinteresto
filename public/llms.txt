@@ -1,0 +1,38 @@
+# The Cozy Canvas
+
+> Cozy home decor ideas site — room-by-room product finds (bedroom, living room, vanity, desk, seasonal) with links to products on Amazon; sister project of The Cozy Canvas Pinterest.
+
+## Pages
+
+- [Home](https://pinteresto.vercel.app/): Cozy home decor ideas and product finds, organized by room.
+- [Blog](https://pinteresto.vercel.app/blog): All decor guides and room-by-room product roundups.
+- [Collections](https://pinteresto.vercel.app/collections): Product collections grouped by room and theme.
+- [About](https://pinteresto.vercel.app/about): What The Cozy Canvas is and who it is for.
+
+## Blog posts
+
+- [Top Bedroom Products](https://pinteresto.vercel.app/blog/top-bedroom-products): Bedroom product finds — layered bedding, soft rugs, light-filtering curtains and warm lighting for a calmer bedroom.
+- [Top Living Room Products](https://pinteresto.vercel.app/blog/top-living-room-products): Living room product finds — sink-in seating, rugs, warm wood pieces and lamplight for a room people gather in.
+- [Top Vanity Products](https://pinteresto.vercel.app/blog/top-vanity-products): Vanity product finds — mirrors, good lighting and small organizers for a getting-ready corner.
+- [Cozy Desk Setup Finds](https://pinteresto.vercel.app/blog/cozy-desk-setup-finds): Desk setup product finds — warm lighting, soft colour and tidy storage for a calm workspace corner.
+- [Christmas Decor Finds](https://pinteresto.vercel.app/blog/christmas-decor-finds): Christmas decor finds — the tree, lights and soft seasonal layers, in the order the most-saved Christmas pins use them.
+
+## Collections
+
+- [Bedroom](https://pinteresto.vercel.app/collections/bedroom): Bedroom decor finds.
+- [Living Room](https://pinteresto.vercel.app/collections/living-room): Living room decor finds.
+- [Vanity](https://pinteresto.vercel.app/collections/vanity): Vanity and dressing-corner finds.
+- [Cozy Desk](https://pinteresto.vercel.app/collections/cozy-desk): Desk setup finds.
+- [Seasonal Decor](https://pinteresto.vercel.app/collections/seasonal-decor): Seasonal and holiday decor finds.
+
+## Digital products (Gumroad)
+
+- [Dream Garden Kit](https://cozycanvasstudio.gumroad.com/l/nmkawd): $15. AI image prompt kit for cottage garden and outdoor scenes.
+- [Home Decor Kit](https://cozycanvasstudio.gumroad.com/l/ictsf): $15. AI image prompt kit for cozy home decor interiors.
+- [Complete Bundle](https://cozycanvasstudio.gumroad.com/l/tunog): $24. Both kits together — garden and home decor AI image prompts in one bundle.
+- [350 AI Image Prompt Pack](https://cozycanvasstudio.gumroad.com/l/igopxj): $15. 350 realistic AI image prompts for Pinterest — home decor and garden.
+
+## Notes
+
+- Pages carry an affiliate disclosure: as an Amazon Associate, the site earns from qualifying purchases made through its product links.
+- Product picks are organized by room and scene.
